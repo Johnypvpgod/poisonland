@@ -1,0 +1,13 @@
+[
+    {
+        "id":"poisonland",
+        "name":"The poisoned land",
+        "showInLog":1,
+        "stages":[
+            {
+                "progress":1,
+                "logText":"In the middle of the history lecture #### stood up seemingly to "
+            }
+        ]
+    }
+]
