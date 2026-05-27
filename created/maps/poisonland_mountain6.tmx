@@ -227,8 +227,25 @@
     <property name="place" value="north"/>
    </properties>
   </object>
+  <object name="east" type="mapchange" x="416" y="192" width="32" height="128">
+   <properties>
+    <property name="map" value="poisonland_mountain7"/>
+    <property name="place" value="west"/>
+   </properties>
+  </object>
  </objectgroup>
- <objectgroup name="Spawn"/>
+ <objectgroup name="Spawn">
+  <object name="poisonland_gargoyle" type="spawn" x="288" y="384" width="64" height="32">
+   <properties>
+    <property name="spawngroup" value="poisonland_gargoyle"/>
+   </properties>
+  </object>
+  <object name="poisonland_gargoyle" type="spawn" x="288" y="288" width="96" height="64">
+   <properties>
+    <property name="spawngroup" value="poisonland_gargoyle"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup name="Keys"/>
  <objectgroup name="Replace"/>
 </map>

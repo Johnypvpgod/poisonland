@@ -1,0 +1,48 @@
+[
+    {
+        "id":"brightport_shield",
+        "iconID":"items_tometik3:18",
+        "name":"Feygard shield",
+        "displaytype":"ordinary",
+        "category":"shld_mtl_li",
+        "description":"A standard issue shield for all Feygard garrisons across Aewhata."
+    },
+    {
+        "id":"brightport_feygardarmor",
+        "iconID":"items_tometik3:13",
+        "name":"Feygard breastplate",
+        "displaytype":"ordinary",
+        "category":"plmail",
+        "description":"A standard issue armor for all Feygard garrisons across Aewhata."
+    },
+    {
+        "id":"brightport_shield2",
+        "iconID":"items_reterski_1:28",
+        "name":"Remgardi steel shield",
+        "displaytype":"ordinary",
+        "category":"shld_mtl_hv",
+        "description":"Forged out of expensive Remgard iron."
+    },
+    {
+        "id":"brightport_lamellar",
+        "iconID":"items_armours_3:18",
+        "name":"Lamellar armor",
+        "displaytype":"ordinary",
+        "category":"spmail"
+    },
+    {
+        "id":"brightport_cloak",
+        "iconID":"items_tometik2:7",
+        "name":"Protective cloak",
+        "category":"bdy_clth",
+        "description":"A cloak made from enchanted silk to protection against various acids and chemicals."
+    },
+    {
+        "id":"poisonland_eckhartjournal",
+        "iconID":"items_misc_2:110",
+        "name":"Eckhart's journal",
+        "displaytype":"quest",
+        "category":"other",
+        "description":"Various theories and descriptions made by Eckhart regarding the poisoned land."
+    }
+]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="26" height="17" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="6">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="26" height="17" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="11">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32" tilecount="160" columns="16">
   <image source="../drawable/map_bed_1.png" width="512" height="320"/>
  </tileset>
@@ -186,49 +186,94 @@
  <tileset firstgid="7721" name="map_tree_3" tilewidth="32" tileheight="32" tilecount="544" columns="32">
   <image source="../drawable/map_tree_3.png" width="1024" height="544"/>
  </tileset>
- <layer id="9" name="Base" width="26" height="17">
+ <tileset firstgid="8265" name="map_tree_3" tilewidth="32" tileheight="32" tilecount="544" columns="32">
+  <image source="../../../Brightport/created/drawable/map_tree_3.png" width="1024" height="544"/>
+ </tileset>
+ <layer id="1" name="Base" width="26" height="17">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjAIIUJUbOLsvcg4NM0fB0AMAgqQB+A==
+   eJy7wskwCkbBKBgFYKAqN3B2X6RBWUQLM0cBbQAt4woAx4wDrw==
   </data>
  </layer>
- <layer id="1" name="Ground" width="26" height="17">
+ <layer id="2" name="Ground" width="26" height="17">
   <data encoding="base64" compression="zlib">
-   eJy7wsnAcGUUj0isKsfAoA7FtDRbA4gvckIwsfolcLhJTA7VDpDZlzkh+CIn9e1Bt4MUe9DD4DIWNWpo8tjswGYPrvC9TAJGtwOEb4kjzEV2Fza1yJgUO0AY3b8g/EuMsD3o9hFSBzOTGLWjmD6Y1LRCDTsApUNpSA==
+   eJyTFGdguMI5ikciVpVjYFCHYlqarQHEFzkhmFj9EjjcJCaHagfI7MucEHyRk/r2oNtBij3oYXAZixo1NHlsdmCzB1f4XiYBo9sBwrfEEeYiuwubWmRMih0gjO5fEP4lRtgedPsIqYOZSYzaUUwfjCutcInTzg4At5hn4g==
   </data>
  </layer>
- <layer id="2" name="Objects" width="26" height="17">
+ <layer id="3" name="Objects" width="26" height="17">
   <data encoding="base64" compression="zlib">
-   eJyNVMtSwkAQnIMVIQQ1ewiPQ/gCv0GvWoD8lop+oHrRg2IVXuV1cZrdMcMkAbpqqrY2s9M9PQPDPm3x3iP66NE/1ilVYpmWcy2G/SLnnM8XHCtTr67+b839sF/PV4X2gOhs4M9Xjuja+bPoOQYLpUW/m7jq/hc12gV1vokXh3ytgvZlWcNf1/NLh6jV9aHfax0Td1iDnqV4rWsnHOuMaHxSztunTaB34jXcjwIHaqMuAhw9vpuZPuyu6f7mnN/gaCq+iM9vnUIHOO64fsI62xyz7DhPrAfwNw58iBZHrL6DA+/GrujlJie6zX2O7sPWRv+bzNcAkjA3mekoeITvsqfCAX/x+7zkNz9pUVfXXqvaGb/pqthU+LEyHBrwUc9NdEErch+532lezFGQKb7YFfVxJ3OXGW3n6Hxd5EOPzhVsAsen4vpOy33izZfRo7nwPVO5qAeN99zHQ172x/amgTnbXuTN7MD/L7TbfW+4Xc5p0HOqftuR2ksb+rdhde/rwyIKOw80A/ciLXYlDlzQL14/sdZnjnnqZwVfI6NN9lnuwZGo3nD+AzV/fHY=
+   eJyNVMtSwkAQnAMVeQQ1ewiPA/ADfoN+ACC/gX+ioh+oXvSgWIVXFbi4bXbcZiBgV03V1mZmuqcnybArv3juiLx05A+rTHbiu+SeMezGfif+fOpjaerK+n+W3A+7h3kZzb7Icb84nzuRC1ecVc9/8EVaUl/TDHUTt+nVrvxdsB4r1Iuy5/vAvpTtpmzmh5ZIo10E17OOiTusgXepXnPv1McqFxlXtvPYV6tNwe/EY7gfBQ70Rl8EODr+bm7msBw838LnV33UiC/x56dW1AGOy0rsM89jbtm+4In1AP7WAx+i4aNOz8GBurGLs0wHIleDIod9tr0x/zovegBp2JvudBQ8wnN9T5UD/uL7PPM1H1nsy71X1Dv3NW2KNfmhWBoOBnzkvakuaEXubU9k1ot7VOTEV3exP+5077zrxBV9kQ89nKtYB45X4nrPtudEzZvRw1x4nlMu+kHjtZ/jprftj52NgT3bWbQGse8/Ae3231p1m5yzoOeIvu2E3ksb/G1Y3fvmsEjCOw/UAjf/M7EjcEG/en3ntd77WGTFruBrYrRpD70HR0qz4fwDQjR61Q==
   </data>
  </layer>
- <layer id="3" name="Above" width="26" height="17">
+ <layer id="4" name="Above" width="26" height="17">
   <data encoding="base64" compression="zlib">
-   eJxjYKAM2EiRpv6tHAPDOzlM8f+SQIJEs7DpuyRJuhkXJfHrIySPDRATLqT6mRx3kAvIjQ9cwI8FwcblD3L99weo5y8Q+7MQVkstoAlMw1pY0vFAAj8c/s8FujOPCLf+wRP+ILOzgWbkQM3JBNJZaGb2Avl9OOyBxREMPCIynjuB5nWRGM7odmED2NxPqfmU5E/ksKWlHlB4EpsekPWgxwExZuBLD+iAmmUwLG8i6wEAVDk1kQ==
+   eJxjYKAM2EiRpv6tHAPDOzlM8f+SQIJEs0DgD1DfX0kE/5IkbrW4wEVJ/PoIyWMDxIQLqX4mxx3kAvRwpRT4sSDYMH+g20Gu/2Dm+CPZQetw0gSmYS0s6XggAXIYIwNceQ4d/MET/iCzs4Fm5EDNyQTSWWhm8sozMPDJ4zYbOa4fERk/nUA7ukgMZ2LSLjb3U2o+JfkTOWxpqQcUnrlAnEeCPmxxQIwZvUD5PiLtoWYZDMubyHoAsl46mw==
   </data>
  </layer>
- <layer id="4" name="Walkable" width="26" height="17" visible="0">
+ <layer id="5" name="Walkable" width="26" height="17" visible="0">
   <data encoding="base64" compression="zlib">
-   eJy1k9ENACEIQ28K91+JjS7RnwsBbKFHYmKUPiuirWeHrTOQ6OSi+RWHzbfgbl0vXqdgsPuZZnquwkeljXrgu9at5Y2TsX0/VHyFV+QcxGvFvvnr7jN3R+oaMbPe8HMksn+KvDMbbE1U/D+Yas1EFzGmrBfx0WCO
+   eJy1lYEKwCAIRPcV/f8v9UeDjUGEZ3enEwKxfJoazXE9Mse7uuXjVtmq/xoT6S7PyYeJ7eTGnFe5lX5FvtEMrDa3licOYu/zkPGZGEq+yM7kmrFPtXT3lT4xdY2YaDZ2nRH0Tpk+q6LWpIv/B7Pbx/HL7lr9Q257uWCO
   </data>
  </layer>
- <objectgroup id="5" name="Mapevents" visible="0">
-  <object id="2" name="poisoned_ground" type="script" x="32" y="192" width="288" height="128">
+ <objectgroup id="6" name="Mapevents" visible="0">
+  <object id="1" name="poisoned_ground" type="script" x="32" y="192" width="288" height="128">
    <properties>
     <property name="when" value="step"/>
    </properties>
   </object>
-  <object id="3" name="poisoned_ground" type="script" x="320" y="192" width="320" height="64">
+  <object id="2" name="poisoned_ground" type="script" x="320" y="192" width="320" height="64">
    <properties>
     <property name="when" value="step"/>
    </properties>
   </object>
-  <object id="4" name="poisoned_ground" type="script" x="32" y="32" width="768" height="160">
+  <object id="3" name="poisoned_ground" type="script" x="32" y="32" width="768" height="160">
    <properties>
     <property name="when" value="step"/>
+   </properties>
+  </object>
+  <object id="4" name="west1" type="mapchange" x="0" y="64" width="32" height="192">
+   <properties>
+    <property name="map" value="poisonland3"/>
+    <property name="place" value="east"/>
+   </properties>
+  </object>
+  <object id="5" name="south" type="mapchange" x="128" y="512" width="96" height="32">
+   <properties>
+    <property name="map" value="brightportwild28"/>
+    <property name="place" value="north1"/>
+   </properties>
+  </object>
+  <object id="6" name="south1" type="mapchange" x="384" y="512" width="288" height="32">
+   <properties>
+    <property name="map" value="brightportwild26"/>
+    <property name="place" value="north"/>
+   </properties>
+  </object>
+  <object id="7" name="east" type="mapchange" x="800" y="352" width="32" height="192">
+   <properties>
+    <property name="map" value="brightportwild25"/>
+    <property name="place" value="west"/>
+   </properties>
+  </object>
+  <object id="8" name="west" type="mapchange" x="0" y="416" width="32" height="128">
+   <properties>
+    <property name="map" value="brightportwild31"/>
+    <property name="place" value="east"/>
+   </properties>
+  </object>
+  <object id="9" name="north" type="mapchange" x="128" y="0" width="544" height="32">
+   <properties>
+    <property name="map" value="poisonland2"/>
+    <property name="place" value="south"/>
+   </properties>
+  </object>
+  <object id="10" name="east1" type="mapchange" x="800" y="32" width="32" height="96">
+   <properties>
+    <property name="map" value="brightportwild24"/>
+    <property name="place" value="west1"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="6" name="Spawn"/>
- <objectgroup id="7" name="Keys"/>
- <objectgroup id="8" name="Replace"/>
+ <objectgroup id="7" name="Spawn" visible="0"/>
+ <objectgroup id="8" name="Keys" visible="0"/>
+ <objectgroup id="9" name="Replace" visible="0"/>
 </map>

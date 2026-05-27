@@ -1,0 +1,74 @@
+[
+    {
+        "id":"poisonland_gargoyle",
+        "name":"Overgrown gargoyle",
+        "iconID":"monsters_johny:16",
+        "monsterClass":"construct",
+        "droplistID":"poisonland_overgrowngargoyle"
+    },
+    {
+        "id":"poisonland_firespirit",
+        "name":"Fire spirit",
+        "iconID":"monsters_tometik3:41",
+        "unique":1,
+        "spawnGroup":"",
+        "phraseID":"poisonland_firespirit_selector"
+    },
+    {
+        "id":"poisonland_scientist",
+        "name":"Eckhart",
+        "iconID":"monsters_johny:19",
+        "spawnGroup":"",
+        "phraseID":"poisonland_eckhart"
+    },
+    {
+        "id":"poisonland_crackedgargoyle",
+        "name":"Cracked gargoyle",
+        "iconID":"monsters_johny:15",
+        "monsterClass":"construct",
+        "droplistID":"poisonland_crackedgargoyle"
+    },
+    {
+        "id":"poisonland_normalbeast",
+        "name":"Blighted mountain cat",
+        "iconID":"monsters_tometik4:62",
+        "monsterClass":"animal"
+    },
+    {
+        "id":"poisonland_fireperson",
+        "name":"Fire person",
+        "iconID":"monsters_tometik1:36",
+        "unique":1,
+        "phraseID":"poisonland_fireperson_selector"
+    },
+    {
+        "id":"poisonland_tree",
+        "name":"Moonwalker tree",
+        "iconID":"monsters_tometik10:31"
+    },
+    {
+        "id":"poisonland_guardian",
+        "name":"Hunched guardian",
+        "iconID":"monsters_newb_3:2",
+        "unique":1,
+        "monsterClass":"giant",
+        "movementAggressionType":"none"
+    },
+    {
+        "id":"poisonland_chimera",
+        "name":"Blight chimera",
+        "iconID":"monsters_tometik4:39",
+        "monsterClass":"animal"
+    },
+    {
+        "id":"poisonland_brimhavenguard",
+        "name":"Brimhaven guard",
+        "iconID":"monsters_ld1:41",
+        "phraseID":"poisonland_brimhavenguard"
+    },
+    {
+        "id":"poisonland_heiter",
+        "name":"Heiter",
+        "iconID":"monsters_ld_edit:80"
+    }
+]
