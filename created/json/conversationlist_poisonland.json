@@ -1,5 +1,43 @@
 [
     {
+        "id":"dbg_teleport_prj_brightportdungeon",
+        "message":"  poisonland  ",
+        "replies":[
+            {
+                "text":"waytobrightport2",
+                "nextPhraseID":"dbg_teleport_prj_brightportdungeon_brightport_dungeon"
+            },
+            {
+                "text":"poisonland_cave1",
+                "nextPhraseID":"dbg_teleport_prj_brightportdungeon_brightport_dungeon86"
+            },
+            {
+                "text":"Back",
+                "nextPhraseID":"dbg_teleport"
+            }
+        ]
+    },
+	{
+        "id":"dbg_teleport_prj_brightportdungeon_brightport_dungeon",
+        "rewards":[
+            {
+                "rewardType":"mapchange",
+                "rewardID":"east",
+                "mapName":"waytobrightport2"
+            }
+        ]
+    },
+    {
+        "id":"dbg_teleport_prj_brightportdungeon_brightport_dungeon86",
+        "rewards":[
+            {
+                "rewardType":"mapchange",
+                "rewardID":"east",
+                "mapName":"poisonland_cave1"
+            }
+        ]
+    },
+    {
         "id":"brv_playing_children_10_selector",
         "replies":[
             {
