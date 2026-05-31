@@ -11,7 +11,9 @@
         "name":"Fire spirit",
         "iconID":"monsters_tometik3:41",
         "unique":1,
+        "monsterClass":"ghost",
         "spawnGroup":"",
+        "horizontalFlipChance":50,
         "phraseID":"poisonland_firespirit_selector"
     },
     {
@@ -39,6 +41,8 @@
         "name":"Fire person",
         "iconID":"monsters_tometik1:36",
         "unique":1,
+        "monsterClass":"ghost",
+        "horizontalFlipChance":50,
         "phraseID":"poisonland_fireperson_selector"
     },
     {
@@ -58,7 +62,8 @@
         "id":"poisonland_chimera",
         "name":"Blight chimera",
         "iconID":"monsters_tometik4:39",
-        "monsterClass":"animal"
+        "monsterClass":"animal",
+        "horizontalFlipChance":30
     },
     {
         "id":"poisonland_brimhavenguard",
@@ -70,5 +75,29 @@
         "id":"poisonland_heiter",
         "name":"Heiter",
         "iconID":"monsters_ld_edit:80"
+    },
+    {
+        "id":"poisonland_shaman",
+        "name":"Charwood goblin shaman",
+        "iconID":"monsters_newb_1:93"
+    },
+    {
+        "id":"poisonland_hobgoblin",
+        "name":"Charwood hobgoblin bodyguard",
+        "iconID":"monsters_newb_1:91",
+        "movementAggressionType":"helpOthers",
+        "horizontalFlipChance":50
+    },
+    {
+        "id":"poisonland_goblintrainer",
+        "name":"Charwood goblin tamer",
+        "iconID":"monsters_rltiles4:22"
+    },
+    {
+        "id":"poisonland_mazarth",
+        "name":"Mazarth beast stud",
+        "iconID":"monsters_ld2:36",
+        "monsterClass":"animal",
+        "horizontalFlipChance":50
     }
 ]

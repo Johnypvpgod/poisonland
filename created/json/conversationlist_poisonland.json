@@ -1253,7 +1253,7 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_gem",
-                        "value":100,
+                        "value":200,
                         "negate":true
                     }
                 ]
@@ -1265,7 +1265,7 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_gem",
-                        "value":100
+                        "value":200
                     }
                 ]
             }
@@ -1401,7 +1401,7 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_gem",
-                        "value":100,
+                        "value":200,
                         "negate":true
                     }
                 ]
@@ -1413,7 +1413,7 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_gem",
-                        "value":100
+                        "value":200
                     }
                 ]
             }
@@ -1533,7 +1533,7 @@
             {
                 "rewardType":"alignmentChange",
                 "rewardID":"poisonland_gem",
-                "value":10
+                "value":7
             }
         ]
     },
@@ -1563,7 +1563,7 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_gem",
-                        "value":100,
+                        "value":200,
                         "negate":true
                     }
                 ]
@@ -1575,7 +1575,7 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_gem",
-                        "value":100
+                        "value":200
                     }
                 ]
             }
@@ -1677,7 +1677,7 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_gem",
-                        "value":100,
+                        "value":200,
                         "negate":true
                     }
                 ]
@@ -1689,7 +1689,7 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_gem",
-                        "value":100
+                        "value":200
                     }
                 ]
             }
@@ -1791,7 +1791,7 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_gem",
-                        "value":100,
+                        "value":200,
                         "negate":true
                     }
                 ]
@@ -1803,7 +1803,7 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_gem",
-                        "value":100
+                        "value":200
                     }
                 ]
             }
@@ -1902,6 +1902,7 @@
     {
         "id":"poisonland_altar_fireperson2",
         "message":"Enough... Your offerings were sufficient.",
+        "switchToNPC":"poisonland_fireperson",
         "replies":[
             {
                 "text":"What are you.",
@@ -1931,6 +1932,7 @@
     {
         "id":"poisonland_altar_fireperson3",
         "message":"Millennia ago, we agreed to be bound here and serve for a price, but your offerings exceeded what remained of the original. The lava will soon dissipate, and we are free to roam once more.",
+        "switchToNPC":"poisonland_fireperson",
         "replies":[
             {
                 "text":"N",
@@ -1940,7 +1942,7 @@
     },
     {
         "id":"poisonland_altar_gemofwarmth",
-        "message":"The gem burns, the flame great enough to envelop the whole altar... once it subsides, the gem remains intact.",
+        "message":"The gem burns. The flame great enough to envelop the whole altar... Once it subsides, the gem remains intact.",
         "replies":[
             {
                 "text":"N",
@@ -1975,6 +1977,7 @@
     {
         "id":"poisonland_altar_fireperson_gemofwarmth",
         "message":"The Kazaul offered us enough energy to dwell beneath the sun at the price of mere lava. But the crystals worth has diminished, making this form unstable and unpleasant. You have paid off the remaining decades of our toil, the lava will soon dissipate, and we are free to roam once more.",
+        "switchToNPC":"poisonland_fireperson",
         "replies":[
             {
                 "text":"N",
@@ -2677,7 +2680,7 @@
     },
     {
         "id":"poisonland_brimhavenguard4",
-        "message":"Brimhaven and Charwood were closely related up until recently. It was someone from Brimhaven came across a few ore deposits in the hills a few hundred years ago and decided to open a mine.",
+        "message":"Brimhaven and Charwood were much closely related up until recently. It was someone from Brimhaven came across a few ore deposits in the hills a few hundred years ago and decided to open a mine.",
         "replies":[
             {
                 "text":"N",
@@ -2724,7 +2727,7 @@
     },
     {
         "id":"poisonland_brimhavenguard8",
-        "message":"Err, forget everything I just said then. You have't heard a word from me.",
+        "message":"Err, forget everything I just said then. You haven't heard a word from me.",
         "rewards":[
             {
                 "rewardType":"questProgress",
