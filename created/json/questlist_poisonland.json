@@ -198,6 +198,42 @@
             {
                 "progress":21,
                 "logText":"told guard you're not from brimhaven"
+            },
+            {
+                "progress":22,
+                "logText":"aurelia for the lecture"
+            },
+            {
+                "progress":23,
+                "logText":"Aurelia lecture"
+            },
+            {
+                "progress":24,
+                "logText":"regnal lecture"
+            },
+            {
+                "progress":25,
+                "logText":"Eiden lecture"
+            },
+            {
+                "progress":27,
+                "logText":"Spoken with aurelia at the start of the lecture"
+            },
+            {
+                "progress":28,
+                "logText":"Spoken with regnal at the start of the lecture"
+            },
+            {
+                "progress":26,
+                "logText":"Spoken with eiden at the start of the lecture"
+            },
+            {
+                "progress":27,
+                "logText":"book received from aurelia"
+            },
+            {
+                "progress":28,
+                "logText":"lecture checkpoint at the start"
             }
         ]
     }

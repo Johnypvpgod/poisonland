@@ -22,7 +22,15 @@
         "replies":[
             {
                 "text":"I've come a long distance in the pursuit of my brother Andor. So I peeked inside to see if he was in here.",
-                "nextPhraseID":"waterway_forest_isolated_man_5"
+                "nextPhraseID":"waterway_forest_isolated_man_5",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"andor_ending",
+                        "value":900,
+                        "negate":true
+                    }
+                ]
             },
             {
                 "text":"I am looking for someone that could explain why that land nearby is strange.",

@@ -17,7 +17,7 @@
             }
         ]
     },
-	{
+    {
         "id":"dbg_teleport_prj_brightportdungeon_brightport_dungeon",
         "rewards":[
             {
@@ -2139,7 +2139,26 @@
             },
             {
                 "text":"That wasn't my motivation from the beginning. I don't attend the academy, I'm traveling around in search of my brother Andor.",
-                "nextPhraseID":"poisonland_isolatedman9"
+                "nextPhraseID":"poisonland_isolatedman9",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"andor_ending",
+                        "value":900,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"That wasn't my motivation from the beginning. I traveled all throughout the world in search of my brother, after I had found him I decided to continue my adventure.",
+                "nextPhraseID":"poisonland_isolatedman9",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"andor_ending",
+                        "value":900
+                    }
+                ]
             }
         ]
     },
@@ -2858,7 +2877,7 @@
     },
     {
         "id":"poisonland_heiter8",
-        "message":"The men from Brimhaven who were sent alongside them, stood as auxiliaries in the back rows, and were left relatively unscathed. Save for those in the Oakburn's employ... The other families conspired with a commander and made arrangements so that the men from Charwood were sent to the front lines, lightly armored as they were.",
+        "message":"I found the men from Brimhaven who were sent alongside them, they stood as auxiliaries in the back rows, and were left relatively unscathed. Save for those in the Oakburn's employ... The other families conspired with a commander and made arrangements so that the men from Charwood were sent to the front lines, lightly armored as they were.",
         "replies":[
             {
                 "text":"N",
@@ -2878,7 +2897,7 @@
     },
     {
         "id":"poisonland_heiter10",
-        "message":"He fought bravely, as I knew my brother would. But as the battle began to stabilize, something horrific happened. A horde of horrific creatures assailed the battlefield. It wasn\u2019t an attack by Nor City, no sane person would believe that. They were something far worse than that. Those creatures targeted the weaker ones first, and Nor City lost even more than Feygard. But my brother... he was torn apart by a disfigured giant. I couldn\u2019t believe it when I heard it.",
+        "message":"He fought bravely, as I knew my brother would. But as the battle began to stabilize, something horrific happened. A horde of horrific creatures assailed the battlefield. It wasn\u2019t an attack by Nor City, no sane person would believe that. They were something far worse than that. Those creatures targeted the weaker ones first, and Nor City lost even more than Feygard. But my brother... he was torn apart by a disfigured giant. I couldn\u2019t believe when I heard about it.",
         "replies":[
             {
                 "text":"N",
@@ -2905,7 +2924,7 @@
     },
     {
         "id":"poisonland_heiter11",
-        "message":"A fate as horrible as this, for my brother... The Shadow had forsaken us in those needless wars. And now I wonder. Did my brother die with any regrets? Since then I've witnessed the land west of here be poisoned by this curse before my very own eyes.",
+        "message":"A fate as horrible as this, for my brother... The Shadow had forsaken us in those needless wars. And now I wonder. Did my brother die with any regrets... Since then I've witnessed the land west of here be poisoned by this curse before my very own eyes.",
         "replies":[
             {
                 "text":"N",
@@ -2985,5 +3004,648 @@
     {
         "id":"poisonland_heiter16",
         "message":"No I don\u2019t, but it\u2019s better you stay away from it. Disturbing the dead is never wise..."
+    },
+    {
+        "id":"brightport_lecture_aurelia",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"brightport_lecture1",
+                "requires":[
+                    {
+                        "requireType":"timerElapsed",
+                        "requireID":"brightport_class",
+                        "value":2
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":26,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28,
+                        "negate":true
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":23
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":24
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":25
+            }
+        ]
+    },
+    {
+        "id":"brightport_lecture_eiden",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"brightport_lecture1",
+                "requires":[
+                    {
+                        "requireType":"timerElapsed",
+                        "requireID":"brightport_class",
+                        "value":2
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27,
+                        "negate":true
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":25
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":23
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":24
+            }
+        ]
+    },
+    {
+        "id":"poisonland_npcstudentgreeting",
+        "message":"What are you doing, hurry up and sit down!"
+    },
+    {
+        "id":"poisonland_thaddeus",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_npcstudentgreeting"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dietrich",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_npcstudentgreeting"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_aureliastart",
+        "message":"Oh my, how long has it been since someone sat next to me at the front of the class. Let's enjoy the lecture as fellow lovers of history!",
+        "switchToNPC":"brightportstudent8",
+        "replies":[
+            {
+                "text":"Uh, sure.",
+                "nextPhraseID":"poisonland_lecturestart_spokenselector_aurelia"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_regnalstart",
+        "message":"Hi kid, I'm Regnal. I hate this guy's class, so I slack off in the back. You can sit somewhere else if you don't like that. If you don't make too much noise I'll be able to sleep through the whole lecture.",
+        "switchToNPC":"brightportstudent4",
+        "replies":[
+            {
+                "text":"I don't care much for it either.",
+                "nextPhraseID":"poisonland_lecturestart_spokenselector_regnal"
+            },
+            {
+                "text":"Yeah maybe I'll sit somewhere else.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eidenstart",
+        "message":"Why did you sit next to me? We're not friends. Why's Agnese being late...",
+        "switchToNPC":"brightportstudent6",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecturestart_spokenselector_eiden"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_aurelia_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_aureliashh1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":225
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_aureliashh",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_aureliastart",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_aureliashh",
+        "message":"Shh, pay attention."
+    },
+    {
+        "id":"poisonland_lecturestart",
+        "message":"Everyone quiet! I will now begin the lecture.",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture0"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"brightport_nondisplay",
+                "value":225
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":28
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecturestart_spokenselector_aurelia",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecturestart"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":27
+            }
+        ]
+    },
+    {
+        "id":"poisonland_regnal_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_regnalshh1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":225
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_regnalshh",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_regnalstart",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_regnalshh",
+        "message":"Shh, be quiet! How can I slack off in the back when you're making noise here!"
+    },
+    {
+        "id":"poisonland_eiden_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_regnalshh1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":26,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":225
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_eidenshh",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":26
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_eidenstart",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eidenshh",
+        "message":"Tch, annoying kid."
+    },
+    {
+        "id":"poisonland_lecturestart_spokenselector_regnal",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecturestart"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":28
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecturestart_spokenselector_eiden",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecturestart"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":26
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture0",
+        "message":"Before we continue, can someone remind us what we covered during our last lecture? Let's see if any of you were paying attention.",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture0_selector"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_regnalshh1",
+        "message":"Don't bother me kid. Go back to your seat."
+    },
+    {
+        "id":"poisonland_aureliashh1",
+        "message":"Excuse me! What impudence! Interrupting my focus on this lovely lecture!"
+    },
+    {
+        "id":"poisonland_lecture0_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture3"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture1",
+        "message":"The girl next to you stands up enthusiastically.",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture2"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture2",
+        "message":"Allow me to do that sir. Ahem, the foolish coalitions fought each other for years in vain, hurting the subjects of the kingdom and destroying the legacy of King Luthor, even burning down Fallhaven in the struggle for their own benefit. It was the magnanimous Lord Geomyr who saw this and couldn't stand by any longer, so he raised the legions of Feygard at the plea of the people of Aewhata.",
+        "switchToNPC":"brightportstudent8",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture2_selector"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture3",
+        "message":"The girl sitting at the front of the class stands up in a blink.",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture2"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture2_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_regnal",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_eiden",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":26
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture4",
+        "message":"Good answer Aurelia. Indeed, last time we covered the Feygard entry into the war, marking the beginning of the third period of the Noble Wars. Today we will continue in much the same vein and continue from where we left off. Everyone, open your textbooks to the chapter titled \"The Taking of Brimhaven\" on page 119.",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"Good thing I have that textbook I pilfered at the beginning.",
+                "nextPhraseID":"poisonland_lecture5",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"brightport_book",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I don't have a textbook...",
+                "nextPhraseID":"poisonland_lecture4_selector",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"brightport_book",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_regnal",
+        "message":"[Whispers] That's Aurelia. She's always like this in class, so nobody wants to be her friend. Serves her right, teacher's pet.",
+        "switchToNPC":"brightportstudent4",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture4"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_eiden",
+        "message":"[Muttering to himself] Tch, what a load of nonsense. It only benefited him to sit out for so long.",
+        "switchToNPC":"brightportstudent6",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture4"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture4_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_aurelia",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_regnal1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture5",
+        "message":"As the forces of Feygard approached from the north t"
+    },
+    {
+        "id":"poisonland_lecture_aurelia",
+        "message":"Good thing I always carry two on me. I can give one to my fellow lover of history!",
+        "switchToNPC":"brightportstudent8",
+        "replies":[
+            {
+                "text":"Thanks, I guess.",
+                "nextPhraseID":"poisonland_lecture5"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"brightport_book",
+                "value":1
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":27
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_regnal1",
+        "message":"Eh, I'm not giving you mine. I hide my head behind it when I sleep.",
+        "switchToNPC":"brightportstudent4",
+        "replies":[
+            {
+                "text":"It's fine, suits me eitherway.",
+                "nextPhraseID":"poisonland_lecture5"
+            }
+        ]
     }
 ]
