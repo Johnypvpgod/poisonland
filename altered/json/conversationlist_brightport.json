@@ -213,6 +213,76 @@
         "replies":[
             {
                 "text":"N",
+                "nextPhraseID":"poisonland_lecture23"
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture18",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":33
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture16",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":32
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture13",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":31
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":30
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture8",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":29
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture5",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27
+                    }
+                ]
+            },
+            {
+                "text":"N",
                 "nextPhraseID":"poisonland_lecture0",
                 "requires":[
                     {
@@ -252,6 +322,147 @@
                         "requireType":"questProgress",
                         "requireID":"poisonland_nondisplay",
                         "value":23
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"brightport_frederich_afterlecture",
+        "message":"The one student whose name I don't remember. The one that didn't bolt out of the door. What is it?",
+        "replies":[
+            {
+                "text":"Could you tell me what you know about the library theft?",
+                "nextPhraseID":"brightport_frederich",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":25
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":96,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Can you tell me again where I can find Eiden?",
+                "nextPhraseID":"poisonland_frederich3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":5
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"What was with that student at the end?",
+                "nextPhraseID":"poisonland_frederich",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":6
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":10,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":5,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Nothing, bye.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"brightport_mayor8",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_rubiano",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":60
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"brightport_mayor9"
+            }
+        ]
+    },
+    {
+        "id":"brightport_mayor",
+        "message":"Im Rubiano, the Doughe of Brightport, speak up.",
+        "replies":[
+            {
+                "text":"Have you seen my brother Andor?",
+                "nextPhraseID":"brightport_mayor0",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"andor_ending",
+                        "value":900,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"What's the history of the town?",
+                "nextPhraseID":"brightport_mayor5"
+            },
+            {
+                "text":"Heiter told me to see you if I want to learn what happened with the forest.",
+                "nextPhraseID":"poisonland_rubiano1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":45
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":60,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"What's a Doughe?",
+                "nextPhraseID":"brightport_mayor1"
+            },
+            {
+                "text":"Can you give Freya permission to sell me better equipment?",
+                "nextPhraseID":"brightport_mayor8",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":236
                     }
                 ]
             }

@@ -343,16 +343,23 @@
                 "requires":[
                     {
                         "requireType":"questProgress",
-                        "requireID":"poisonland_nondisplay",
-                        "value":4
+                        "requireID":"poisonland",
+                        "value":100,
+                        "negate":true
                     },
                     {
                         "requireType":"questProgress",
                         "requireID":"poisonland",
-                        "value":100,
-                        "negate":true
+                        "value":60
                     }
                 ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":4
             }
         ]
     },
@@ -3332,6 +3339,17 @@
         "replies":[
             {
                 "text":"N",
+                "nextPhraseID":"poisonland_eiden",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224
+                    }
+                ]
+            },
+            {
+                "text":"N",
                 "nextPhraseID":"poisonland_regnalshh1",
                 "requires":[
                     {
@@ -3612,7 +3630,14 @@
     },
     {
         "id":"poisonland_lecture5",
-        "message":"As the forces of Feygard approached from the north t"
+        "message":"As the forces of Feygard approached the crucial crossroads, a second army was dispatched to secure the flank of the main force. The town of Brimhaven stood at this important position. The Nor City garrison had not been greatly diminished by years of skirmishing, so the fighting was expected to be fierce. As these heavy thoughts loomed over the marching soldiers, a missive from the wealthy families of Brimhaven arrived. The letter reads as follow.",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture6"
+            }
+        ]
     },
     {
         "id":"poisonland_lecture_aurelia",
@@ -3645,6 +3670,1041 @@
             {
                 "text":"It's fine, suits me eitherway.",
                 "nextPhraseID":"poisonland_lecture5"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture6",
+        "message":"[The teacher begins reading from the book.]\n\n\"To the great and magnificent forces of the venerable city, these years of conflict have weighed heavily upon us. Our loyalty was drawn at the behest of those with a sword in hand, never by our own moral judgment. The people of Brimhaven have suffered greatly themselves, and the raids upon the village of Loneford, enabled by our forced allegiance to the East, have weighed heavily upon our minds...",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture7"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture7",
+        "message":"Furthermore, five years of rationing have weakened us beyond our capacity for further resistance, but we have come to tell you this. Though the Easterners remain strong, within our meager capabilities we pledge to the venerable city our utmost allegiance and strength, so that peace may return to Aewhata and the injustice done against the Shadow at the hands of those who would rather see Dhayavar burn than prosper may be corrected.\n\nOnce the forces of Feygard are within sight of the river, we shall announce this decision to the public. Undoubtedly, we shall hold until your honorable aid arrives.\n\nSigned,\n\nAlka, Oakburn, Tloni, and the Council of the Eastern Side.\"",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture8"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":29
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture8",
+        "message":"Though their request was little more than a demand that Feygard hasten its advance and abandon its caution, it proved fortuitous. Once the tired and war-weary people of Brimhaven learned of this news, it inspired a fervor that only a wounded prey animal fighting for survival could muster. Rather than the fight they expected, a portion of the Nor City soldiers themselves renounced their allegiance to their commander. A man known to us only as Vergas, he fell in the Battle of Duleian and, as he was adopted rather than a trueborn Houdart, no knowledge of his life remains other than this.",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture9_selector"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture9",
+        "message":"The Feygard troops arrived in a friendly town, though the locals foolishly spoke of the Shadow, the light of reason they displayed was the motive the town stands unharmed to this day over the foolish stoutforders, who dwell among ruins. Having not lost any lives and with the burden on their supply lines lessened general Ahrensbach decided that no break would be needed, they would chase down the remaining Nor City troops who have fled to continue their resistance with the support of Brightport. And in turn, by securing the waterway infrastructure Remgard would be able to support his army with supplies. It is worth noting here that Remgard's role was tertial and little to nothing happened to the town due to its isolation.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture10_narration"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture9_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_aurelia1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture9"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_aurelia1",
+        "message":"The Feygard troops arrived in a friendly town. Though they foolishly spoke of the Shadow, the light of reason they displayed is the reason the town stands unharmed to this day over the foolish Stoutforders, who dwell among ruins.",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_aurelia2"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_aurelia2",
+        "message":"*Sheds a tear* The light shines over the Shadow. What a beautiful parallel!",
+        "switchToNPC":"brightportstudent8",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_aurelia3"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":30
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_aurelia3",
+        "message":"Having lost no lives and with the burden on their supply lines lessened, General Ahrensbach decided no respite would be needed. They would chase down the remaining Nor City troops who had fled to continue their resistance with the support of Brightport, and in turn, by securing the waterway infrastructure, Remgard would be able to support his army with supplies. It is worth noting here that Remgard's role was tertiary, and little to nothing happened to the town due to its isolation.",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture10"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture10",
+        "message":"Aurelia, I appreciate your enthusiasm, but please refrain from interrupting my lecture.",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture11"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":30
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture10_narration",
+        "message":"At some point during the lecture, the girl sitting at the front of the class stood up and exclaimed something, but you couldn't make out what she said.",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture10_selector"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture10_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_regnal2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_eiden1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":26
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":30
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_regnal2",
+        "message":"Zzzz... Zzzz...",
+        "switchToNPC":"brightportstudent4",
+        "replies":[
+            {
+                "text":"This kid, hes already fallen asleep!",
+                "nextPhraseID":"poisonland_lecture10"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_eiden1",
+        "message":"[The student to your left looks disinterested as ever.]",
+        "switchToNPC":"brightportstudent6",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture10"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture11",
+        "message":"General Ahrensbach dispatched a force west to catch the meager garrison of Loneford in a pincer attack. He himself marched east with his legion, accompanied by Brimhaven auxiliaries. The advance proved effortless up until the waterway. Where they had expected the need for utmost caution, they found the bridges to have been left unguarded. Scouts reported no unusual movement to the north or south, and even as the legion crossed and left the river behind them, no attack came.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture12"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture12",
+        "message":"Everyone, open your textbooks to the chapter titled \"Battle of Brightport\" on page 158.",
+        "replies":[
+            {
+                "text":"Good thing I have my textbook from Aurelia.",
+                "nextPhraseID":"poisonland_lecture_aurelia4",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"brightport_book",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27
+                    }
+                ]
+            },
+            {
+                "text":"Good thing I pilfered that textbook in the beginning...",
+                "nextPhraseID":"poisonland_lecture13_selector",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"brightport_book",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"Eh, who needs a textbook anyway.",
+                "nextPhraseID":"poisonland_lecture13_selector",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"brightport_book",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":31
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture13",
+        "message":"Though Brightport lies some distance from the river, no missive such as the one from Brimhaven arrived. And, as history proved, they were content in their fate. I quote from the memoirs of General Ahrensbach: \"It is my memory of the day, and the devils of the south that I recall...\"",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture14"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture13_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_regnal3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture13"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_regnal3",
+        "message":"[Whispering] Keep quiet, you're ruining my sleep! We still have astronomy in the evening!",
+        "switchToNPC":"brightportstudent4",
+        "replies":[
+            {
+                "text":"Sorry.",
+                "nextPhraseID":"poisonland_lecture13"
+            },
+            {
+                "text":"[What is this kid doing instead of sleeping at night.]",
+                "nextPhraseID":"poisonland_lecture13"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_aurelia4",
+        "message":"You're always welcome my friend!",
+        "switchToNPC":"brightportstudent8",
+        "replies":[
+            {
+                "text":"We're not friends. And don't get in my face!",
+                "nextPhraseID":"poisonland_lecture13"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture14",
+        "message":"We passed the river and assumed a fighting position. Though tiring to our nerves, we moved at the pace of a leisurely stroll, looking to our left and right so that no movement through the crags or the forest might be missed. We passed a bog or two before a keen-eyed young man hurried toward me and said he had spotted something. We arranged ourselves in the preferred fighting position of the legions, with the heavy troops in front and the auxiliaries to our right. We watched carefully before we realized the deception we were caught in...\"",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture15"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture15",
+        "message":"The battle goes into detail here, but I will cut my reading short and continue the lecture to better capture the historical nuance of the situation. The leader of the Eastern Coalition in this battle was Commander Vergas, but alongside him were a number of paladins of the Shadow, along with their organization's leader. I believe this might explain much of the context surrounding the battle that the firsthand accounts in the memoirs lack.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture16"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":32
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture16",
+        "message":"The Feygard legion stopped somewhere south of the bridge. General Ahrensbach would not have risked crossing the bridge to Brightport nor marching through the dense forest. Instead he intended to circle the ravine and take Brightport from the south which lacking natural fortifications would likely have proven easier to take than Brimhaven. His plans were cut short however by the Eastern Coalition. They had maneuvered so that the heavy troops faced south while the attack came from the north. In summary an ambush from the forest. The legions of Feygard however were not so weak as to fall to such tricks.",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture17"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture17",
+        "message":"The frontlines quickly stabilized before the Easterners could inflict too many casualties. But their plan had not been fully realized. It is in the following words that I explain it and I truly warn you all of the things you are about to hear.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture18"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture18",
+        "message":"The Easterners summoned a horde of monsters to attack the Feygardians when they were barely recovering from the dirty tricks they had suffered. It was a slaughter, not a battle. And to this day, none of the cultists responsible were held accountable for this crime! As unbelievable as it sounds, this is our history.",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture19_selector"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":33
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture19_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_aurelia5",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_regnal4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture19"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_aurelia5",
+        "message":"This is unbelievable. I am filled with indignation...",
+        "switchToNPC":"brightportstudent8",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture19"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_regnal4",
+        "message":"Zzzz... Zzzz..",
+        "switchToNPC":"brightportstudent4",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture19"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture19",
+        "message":"With this, today's lecture will-",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture20_selector"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture20_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_eiden2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":26,
+                        "negate":false
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture20_narration"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_eiden2",
+        "message":"The student to your left, who had kept quiet this whole time, suddenly sprung up and raised his hand.",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture20"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture20_narration",
+        "message":"Before the teacher could finish speaking, a boy in the middle of the class sprang up, seemingly to ask a question.",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture20"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture20",
+        "message":"Excuse me sir! There must be something you've confused, that's not entirely what-",
+        "switchToNPC":"brightportstudent6",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture21"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":1
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture21",
+        "message":"I will have none of your antics today, Eiden! Furthermore you have interrupted the ending of my lecture!",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture23_selector"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":34
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture22",
+        "message":"The boy dejectedly sits back on his seat, seemingly having wanted to say something",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture23"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture23_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_regnal5",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture22",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":26
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture_aurelia6",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_regnal5",
+        "message":"[Regnal does a good stretch.] Yawn. Over already?",
+        "switchToNPC":"brightportstudent4",
+        "replies":[
+            {
+                "text":"Seems like it.",
+                "nextPhraseID":"poisonland_lecture23"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture23",
+        "message":"Tch, you Nor City ilk have no manners... With this, today's lecture will end. Six years of fighting and eight of venerable rule by our King Geomyr. Today marks the fourteenth year since the end of the era of prosperity and the death of King Luthor. Next time you will learn about the Battle of the Duleian, the siege of Stoutford, and the signing of the treaty. You are free to go.",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture24"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":3
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"brightport_nondisplay",
+                "value":224
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"brightportstudent8",
+                "mapName":"brightport_school10"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"brightportstudent5",
+                "mapName":"brightport_school10"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"brightportstudent1",
+                "mapName":"brightport_school10"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"brightportstudent6",
+                "mapName":"brightport_school10"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"brightportstudent7",
+                "mapName":"brightport_school10"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"brightportstudent4",
+                "mapName":"brightport_school10"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"brightportstudent2",
+                "mapName":"brightport_school10"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"brightportstudent6",
+                "mapName":"waytobrightport17"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture_aurelia6",
+        "message":"What a boor.",
+        "switchToNPC":"brightportstudent8",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture23"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture24",
+        "message":"Before you manage to stand up, all of the students have already left in a rush.",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture25"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture25",
+        "message":"Hmm? Go on child, what is it?",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"Nothing.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_frederich",
+        "message":"Ah, that boy. His name is Eiden. He is one of the most difficult students I've ever had to work with.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_frederich1"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_frederich1",
+        "message":"He is misinformed, stubborn, and never listens when I tell him otherwise. I was personally sent here from Feygard due to my teaching skills, and yet he claims to know better.",
+        "replies":[
+            {
+                "text":"That's irrelevant to me. Do you know where I can find him?",
+                "nextPhraseID":"poisonland_frederich2"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":5
+            }
+        ]
+    },
+    {
+        "id":"poisonland_frederich2",
+        "message":"He tends to stick along his Nor City brethren, often at the bakery. Truly a troublesome bunch.",
+        "replies":[
+            {
+                "text":"Thanks, bye.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"You seem to lack self-awareness...",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":6
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eiden",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_eiden2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":25,
+                        "negate":false
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_eiden3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":15
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":25,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_eiden1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":26
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_eiden0",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":26,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eiden0",
+        "message":"I don't know you, we haven't talked before.",
+        "replies":[
+            {
+                "text":"Can you tell me what you had to say at the lecture?",
+                "nextPhraseID":"poisonland_eiden4"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eiden1",
+        "message":"It's you again, you sat in the place of Agnese.",
+        "replies":[
+            {
+                "text":"Could you share with me what you were going to say at the lecture?",
+                "nextPhraseID":"poisonland_eiden4"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_frederich3",
+        "message":"As I said, he tends to stick along his Nor City brethren, often at the bakery. Truly a troublesome bunch.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":6
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eiden2",
+        "message":"I guess we know each other now, hi.",
+        "replies":[
+            {
+                "text":"It was nice meeting you.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eiden3",
+        "message":"I appreciate the gold, but why do you need to know what I had on my mind?",
+        "replies":[
+            {
+                "text":"I'm looking for anything that could help me find my brother Andor.",
+                "nextPhraseID":"poisonland_eiden7",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"andor_ending",
+                        "value":900,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I'm an adventurer. I've long wanted to know what happened up there, where the land is strange. I feel sick every time I pass by.",
+                "nextPhraseID":"poisonland_eiden7"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":15
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eiden4",
+        "message":"Huh, why would you take interest in that...?",
+        "replies":[
+            {
+                "text":"It's curiousity.",
+                "nextPhraseID":"poisonland_eiden5"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":10
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eiden5",
+        "message":"I don't want any trouble, what if it was Frederich who put you up to this. We don't know each other after all.",
+        "replies":[
+            {
+                "text":"200 gold. For your acquaintance.",
+                "nextPhraseID":"poisonland_eiden3",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":200
+                    }
+                ]
+            },
+            {
+                "text":"'I can tell Frederich would rather see you gone than bother himself with you.",
+                "nextPhraseID":"poisonland_eiden6"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eiden6",
+        "message":"Look, we're not friends and you don't know me. I'd rather enjoy my free time much the same way."
+    },
+    {
+        "id":"poisonland_eiden7",
+        "message":"Seeing as you gave me that gold, I think I can trust you. A Feygardian wouldn't bother with that just for a simple story.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_eiden8"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eiden8",
+        "message":"This isn't the first time I've heard about the battle. My uncle lives close to Brightport and has told me stories from his youth many times.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_eiden9"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eiden9",
+        "message":"It was once late at night, and he was drinking something I brought when he told me about this battle. He didn't just say they were monsters or that they were summoned or anything like that. They simply appeared and attacked everyone indiscriminately, and unlike Frederich, he described what they looked like. It was really scary.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_eiden10"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":25
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eiden10",
+        "message":"When we started the study on the subject of the noble wars half a year ago I went back to inquire with him on an essay. This time he didn't mention anything about those monsters, it felt forced. Like he was hiding it. ",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_eiden11"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_eiden11",
+        "message":"That's what I wanted to ask about at the lecture, but that stuck-up jerk didn't want to hear it. That's the gist of what I know though. My uncle would know the details, but he's living in isolation north of Brightport. You'd have to ask him directly since he doesn't pass by Brightport very often.",
+        "replies":[
+            {
+                "text":"Thanks Eiden. I'll be going.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":30
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano",
+        "message":"I'll consider it after your mission, $playername."
+    },
+    {
+        "id":"poisonland_rubiano1",
+        "message":"Heiter did? I suppose you really are capable if Heiter himself told you his name and sent you to me.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_rubiano2"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano2",
+        "message":"I'll cut to the chase, the situation is really dire. A while ago, when the outskirts of that area began to be affected, I sent an adventuring party to see what was happening in the depths of the cursed land. Everyone thinks it's just superstition, but there had to be a cause. They returned extremely ill. It took them weeks to recover since we have no bonemeal left at hand...",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_rubiano3"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano3",
+        "message":"They said they witnessed monsters in the depths of the forest, where there used to be nothing but deer and mountain cats. Monsters mutated in many forms, much like those Heiter knows about. ",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_rubiano4"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":50
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano4",
+        "message":"The most experienced adventurers we had on hand could not handle the problem, so I wrote to Lord Emerion. He is the nobleman I answer to and the Lord of Brightport. I requested that a veteran party of adventurers be sent over, especially one with an experienced alchemist, and after some time I received a positive response. But only a novice named Eckhart was sent.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_rubiano5"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":55
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano5",
+        "message":"He himself was very optimistic about it. If I had tried to stop him, I'm convinced he would have gone by himself without any of the supplies we loaded him with. But it's been a week since he left, and I'm worried the worst has happened. I'm not telling you to risk your life for this town, but if you willingly came to me, I'll simply say this: find Eckhart and return. Both of you hopefully.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":60
             }
         ]
     }

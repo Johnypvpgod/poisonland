@@ -52,5 +52,18 @@
         "name":"Dietrich",
         "iconID":"monsters_ld1:86",
         "phraseID":"poisonland_dietrich"
+    },
+    {
+        "id":"brightportnpc6",
+        "name":"Oswald",
+        "iconID":"monsters_ld1:56",
+        "unique":1,
+        "phraseID":"oswald_selector"
+    },
+    {
+        "id":"brightport_mayor",
+        "name":"Rubiano",
+        "iconID":"monsters_ld1:77",
+        "phraseID":"brightport_mayor"
     }
 ]

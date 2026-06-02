@@ -45,7 +45,7 @@
                 ]
             },
             {
-                "text":"I heard about the Battle of Brightport in a lecture at the academy, but your nephew Eiden said most of what we learnt is false. He directed me here to hear the real story from you.",
+                "text":"I heard about the Battle of Brightport in a lecture at the academy, but your nephew Eiden said the details we were told were wrong. He directed me here to hear the real story from you.",
                 "nextPhraseID":"poisonland_isolatedman",
                 "requires":[
                     {

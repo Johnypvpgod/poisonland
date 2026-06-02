@@ -234,6 +234,30 @@
             {
                 "progress":28,
                 "logText":"lecture checkpoint at the start"
+            },
+            {
+                "progress":29,
+                "logText":"lecture checkpoint after letter"
+            },
+            {
+                "progress":30,
+                "logText":"Lecture checkpoint, remark to aurelia"
+            },
+            {
+                "progress":31,
+                "logText":"lecture checkpoint, battle of brightport"
+            },
+            {
+                "progress":32,
+                "logText":"lecture checkpoint, memoir done"
+            },
+            {
+                "progress":33,
+                "logText":"lecture checkpoint, hear about the monster summoning"
+            },
+            {
+                "progress":34,
+                "logText":"lecture checkpoint, ending interrupted"
             }
         ]
     }
