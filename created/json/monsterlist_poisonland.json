@@ -99,5 +99,15 @@
         "iconID":"monsters_ld2:36",
         "monsterClass":"animal",
         "horizontalFlipChance":50
+    },
+    {
+        "id":"brightportstudent13",
+        "name":"Erina",
+        "iconID":"monsters_ld_edit:41"
+    },
+    {
+        "id":"brightportstudent14",
+        "name":"Dinan",
+        "iconID":"monsters_ld_edit:38"
     }
 ]

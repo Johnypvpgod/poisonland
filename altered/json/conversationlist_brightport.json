@@ -131,11 +131,6 @@
                 "nextPhraseID":"brightport_lecture1",
                 "requires":[
                     {
-                        "requireType":"timerElapsed",
-                        "requireID":"brightport_class",
-                        "value":2
-                    },
-                    {
                         "requireType":"questProgress",
                         "requireID":"brightport_nondisplay",
                         "value":224,
@@ -152,6 +147,11 @@
                         "requireID":"poisonland_nondisplay",
                         "value":27,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":225
                     }
                 ]
             }
@@ -272,7 +272,7 @@
             },
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_lecture5",
+                "nextPhraseID":"poisonland_lecture0",
                 "requires":[
                     {
                         "requireType":"questProgress",
@@ -372,7 +372,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"poisonland",
-                        "value":6
+                        "value":3
                     },
                     {
                         "requireType":"questProgress",
@@ -465,6 +465,175 @@
                         "value":236
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "id":"brightport_northguard",
+        "rewards":[
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"brightport_nondisplay",
+                "value":250
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"brightport_nondisplay",
+                "value":249
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":35
+            }
+        ]
+    },
+    {
+        "id":"brightport_guard1",
+        "message":"Keep yourself safe.",
+        "switchToNPC":"brightportguard",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":35
+            }
+        ]
+    },
+    {
+        "id":"brightport_student_4",
+        "message":"[You see a girl sitting at the table with her arms resting on it and her head lowered.]",
+        "replies":[
+            {
+                "text":"Umm, excuse me...",
+                "nextPhraseID":"brightport_student_4_reply",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Umm, excuse me. The lecture is over...",
+                "nextPhraseID":"brightport_student_4_reply",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224
+                    }
+                ]
+            },
+            {
+                "text":"I'd better not bother her.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"brightport_elynard",
+        "message":"Hello, my name is Elynard, I came here from a beautiful village called Luthaven. You should visit it sometime."
+    },
+    {
+        "id":"brightport_charwood_shortcut1",
+        "message":"Before you stands a crumbling stone statue, hidden behind the foliage. And overgrown with moss.",
+        "replies":[
+            {
+                "text":"Elythara.",
+                "nextPhraseID":"brightport_charwood_shortcut2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":233
+                    }
+                ]
+            },
+            {
+                "text":"[Examine it.]",
+                "nextPhraseID":"poisonland_extrastatue",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":233,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":85,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I've already found the statues I needed, this one might be useless. Best ignore it.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":233,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":85
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"brightport_statue_sw2",
+        "message":"After a bit of examination you notice something engraved on the statue. Symbols similar in appearance to the letters G, A and R.\n\nThe lines are straight and the shapes are a bit hard to tell but these must be important. I should keep them in mind.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"Stanwickquest",
+                "value":80
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":36
+            }
+        ]
+    },
+    {
+        "id":"brightport_statue_s2",
+        "message":"After a bit of examination you notice something engraved on the statue. Symbols similar in appearance to the letters T and E.\n\nThe lines are straight and the shapes are a bit hard to tell but these must be important. I should keep them in mind.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"Stanwickquest",
+                "value":75
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":36
+            }
+        ]
+    },
+    {
+        "id":"brightport_statue_n2",
+        "message":"After a bit of examination you notice something engraved on the statue. Symbols similar in appearance to the letters L and H.\n\nThe lines are straight and the shapes are a bit hard to tell but these must be important. I should keep them in mind.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"Stanwickquest",
+                "value":70
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":36
             }
         ]
     }

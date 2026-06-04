@@ -258,6 +258,14 @@
             {
                 "progress":34,
                 "logText":"lecture checkpoint, ending interrupted"
+            },
+            {
+                "progress":35,
+                "logText":"has been to brightport in general"
+            },
+            {
+                "progress":36,
+                "logText":"statue with letters interacted with"
             }
         ]
     }

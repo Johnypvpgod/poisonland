@@ -9,10 +9,6 @@
         "switchToNPC":"brv_playing_child1",
         "replies":[
             {
-                "text":"I am sorry.",
-                "nextPhraseID":"X"
-            },
-            {
                 "text":"What are you playing?",
                 "nextPhraseID":"brv_playing_children_10_selector",
                 "requires":[
@@ -32,11 +28,6 @@
                         "requireType":"questProgress",
                         "requireID":"poisonland_nondisplay",
                         "value":2
-                    },
-                    {
-                        "requireType":"timerElapsed",
-                        "requireID":"bagame_fellinwater",
-                        "value":15
                     }
                 ]
             }

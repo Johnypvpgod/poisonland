@@ -1086,6 +1086,7 @@
     {
         "id":"poisonland_fireperson1",
         "message":"The creature before you is made entirely of flame, yet unlike the other two, its form is stable, resembling more a person engulfed by fire than a natural phenomenon.",
+        "switchToNPC":"none",
         "replies":[
             {
                 "text":"N",
@@ -1096,6 +1097,7 @@
     {
         "id":"poisonland_fireperson2",
         "message":"Crrckk... Sizzle...",
+        "switchToNPC":"poisonland_fireperson",
         "replies":[
             {
                 "text":"[Attack it.]",
@@ -1106,6 +1108,7 @@
     {
         "id":"poisonland_firespirit3",
         "message":"Crrckk... Sputter...",
+        "switchToNPC":"poisonland_firespirit",
         "replies":[
             {
                 "text":"[Attack it.]",
@@ -2063,7 +2066,14 @@
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_heiter_greeting"
+                "nextPhraseID":"poisonland_heiter_greeting",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":45
+                    }
+                ]
             },
             {
                 "text":"N",
@@ -2427,9 +2437,9 @@
                 "nextPhraseID":"brv_playing_children",
                 "requires":[
                     {
-                        "requireType":"timerElapsed",
-                        "requireID":"bagame_fellinwater",
-                        "value":15,
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":17,
                         "negate":true
                     }
                 ]
@@ -2509,7 +2519,8 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"poisonland_nondisplay",
-                        "value":17
+                        "value":17,
+                        "negate":true
                     }
                 ]
             }
@@ -3020,11 +3031,6 @@
                 "nextPhraseID":"brightport_lecture1",
                 "requires":[
                     {
-                        "requireType":"timerElapsed",
-                        "requireID":"brightport_class",
-                        "value":2
-                    },
-                    {
                         "requireType":"questProgress",
                         "requireID":"brightport_nondisplay",
                         "value":224,
@@ -3033,14 +3039,19 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"poisonland_nondisplay",
-                        "value":26,
+                        "value":24,
                         "negate":true
                     },
                     {
                         "requireType":"questProgress",
                         "requireID":"poisonland_nondisplay",
-                        "value":28,
+                        "value":25,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":225
                     }
                 ]
             }
@@ -3071,11 +3082,6 @@
                 "nextPhraseID":"brightport_lecture1",
                 "requires":[
                     {
-                        "requireType":"timerElapsed",
-                        "requireID":"brightport_class",
-                        "value":2
-                    },
-                    {
                         "requireType":"questProgress",
                         "requireID":"brightport_nondisplay",
                         "value":224,
@@ -3092,6 +3098,11 @@
                         "requireID":"poisonland_nondisplay",
                         "value":27,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":225
                     }
                 ]
             }
@@ -3164,7 +3175,7 @@
     },
     {
         "id":"poisonland_eidenstart",
-        "message":"Why did you sit next to me? We're not friends. Why's Agnese being late...",
+        "message":"Why did you sit next to me? We're not friends. [The boy talks to himself.] Why is Agnese being late...",
         "switchToNPC":"brightportstudent6",
         "replies":[
             {
@@ -3561,7 +3572,7 @@
                         "requireType":"inventoryKeep",
                         "requireID":"brightport_book",
                         "value":1,
-                        "negate":true
+                        "negate":false
                     }
                 ]
             },
@@ -3686,7 +3697,7 @@
     },
     {
         "id":"poisonland_lecture7",
-        "message":"Furthermore, five years of rationing have weakened us beyond our capacity for further resistance, but we have come to tell you this. Though the Easterners remain strong, within our meager capabilities we pledge to the venerable city our utmost allegiance and strength, so that peace may return to Aewhata and the injustice done against the Shadow at the hands of those who would rather see Dhayavar burn than prosper may be corrected.\n\nOnce the forces of Feygard are within sight of the river, we shall announce this decision to the public. Undoubtedly, we shall hold until your honorable aid arrives.\n\nSigned,\n\nAlka, Oakburn, Tloni, and the Council of the Eastern Side.\"",
+        "message":"Furthermore, seven years of rationing have weakened us beyond our capacity for further resistance, but we have come to tell you this. Though the Easterners remain strong, within our meager capabilities we pledge to the venerable city our utmost allegiance and strength, so that peace may return to Aewhata and the injustice done against the Shadow at the hands of those who would rather see Dhayavar burn than prosper may be corrected.\n\nOnce the forces of Feygard are within sight of the river, we shall announce this decision to the public. Undoubtedly, we shall hold until your honorable aid arrives.\n\nSigned,\n\nAlka, Oakburn, Tloni, and the Council of the Eastern Side.\"",
         "replies":[
             {
                 "text":"N",
@@ -3869,7 +3880,7 @@
     },
     {
         "id":"poisonland_lecture11",
-        "message":"General Ahrensbach dispatched a force west to catch the meager garrison of Loneford in a pincer attack. He himself marched east with his legion, accompanied by Brimhaven auxiliaries. The advance proved effortless up until the waterway. Where they had expected the need for utmost caution, they found the bridges to have been left unguarded. Scouts reported no unusual movement to the north or south, and even as the legion crossed and left the river behind them, no attack came.",
+        "message":"General Ahrensbach dispatched a force west to catch the meager garrison of Loneford in a pincer attack. While he marched east with his legion, accompanied by Brimhaven auxiliaries. The advance proved effortless up until the waterway. Where they had expected the need for utmost caution, they found the bridges to have been left unguarded. Scouts reported no unusual movement to the north or south, and even as the legion crossed and left the river behind them, no attack came.",
         "replies":[
             {
                 "text":"N",
@@ -4022,7 +4033,7 @@
     },
     {
         "id":"poisonland_lecture16",
-        "message":"The Feygard legion stopped somewhere south of the bridge. General Ahrensbach would not have risked crossing the bridge to Brightport nor marching through the dense forest. Instead he intended to circle the ravine and take Brightport from the south which lacking natural fortifications would likely have proven easier to take than Brimhaven. His plans were cut short however by the Eastern Coalition. They had maneuvered so that the heavy troops faced south while the attack came from the north. In summary an ambush from the forest. The legions of Feygard however were not so weak as to fall to such tricks.",
+        "message":"The Feygard legion stopped somewhere south of the bridge. General Ahrensbach would not have risked crossing the bridge to Brightport nor marching through the dense forest. Instead he intended to circle the ravine and take Brightport from the south which lacking natural fortifications is a harder town to defend than Brimhaven. His plans were cut short however by the Eastern Coalition. They had maneuvered so that Feygard's heavy troops faced south while they attacked from the north. In summary an ambush from the forest. Though the legions of Feygard were not so weak as to fall to such tricks.",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
@@ -4086,7 +4097,7 @@
             },
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_lecture19"
+                "nextPhraseID":"poisonland_lecture8_extra"
             }
         ]
     },
@@ -4097,7 +4108,7 @@
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_lecture19"
+                "nextPhraseID":"poisonland_lecture8_extra"
             }
         ]
     },
@@ -4108,7 +4119,7 @@
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_lecture19"
+                "nextPhraseID":"poisonland_lecture8_extra"
             }
         ]
     },
@@ -4264,7 +4275,7 @@
     },
     {
         "id":"poisonland_lecture23",
-        "message":"Tch, you Nor City ilk have no manners... With this, today's lecture will end. Six years of fighting and eight of venerable rule by our King Geomyr. Today marks the fourteenth year since the end of the era of prosperity and the death of King Luthor. Next time you will learn about the Battle of the Duleian, the siege of Stoutford, and the signing of the treaty. You are free to go.",
+        "message":"Tch, you Nor City ilk have no manners... With this, today's lecture will end. Eight years of fighting and six of venerable rule by our King Geomyr. Today marks the fourteenth year since the end of the era of prosperity and the death of King Luthor. Next time you will learn about the Battle of the Duleian, the Siege of Stoutford, and the signing of the Treaty of Fallhaven. You are free to go.",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
@@ -4316,6 +4327,16 @@
             {
                 "rewardType":"removeSpawnArea",
                 "rewardID":"brightportstudent2",
+                "mapName":"brightport_school10"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"brightportstudent14",
+                "mapName":"brightport_school10"
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"brightportstudent13",
                 "mapName":"brightport_school10"
             },
             {
@@ -4566,7 +4587,7 @@
                 ]
             },
             {
-                "text":"'I can tell Frederich would rather see you gone than bother himself with you.",
+                "text":"I can tell Frederich prefers enjoying his free time by himself than bother with you.",
                 "nextPhraseID":"poisonland_eiden6"
             }
         ]
@@ -4705,6 +4726,80 @@
                 "rewardType":"questProgress",
                 "rewardID":"poisonland",
                 "value":60
+            }
+        ]
+    },
+    {
+        "id":"poisonland_valentina",
+        "message":"And have you done anything to help your and Andor's friend?",
+        "replies":[
+            {
+                "text":"I agreed to help him but I haven't made much progress. I'll be back on my way.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture8_extra",
+        "message":"Though they had to retreat, the Feygardians renewed their advance within the following weeks. Brightport was taken with minimal resistance and the legion headed south...",
+        "switchToNPC":"brightportnpc5",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture19"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_extrastatue",
+        "message":"After a bit of examination, you notice symbols engraved on the statue. Straight lines form indecipherable markings unlike any you have seen before.",
+        "replies":[
+            {
+                "text":"Those symbols are far too contrived to remember. I'll ignore it for now.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":66,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":75,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"This statue is similar to the one I found in the forest, I hadn't thought that there could be more of the light type. Best focus on that one for now.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":66
+                    }
+                ]
+            },
+            {
+                "text":"It doesn't look like this statue contains the familiar letters found on the others. Perhaps there are more than the four I read about. Best ignore it for now.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":36
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"Stanwickquest",
+                "value":81
             }
         ]
     }

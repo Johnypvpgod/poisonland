@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map SYSTEM "https://mapeditor.org/dtd/1.0/map.dtd">
-<map version="1.0" orientation="orthogonal" width="11" height="14" tilewidth="32" tileheight="32">
+<map version="1.0" orientation="orthogonal" width="30" height="19" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="map_bed_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_bed_1.png" width="512" height="320"/>
  </tileset>
@@ -157,156 +157,134 @@
  <tileset firstgid="6481" name="map_transition_5" tilewidth="32" tileheight="32">
   <image source="../drawable/map_transition_5.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="6609" name="map_tree_1" tilewidth="32" tileheight="32">
-  <image source="../drawable/map_tree_1.png" width="512" height="256"/>
- </tileset>
- <tileset firstgid="6737" name="map_tree_2" tilewidth="32" tileheight="32">
+ <tileset firstgid="6609" name="map_tree_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_tree_2.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="6865" name="map_wall_1" tilewidth="32" tileheight="32">
+ <tileset firstgid="6737" name="map_wall_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_wall_1.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="6993" name="map_wall_2" tilewidth="32" tileheight="32">
+ <tileset firstgid="6865" name="map_wall_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_wall_2.png" width="480" height="256"/>
  </tileset>
- <tileset firstgid="7113" name="map_wall_3" tilewidth="32" tileheight="32">
+ <tileset firstgid="6985" name="map_wall_3" tilewidth="32" tileheight="32">
   <image source="../drawable/map_wall_3.png" width="480" height="256"/>
  </tileset>
- <tileset firstgid="7233" name="map_wall_4" tilewidth="32" tileheight="32">
+ <tileset firstgid="7105" name="map_wall_4" tilewidth="32" tileheight="32">
   <image source="../drawable/map_wall_4.png" width="480" height="256"/>
  </tileset>
- <tileset firstgid="7353" name="map_window_1" tilewidth="32" tileheight="32">
+ <tileset firstgid="7225" name="map_window_1" tilewidth="32" tileheight="32">
   <image source="../drawable/map_window_1.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="7481" name="map_window_2" tilewidth="32" tileheight="32">
+ <tileset firstgid="7353" name="map_window_2" tilewidth="32" tileheight="32">
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="7609" name="map_brightport" tilewidth="32" tileheight="32">
-  <image source="../drawable/map_brightport.png" width="512" height="224"/>
+ <tileset firstgid="7481" name="map_tree_1" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_tree_1.png" width="512" height="256"/>
  </tileset>
- <layer name="Ground" width="11" height="14">
+ <tileset firstgid="7609" name="map_pillar_3" tilewidth="32" tileheight="32">
+  <image source="../drawable/map_pillar_3.png" width="512" height="320"/>
+ </tileset>
+ <layer name="Ground" width="30" height="19">
   <data encoding="base64" compression="zlib">
-   eJwT4mJgECIBv5IljGFqf8kSxjC1wkTgUbXkqQXFCTFqX0HjhBi1IHWcXJhYGIsYCAMAXvklvA==
+   eJzVksENwjAMRa0QDgzR9bhw73SsUBBigJRuUGAAailWXckJTpxLD+9Sp3n+jv0BwC88TiuDA7gpuEY0Z/i50W19hMZpQfLOy7cQa2NjF0fKi+53JDRwvth9hORFfHz3OeHmvedq6Py49T4v7FMKdA+Z/kOmhs6nwpGCvHehf+pLqtX6iMDyHIX7qIbZCKuTZj3FPKlZ0Ewvmb0h+g7g3Onc38R9/G21OdBZ4pbmz/dW+x85+0rvzPa25D9rXgT3dir0Wp3/3j6X1+rcG9bdqqXFbu0l7w+6i9BP
   </data>
  </layer>
- <layer name="Objects" width="11" height="14">
+ <layer name="Objects" width="30" height="19">
   <data encoding="base64" compression="zlib">
-   eJxjYIAASyYGrMBZGJVfz8bA8JWPgeEWEN8G4jtINEgcJI8OXgHFXwPxGyQaBBr5EWreszIwlLNgdwMI3ODD7p6NYgwMm4B4MxB/FIOIveBDyCvKMTAo4cHKcrj9jg9gsxddHAbCWRAYGaCLg9xBbXNh4UUL98IAepygA5C/ALhLL8Y=
+   eJxtVb1uFEEMXs3pkkASidlIF65YWoQiaCIFEWhAUF0RgtJtQQOUVMBDhEeg5DEQvAVFnoCLEkREcX8Fws74037jHUsr33k8/vzZnpnXoar25BsOqqptqmoaq2tZin4q9mfy7Ydk+yDrH+Vbr6tM3jbdGvSEfv+Jne87s/GeFa1vSOxjwXsl3+/Yx2IclpJN/39qEiZrxJgT7oHgHdXdGrjjv8cvCexcB2jwVn4nogeD5HsY8tjgrnIZc7wSd8YAj88hX1dpyQ/YLPuO6yz2OWzX+e8j15svEuNhSDn8tBngGi9jPweNoTxvWKx7lP9BqHqitrtm15kd76b9zPeFq9dNif3S4oedDvt502E8Cin/PTfrKo9FPwnJZzVKmHcs3sR8tB5nsrawXHSmW9eb1vQJ9e/vqF8T9VNuiA1M7J/QfpZty+lXzDloD8DzlPqsdVtRT77bGXhPPEtnlAXclDtjnps/OA1Nz63X30K6F5DX7d30KaYKZovvkxI26n0leqvOz/DaIM3xpcsdsU/d2QNP7tl98X3g5tzXdibcl9Z7YCn/zdrNkeD9sLsW9uFOyruUR4kv1tFjvU++3up81uquzhrXn/VNOrea68VY9LjDa12dcX54DRzPRjm/FfGHXc+M1kX7hzohT8zIse3H2+PvOy+az8x8NfZG3ffV3qMuW65/ugf71+3cljD53bjuicVhHqib1pXtKuc0S4uYr0+pTizAwtuF/eqvPUXvljQf/p1QmcfuzHBPr1yNIYqlb/KbJs+hVBePdVHAX8S+7zSW+fLbzHt8TO+LPJu6v+cf5aS8/gMMgtQ4
   </data>
  </layer>
- <layer name="Above" width="11" height="14">
+ <layer name="Above" width="30" height="19">
   <data encoding="base64" compression="zlib">
-   eJxjYKAduM9KQ8ORwEF++tiDDFxx2HkYKm5GgZvw+ceUAnNxuekwHcIPAA2JBUs=
+   eJydVcsNwjAMtYpYoVIPmYQTEjeubAB0AUS3YQAGYQq4dYN2AWoJS8b4F54UNXXs9+LESW4NwKkAnJc2tZAGxZzKdz/6UiznQNwbnd/775c2fL40PjA79+cg+84Yl1rSJrX5HHqDM+InXIudO7cPhtYs9vCx+GwUP+I6Nr9jtUDNUeh6e4e4GLpy/jxWjqEm1ayWo8WjaSKX5iNzW6/ympG2V+OUG2lYHLIuIk1trzhobG/wyZy9ddXyiXTlObO4M/qISeFF4NmfjT2PeK01z+BQ9LV4dgCvrp6PkMljbP2a3VbchzXz8Ootw6PdfxnwNY5irbcqG+/5eWseccq8o/NRc9dEqHnXvb3i/X/ypTc2O19pw/YGOJB7og==
   </data>
  </layer>
- <layer name="Top" width="11" height="14">
+ <layer name="Top" width="30" height="19">
   <data encoding="base64" compression="zlib">
-   eJxjYCANPBYbVTuqlnQAAN86C60=
+   eJxjYBgFo2AUDAR4LDbQLhgFo3EwCkbB8AcAG/cB8w==
   </data>
  </layer>
- <layer name="Walkable" width="11" height="14" visible="0">
+ <layer name="Walkable" width="30" height="19" visible="0">
   <data encoding="base64" compression="zlib">
-   eJy7KMbAcHEQYVwAlxpC4sQActQS456RZi5MLzZxAON9ToI=
+   eJzlklEKwCAMQz2F97+SNxr7k5I0qUz9WKEwmOYltaO3NqZ+a/SzfYP5p6w3mXOd4KDMsb5kIn3EWeVGPcVE/IyNfEaWmiFjOueYPrvv3HP2g/lk38wHYmc5lf9sfs681CzUP3cnmF+mrd4Y6VWyMq9uOW+/UpX9ru4J0mCZVrnZXBRfnd3Zkf0AhKNTWA==
   </data>
  </layer>
  <objectgroup name="Mapevents">
-  <object name="entrance" type="mapchange" x="160" y="416" width="32" height="32">
+  <object name="north" type="mapchange" x="128" y="0" width="32" height="32">
    <properties>
-    <property name="map" value="brightport_school1"/>
-    <property name="place" value="class"/>
+    <property name="map" value="waytobrightport1"/>
+    <property name="place" value="south"/>
    </properties>
   </object>
-  <object name="brightport_book" type="container" x="288" y="128" width="32" height="32"/>
-  <object name="brightport_class" type="script" x="128" y="384" width="96" height="32">
+  <object name="east" type="mapchange" x="928" y="160" width="32" height="384">
+   <properties>
+    <property name="map" value="waytobrightport5"/>
+    <property name="place" value="west"/>
+   </properties>
+  </object>
+  <object name="west" type="mapchange" x="0" y="224" width="32" height="64">
+   <properties>
+    <property name="map" value="waytominingtown3"/>
+    <property name="place" value="east"/>
+   </properties>
+  </object>
+  <object name="brightport_goblintrap" type="script" x="672" y="256" width="32" height="32">
    <properties>
     <property name="when" value="enter"/>
    </properties>
   </object>
-  <object name="brightport_lecture_warning" type="script" x="128" y="128" width="96" height="256">
+ </objectgroup>
+ <objectgroup name="Spawn" visible="0">
+  <object name="goblinrider" type="spawn" x="64" y="192" width="160" height="160">
    <properties>
-    <property name="when" value="round"/>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="brightport_goblin"/>
    </properties>
   </object>
-  <object name="brightport_lecture_regnal" type="script" x="224" y="384" width="96" height="32">
+  <object name="goblinrider3" type="spawn" x="256" y="384" width="256" height="160">
    <properties>
-    <property name="when" value="always"/>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="brightport_goblin"/>
    </properties>
   </object>
-  <object name="brightport_lecture_aurelia" type="script" x="224" y="256" width="32" height="32">
+  <object name="goblinrider2" type="spawn" x="576" y="480" width="32" height="32">
    <properties>
-    <property name="when" value="always"/>
+    <property name="spawngroup" value="brightport_goblin"/>
    </properties>
   </object>
-  <object name="brightport_lecture_eiden" type="script" x="64" y="320" width="64" height="32">
+  <object name="goblinrider1" type="spawn" x="96" y="64" width="32" height="32">
    <properties>
-    <property name="when" value="always"/>
+    <property name="spawngroup" value="brightport_goblin"/>
+   </properties>
+  </object>
+  <object name="goblin" type="spawn" x="704" y="192" width="192" height="128">
+   <properties>
+    <property name="spawngroup" value="brightport_goblin2"/>
+   </properties>
+  </object>
+  <object name="goblin1" type="spawn" x="672" y="352" width="224" height="160">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="brightport_goblin2"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn">
-  <object name="brightportnpc5" type="spawn" x="128" y="96" width="96" height="32">
+ <objectgroup name="Keys" visible="0">
+  <object name="stanwick_quest" type="key" x="0" y="160" width="32" height="32">
    <properties>
-    <property name="spawngroup" value="brightportnpc5"/>
-   </properties>
-  </object>
-  <object name="brightportstudent8" type="spawn" x="256" y="256" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="brightportstudent8"/>
-   </properties>
-  </object>
-  <object name="brightportstudent5" type="spawn" x="288" y="320" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="brightportstudent5"/>
-   </properties>
-  </object>
-  <object name="brightportstudent1" type="spawn" x="96" y="256" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="brightportstudent1"/>
-   </properties>
-  </object>
-  <object name="brightportstudent6" type="spawn" x="64" y="320" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="brightportstudent6"/>
-   </properties>
-  </object>
-  <object name="brightportstudent9" type="spawn" x="96" y="384" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="brightportstudent9"/>
-   </properties>
-  </object>
-  <object name="brightportstudent7" type="spawn" x="224" y="320" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="brightportstudent7"/>
-   </properties>
-  </object>
-  <object name="brightportstudent4" type="spawn" x="256" y="384" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="brightportstudent4"/>
-   </properties>
-  </object>
-  <object name="brightportstudent2" type="spawn" x="256" y="320" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="brightportstudent2"/>
-   </properties>
-  </object>
-  <object name="brightportstudent14" type="spawn" x="64" y="384" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="brightportstudent14"/>
-   </properties>
-  </object>
-  <object name="brightportstudent13" type="spawn" x="32" y="256" width="32" height="32">
-   <properties>
-    <property name="spawngroup" value="brightportstudent13"/>
-   </properties>
-  </object>
- </objectgroup>
- <objectgroup name="Keys">
-  <object name="Object" type="key" x="288" y="128" width="32" height="32">
-   <properties>
-    <property name="phrase" value="brightport_null"/>
-    <property name="requireId" value="poisonland_nondisplay"/>
+    <property name="phrase" value="brightport_charwood_shortcut"/>
+    <property name="requireId" value="Stanwickquest"/>
     <property name="requireNegation" value="true"/>
     <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="65"/>
+   </properties>
+  </object>
+  <object name="Object" type="key" x="0" y="224" width="32" height="64">
+   <properties>
+    <property name="phrase" value="brightpor_magic"/>
+    <property name="requireId" value="brightport_nondisplay"/>
+    <property name="requireType" value="questProgress"/>
+    <property name="requireValue" value="126"/>
    </properties>
   </object>
  </objectgroup>
