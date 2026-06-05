@@ -4563,7 +4563,7 @@
     },
     {
         "id":"poisonland_eiden2",
-        "message":"I guess we know each other now, hi.",
+        "message":"Hi. I guess we know each other now.",
         "replies":[
             {
                 "text":"It was nice meeting you.",
@@ -4694,7 +4694,11 @@
         "message":"That's what I wanted to ask about at the lecture, but that stuck-up jerk didn't want to hear it. That's the gist of what I know though. My uncle would know the details, but he's living in isolation north of Brightport. You'd have to ask him directly since he doesn't pass by Brightport very often.",
         "replies":[
             {
-                "text":"Thanks Eiden. I'll be going.",
+                "text":"At first I thought the whole thing with the monsters was a lie.",
+                "nextPhraseID":"poisonland_eiden12"
+            },
+            {
+                "text":"That was interesting, I'll go see your uncle then.",
                 "nextPhraseID":"X"
             }
         ],
@@ -4898,5 +4902,19 @@
     {
         "id":"poisonland_regnal1",
         "message":"I could always go for a second nap. Heh."
+    },
+    {
+        "id":"poisonland_eiden12",
+        "message":"I would have thought the same if it weren't for my uncle. You've already seen how they changed the details.",
+        "replies":[
+            {
+                "text":"I suppose if Feygard did it theres a good reason.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Shadow be with you.",
+                "nextPhraseID":"X"
+            }
+        ]
     }
 ]
