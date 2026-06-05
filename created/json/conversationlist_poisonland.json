@@ -3708,7 +3708,7 @@
     },
     {
         "id":"poisonland_lecture7",
-        "message":"Furthermore, seven years of rationing have weakened us beyond our capacity for further resistance, but we have come to tell you this. Though the Easterners remain strong, within our meager capabilities we pledge to the venerable city our utmost allegiance and strength, so that peace may return to Aewhata and the injustice done against the Shadow at the hands of those who would rather see Dhayavar burn than prosper may be corrected.\n\nOnce the forces of Feygard are within sight of the river, we shall announce this decision to the public. Undoubtedly, we shall hold until your honorable aid arrives.\n\nSigned,\n\nAlka, Oakburn, Tloni, and the Council of the Eastern Side.\"",
+        "message":"Furthermore, five years of rationing have weakened us beyond our capacity for further resistance, but we have come to tell you this. Though the Easterners remain strong, within our meager capabilities we pledge to the venerable city our utmost allegiance and strength, so that peace may return to Aewhata and the injustice done against the Shadow at the hands of those who would rather see Dhayavar burn than prosper may be corrected.\n\nOnce the forces of Feygard are within sight of the river, we shall announce this decision to the public. Undoubtedly, we shall hold until your honorable aid arrives.\n\nSigned,\n\nAlka, Oakburn, Tloni, and the Council of the Eastern Side.\"",
         "replies":[
             {
                 "text":"N",
@@ -4286,7 +4286,7 @@
     },
     {
         "id":"poisonland_lecture23",
-        "message":"Tch, you Nor City ilk have no manners... With this, today's lecture will end. Eight years of fighting and six of venerable rule by our King Geomyr. Today marks the fourteenth year since the end of the era of prosperity and the death of King Luthor. Next time you will learn about the Battle of the Duleian, the Siege of Stoutford, and the signing of the Treaty of Fallhaven. You are free to go.",
+        "message":"Tch, you Nor City ilk have no manners... With this, today's lecture will end. Six years of fighting and Eight of venerable rule by our King Geomyr. Today marks the fourteenth year since the end of the era of prosperity and the death of King Luthor. Next time you will learn about the Battle of the Duleian, the Siege of Stoutford, and the signing of the Treaty of Fallhaven. You are free to go.",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
