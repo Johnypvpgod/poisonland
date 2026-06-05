@@ -3289,6 +3289,17 @@
         "replies":[
             {
                 "text":"N",
+                "nextPhraseID":"poisonland_regnal",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224
+                    }
+                ]
+            },
+            {
+                "text":"N",
                 "nextPhraseID":"poisonland_regnalshh1",
                 "requires":[
                     {
@@ -4343,6 +4354,41 @@
                 "rewardType":"spawnAll",
                 "rewardID":"brightportstudent6",
                 "mapName":"waytobrightport17"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"brightportstudent2",
+                "mapName":"brightport_school6"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"brightportstudent5",
+                "mapName":"brightport3"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"brightportstudent7",
+                "mapName":"brightport3"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"poisonland_bagame",
+                "mapName":"brightport3"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"brightportstudent1",
+                "mapName":"brightport3"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"brightportstudent14",
+                "mapName":"brightport_bakery"
+            },
+            {
+                "rewardType":"spawnAll",
+                "rewardID":"brightportstudent13",
+                "mapName":"brightport_bakery"
             }
         ]
     },
@@ -4802,5 +4848,55 @@
                 "value":81
             }
         ]
+    },
+    {
+        "id":"poisonland_ball",
+        "message":"[This looks like a ball made of leather]"
+    },
+    {
+        "id":"poisonland_regnal",
+        "message":"After a nap some grub is the best.",
+        "replies":[
+            {
+                "text":"It's the opposite. After a meal you ought to sleep.",
+                "nextPhraseID":"poisonland_regnal_selector0"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_regnal_selector0",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_regnal0",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_regnal1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":28
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_regnal0",
+        "message":"Good thing you didn't sit next to me and I could get some rest. Otherwise I'd have had to do it in that order."
+    },
+    {
+        "id":"poisonland_regnal1",
+        "message":"I could always go for a second nap. Heh."
     }
 ]

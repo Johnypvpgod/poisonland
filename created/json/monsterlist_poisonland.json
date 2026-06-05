@@ -109,5 +109,11 @@
         "id":"brightportstudent14",
         "name":"Dinan",
         "iconID":"monsters_ld_edit:38"
+    },
+    {
+        "id":"poisonland_bagame",
+        "name":"Ball",
+        "iconID":"monsters_misc:12",
+        "phraseID":"poisonland_ball"
     }
 ]

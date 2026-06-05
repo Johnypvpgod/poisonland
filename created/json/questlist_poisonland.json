@@ -114,6 +114,7 @@
     {
         "id":"poisonland_nondisplay",
         "name":"poisonland_nondisplay",
+        "showInLog":1,
         "stages":[
             {
                 "progress":1,

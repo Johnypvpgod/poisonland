@@ -1,0 +1,22 @@
+[
+    {
+        "id":"yolgen_1a",
+        "message":"Stoutford used to be the seat of Lord Erwyn of house Gorland. But during the Noble Wars 14 years ago, everything changed.",
+        "replies":[
+            {
+                "text":"The Noble Wars?",
+                "nextPhraseID":"yolgen_2"
+            }
+        ]
+    },
+    {
+        "id":"yolgen_2",
+        "message":"Well, the Noble Wars were one of the darkest periods of our history. They lasted 8 years with intermittent periods of peace, but brought great misery to most of the region.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"yolgen_2a"
+            }
+        ]
+    }
+]

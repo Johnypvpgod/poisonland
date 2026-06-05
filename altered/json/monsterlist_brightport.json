@@ -34,6 +34,7 @@
         "id":"brightportstudent4",
         "name":"Regnal",
         "iconID":"monsters_ld1:80",
+        "horizontalFlipChance":100,
         "phraseID":"poisonland_regnal_selector"
     },
     {
@@ -45,7 +46,8 @@
     {
         "id":"brightportstudent2",
         "name":"Ysolde",
-        "iconID":"monsters_ld1:145"
+        "iconID":"monsters_ld1:145",
+        "horizontalFlipChance":100
     },
     {
         "id":"brightportstudent7",
