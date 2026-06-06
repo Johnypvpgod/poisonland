@@ -213,7 +213,14 @@
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_lecture23"
+                "nextPhraseID":"poisonland_lecture23",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":34
+                    }
+                ]
             },
             {
                 "text":"N",

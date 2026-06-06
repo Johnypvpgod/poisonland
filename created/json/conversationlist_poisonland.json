@@ -3572,7 +3572,7 @@
     },
     {
         "id":"poisonland_lecture4",
-        "message":"Good answer Aurelia. Indeed, last time we covered the Feygard entry into the war, marking the beginning of the third period of the Noble Wars. Today we will continue in much the same vein and continue from where we left off. Everyone, open your textbooks to the chapter titled \"The Taking of Brimhaven\" on page 119.",
+        "message":"Good answer Aurelia. Indeed, last time we covered the Feygard entry into the war, marking the beginning of the third period of the Noble Wars. Today we will continue in much the same vein and continue from where we left off. Everyone, open your textbooks to the chapter titled \"The Taking of Brimhaven\" on page 158.",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
@@ -3652,7 +3652,7 @@
     },
     {
         "id":"poisonland_lecture5",
-        "message":"As the forces of Feygard approached the crucial crossroads, a second army was dispatched to secure the flank of the main force. The town of Brimhaven stood at this important position. The Nor City garrison had not been greatly diminished by years of skirmishing, so the fighting was expected to be fierce. As these heavy thoughts loomed over the marching soldiers, a missive from the wealthy families of Brimhaven arrived. The letter reads as follow.",
+        "message":"As the forces of Feygard approached the crucial crossroads, a second army was dispatched south from Thalgard to secure the flank of the main force. The town of Brimhaven stood at this important position. The Nor City garrison had not been greatly diminished by years of skirmishing, so the fighting was expected to be fierce. As these heavy thoughts loomed over the marching soldiers, a missive from the wealthy families of Brimhaven arrived. The letter reads as follow.",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
@@ -3766,7 +3766,7 @@
     },
     {
         "id":"poisonland_lecture_aurelia1",
-        "message":"The Feygard troops arrived in a friendly town. Though they foolishly spoke of the Shadow, the light of reason they displayed is the reason the town stands unharmed to this day over the foolish Stoutforders, who dwell among ruins.",
+        "message":"The Feygard troops arrived in a friendly town. Though the locals foolishly spoke of the Shadow, the light of reason they displayed is the reason the town stands unharmed to this day over the foolish Stoutforders, who dwell among ruins.",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
@@ -3901,7 +3901,7 @@
     },
     {
         "id":"poisonland_lecture12",
-        "message":"Everyone, open your textbooks to the chapter titled \"Battle of Brightport\" on page 158.",
+        "message":"Everyone, open your textbooks to the chapter titled \"Battle of Brightport\" on page 172.",
         "replies":[
             {
                 "text":"Good thing I have my textbook from Aurelia.",
@@ -3959,7 +3959,7 @@
     },
     {
         "id":"poisonland_lecture13",
-        "message":"Though Brightport lies some distance from the river, no missive such as the one from Brimhaven arrived. And, as history proved, they were content in their fate. I quote from the memoirs of General Ahrensbach: \"It is my memory of the day, and the devils of the south that I recall...\"",
+        "message":"Though Brightport lies some distance from the river, no missive such as the one from Brimhaven arrived. And, as history proved, they were content in their fate. I quote from the memoirs of General Ahrensbach: \"It is my memory of that day, and the devils of the south that I recall...\"",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
@@ -4044,7 +4044,7 @@
     },
     {
         "id":"poisonland_lecture16",
-        "message":"The Feygard legion stopped somewhere south of the bridge. General Ahrensbach would not have risked crossing the bridge to Brightport nor marching through the dense forest. Instead he intended to circle the ravine and take Brightport from the south which lacking natural fortifications is a harder town to defend than Brimhaven. His plans were cut short however by the Eastern Coalition. They had maneuvered so that Feygard's heavy troops faced south while they attacked from the north. In summary an ambush from the forest. Though the legions of Feygard were not so weak as to fall to such tricks.",
+        "message":"The Feygard legion stopped somewhere south of the bridge. General Ahrensbach would not have risked crossing the bridge to Brightport nor marching through the dense forest. Instead he intended to circle the ravine and take Brightport from the south, which lacking natural fortifications was harder to defend than Brimhaven. His plans were cut short however by the Eastern Coalition. They had maneuvered in such a way that the Feygardian heavy infantry faced south while the attack came from the north. In summary, an ambush from the forest. Though the legions of Feygard were not so weak as to fall to such tricks.",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
@@ -4706,7 +4706,7 @@
             {
                 "rewardType":"questProgress",
                 "rewardID":"poisonland",
-                "value":30
+                "value":25
             }
         ]
     },

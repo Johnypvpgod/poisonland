@@ -231,7 +231,7 @@
   </object>
   <object id="3" name="south" type="mapchange" x="128" y="544" width="448" height="32">
    <properties>
-    <property name="map" value="poisonland_mountain4"/>
+    <property name="map" value="poisonland4"/>
     <property name="place" value="north"/>
    </properties>
   </object>
