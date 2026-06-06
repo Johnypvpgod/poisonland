@@ -66,6 +66,6 @@
         "id":"brightport_mayor",
         "name":"Rubiano",
         "iconID":"monsters_ld1:77",
-        "phraseID":"brightport_mayor"
+        "phraseID":"poisonland_mayor_selector"
     }
 ]

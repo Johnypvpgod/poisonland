@@ -31,18 +31,11 @@
         "category":"spmail"
     },
     {
-        "id":"brightport_cloak",
-        "iconID":"items_tometik2:7",
-        "name":"Protective cloak",
-        "category":"bdy_clth",
-        "description":"A cloak made from enchanted silk to protection against various acids and chemicals."
-    },
-    {
         "id":"poisonland_eckhartjournal",
         "iconID":"items_misc_2:110",
-        "name":"Eckhart's journal",
+        "name":"Eckhart's notebook",
         "displaytype":"quest",
         "category":"other",
-        "description":"Various theories and descriptions made by Eckhart regarding the poisoned land."
+        "description":"Various theories, descriptions, and observations made by Eckhart regarding the poisoned land. The most striking text reads:  \"It seems to me that the most likely theory is a curse from the battle. I have seen land be cursed by undead before, but never to such an extent. No undead have risen in the aftermath of the battle, nor have I seen any during my exploration. I thought the monsters from the Doughe's story could not possibly be true, but I found one. It is not something a summoner or even a dozen of them could create. Not such horrible creatures at that.\""
     }
 ]

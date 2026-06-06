@@ -106,8 +106,16 @@
             },
             {
                 "progress":100,
-                "logText":"After I had dealt with the fire spirits to stop the flow of lava, Eckhart handed me his notes to deliver to the Doughe, and said he will continue deeper in, to find the cause for the worsening condition of the forest.",
+                "logText":"After I had dealt with the fire spirits to stop the flow of lava, Eckhart handed me his notes to deliver to the Doughe, and said he will continue deeper in, to find the cause for the worsening condition of the forest."
+            },
+            {
+                "progress":110,
+                "logText":"I brought Rubiano the notebook. He didn't like that Eckhart remained behind, but he respected his decision.",
                 "finishesQuest":1
+            },
+            {
+                "progress":115,
+                "logText":"Rubiano agreed to let Freyja sell me better equipment."
             }
         ]
     },
@@ -267,6 +275,10 @@
             {
                 "progress":36,
                 "logText":"statue with letters interacted with"
+            },
+            {
+                "progress":37,
+                "logText":"rubiano notebook brought"
             }
         ]
     }

@@ -469,7 +469,7 @@
         "message":"Have you checked if the rumble locked us in, or is the passage still open?",
         "replies":[
             {
-                "text":"It is a long story, but in short the way now is open. [Tell Eckhart about the monster and the fire spirits.]",
+                "text":"It is a long story, but in short the way out is now open. [Tell Eckhart about the monster and the fire spirits.]",
                 "nextPhraseID":"poisonland_eckhart12",
                 "requires":[
                     {
@@ -747,7 +747,7 @@
     },
     {
         "id":"poisonland_eckhart15",
-        "message":"And if you're telling me this, then you couldn't find a way to deal with them... Couldn't you simply destroy them like how you killed the monster?",
+        "message":"And if you're telling me this, then you couldn't find a way to deal with them... Couldn't you simply destroy them the same way you killed the monster?",
         "replies":[
             {
                 "text":"I tried to, but they would just reappear and mock me in our tongue, saying things like \"gems\" and \"'pay.\" I know I'm as precious as a gem, but they're the ones who need to pay...",
@@ -887,17 +887,17 @@
     },
     {
         "id":"poisonland_eckhart21",
-        "message":"After being stuck here for days, thinking my end was near, when I saw you it felt like you were a savior sent to help me by Elythara herself. I have a purpose to fulfill, which is why no one but me volunteered for this job. Now with a clear path forward I'm convinced of it.",
+        "message":"After being stuck here for days, thinking my end was near, when I saw you it felt like you were a savior sent to help me by Elythara herself. I know inside my heart that I have a purpose to fulfill, which is why no one but me volunteered for this job. Now with a clear path forward I'm convinced of it.",
         "replies":[
             {
-                "text":"N",
+                "text":"You can't possibly mean to continue, it's too dangerous. The Doughe sent me to bring you back!",
                 "nextPhraseID":"poisonland_eckhart22"
             }
         ]
     },
     {
         "id":"poisonland_eckhart22",
-        "message":"With the spirits gone, the way in should be open too. I cannot stop and leave, $playername. If I flee, the corruption won't heal and the spread of disease won't stop. This whole ordeal would have been for naught. Please take my notes and deliver them to the Doughe. We both have our own missions to fulfill, after all.",
+        "message":"I can't stop and leave, $Playername. With the spirits gone, the way in should be open too. If I flee, we can't discover the cause of the corruption and the spread of disease won't stop. This whole ordeal would've been for naught. Please take my notes and deliver them to the Doughe. We both have our own missions to fulfill, after all.",
         "replies":[
             {
                 "text":"N",
@@ -4716,7 +4716,7 @@
     },
     {
         "id":"poisonland_rubiano1",
-        "message":"Heiter did? I suppose you really are capable if Heiter himself told you his name and sent you to me.",
+        "message":"Heiter did? I suppose you are really capable if Heiter revealed his name to you and sent you this way.",
         "replies":[
             {
                 "text":"N",
@@ -4914,6 +4914,114 @@
             {
                 "text":"Shadow be with you.",
                 "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano0",
+        "message":"You did what I asked of you, $Playername. There is no reason to keep equipment away from an adventurer as useful as you are. You have my permission.",
+        "replies":[
+            {
+                "text":"Thanks, I'll be on my way.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":115
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano6",
+        "message":"Why didn't he bring it to me himself? The two of you returned, didn't you?",
+        "replies":[
+            {
+                "text":"Eckhart stayed behind in the ruins where I found him stuck at. No matter what I said, he wanted to continue the mission.",
+                "nextPhraseID":"poisonland_rubiano7"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":37
+            }
+        ]
+    },
+    {
+        "id":"poisonland_mayor_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_rubiano6",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":110,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":37
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"brightport_mayor"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano7",
+        "message":"That fool, the mission ended the moment he got stranded. This determination of his might be the end of his life...",
+        "replies":[
+            {
+                "text":"I wouldn't discount him so soon.",
+                "nextPhraseID":"poisonland_rubiano8"
+            },
+            {
+                "text":"Yeah, a foolhardy decision.",
+                "nextPhraseID":"poisonland_rubiano9"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano8",
+        "message":"You are right, $Playername. He is an adventurer, and adventurers have their pride. We shouldn't be quick to judge him. Rather, we should pray that the Shadow watches over him. You've done a good job.",
+        "replies":[
+            {
+                "text":"May the Shadow watch over him.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":110
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano9",
+        "message":"Nevertheless, he chose that path for himself, and I doubt he would return a second time. You need not risk your life as well. May the Shadow watch over him.",
+        "replies":[
+            {
+                "text":"May the shadow watch over him.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":110
             }
         ]
     }

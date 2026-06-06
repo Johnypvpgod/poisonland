@@ -405,6 +405,16 @@
         "id":"brightport_mayor8",
         "replies":[
             {
+                "nextPhraseID":"poisonland_rubiano0",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":110
+                    }
+                ]
+            },
+            {
                 "text":"N",
                 "nextPhraseID":"poisonland_rubiano",
                 "requires":[
@@ -442,6 +452,22 @@
                 "nextPhraseID":"brightport_mayor5"
             },
             {
+                "text":"I found Eckhart. He told me to bring his notebook to you.",
+                "nextPhraseID":"poisonland_rubiano6",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":100
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_eckhartjournal",
+                        "value":1
+                    }
+                ]
+            },
+            {
                 "text":"Heiter told me to see you if I want to learn what happened with the forest.",
                 "nextPhraseID":"poisonland_rubiano1",
                 "requires":[
@@ -470,6 +496,12 @@
                         "requireType":"questProgress",
                         "requireID":"brightport_nondisplay",
                         "value":236
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":115,
+                        "negate":true
                     }
                 ]
             }
