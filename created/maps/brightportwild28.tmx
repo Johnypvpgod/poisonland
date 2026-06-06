@@ -187,7 +187,7 @@
   <image source="../drawable/map_tree_3.png" width="1024" height="544"/>
  </tileset>
  <tileset firstgid="8265" name="map_tree_3" tilewidth="32" tileheight="32" tilecount="544" columns="32">
-  <image source="../../../Brightport/created/drawable/map_tree_3.png" width="1024" height="544"/>
+  <image source="../drawable/map_tree_3.png" width="1024" height="544"/>
  </tileset>
  <layer id="1" name="Base" width="28" height="24">
   <data encoding="base64" compression="zlib">
