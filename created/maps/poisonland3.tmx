@@ -219,7 +219,7 @@
    eJytk9ENACEMQp3i9l/Jjfw1TYHXu2tiTFQooO5nrW2GK4e78YSL8NHqelO+ulfPdd6cB6qNeCGaFCfR+TX35FFpUPjuLtL7mt5z6pG0TjHUs+MivCmr1KvOb3KZenQ+KOcUR7WRP6V0qb40u7/+YuWimdF3P838XjsmYbgV
   </data>
  </layer>
- <objectgroup id="7" name="Mapevents" visible="0">
+ <objectgroup id="7" name="Mapevents">
   <object id="1" name="poisoned_ground" type="script" x="96" y="32" width="480" height="640">
    <properties>
     <property name="when" value="step"/>
