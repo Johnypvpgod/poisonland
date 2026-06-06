@@ -211,12 +211,12 @@
    eJxjYKAueCxGZQPJBP8lB9oFQxcAABNWAhI=
   </data>
  </layer>
- <layer id="5" name="Walkable" width="19" height="7" visible="0">
+ <layer id="5" name="Walkable" width="19" height="7">
   <data encoding="base64" compression="zlib">
-   eJy7KMbAcBELxgZwqcGmH5856PoI2UPIHGL0k2MeNj3oeomxi1h/4nIDNj2E1BGjB5cZAI+tNiU=
+   eJy7KMbAcBELxgZwqcGmH5856PrwiRNjDiF3kmIGIb/gkyeECdmFyz3Y9BBSR4weXGYAAC5gN/M=
   </data>
  </layer>
- <objectgroup id="6" name="Mapevents" visible="0">
+ <objectgroup id="6" name="Mapevents">
   <object id="1" name="poisoned_ground" type="script" x="32" y="32" width="544" height="96">
    <properties>
     <property name="when" value="step"/>
@@ -234,7 +234,7 @@
     <property name="place" value="west"/>
    </properties>
   </object>
-  <object id="4" name="north1" type="mapchange" x="320" y="0" width="32" height="32">
+  <object id="4" name="north1" type="mapchange" x="192" y="0" width="160" height="32">
    <properties>
     <property name="map" value="poisonland3"/>
     <property name="place" value="south1"/>
