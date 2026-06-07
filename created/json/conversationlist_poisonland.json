@@ -5024,5 +5024,51 @@
                 "value":110
             }
         ]
+    },
+    {
+        "id":"poisonland_warning",
+        "message":"You have a bad feeling about entering the room.",
+        "replies":[
+            {
+                "text":"Nothing I can't handle.",
+                "nextPhraseID":"poisonland_warning0"
+            },
+            {
+                "text":"I should avoid this room for now.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_warning0",
+        "replies":[
+            {
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":38
+            }
+        ]
+    },
+    {
+        "id":"poisonland_warning1",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_warning",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":38,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
     }
 ]

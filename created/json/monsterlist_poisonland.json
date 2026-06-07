@@ -95,8 +95,8 @@
     },
     {
         "id":"poisonland_mazarth",
-        "name":"Mazarth beast stud",
-        "iconID":"monsters_ld2:36",
+        "name":"Alpha mazarth beast",
+        "iconID":"monsters_tometik9:19",
         "monsterClass":"animal",
         "horizontalFlipChance":50
     },
@@ -115,5 +115,31 @@
         "name":"Ball",
         "iconID":"monsters_misc:12",
         "phraseID":"poisonland_ball"
+    },
+    {
+        "id":"poisonland_goblinking0",
+        "name":"Goblin leader",
+        "iconID":"monsters_fatboy73:22"
+    },
+    {
+        "id":"poisonland_goblinking1",
+        "name":"Goblin leader",
+        "iconID":"monsters_fatboy73:22"
+    },
+    {
+        "id":"poisonland_goblinking2",
+        "name":"Goblin leader",
+        "iconID":"monsters_fatboy73:22"
+    },
+    {
+        "id":"poisonland_goblinking3",
+        "name":"Goblin leader",
+        "iconID":"monsters_fatboy73:22"
+    },
+    {
+        "id":"poisonland_wildmazarth",
+        "name":"Wild mazarth beast",
+        "iconID":"monsters_tometik9:19",
+        "monsterClass":"animal"
     }
 ]

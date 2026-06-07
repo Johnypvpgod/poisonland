@@ -227,7 +227,12 @@
   </data>
  </layer>
  <objectgroup name="Mapevents">
-  <object name="stairs" type="mapchange" x="64" y="128" width="32" height="32"/>
+  <object name="stairs" type="mapchange" x="64" y="128" width="32" height="32">
+   <properties>
+    <property name="map" value="charwood_oakburnmanor"/>
+    <property name="place" value="stairs"/>
+   </properties>
+  </object>
   <object name="north1" type="mapchange" x="32" y="0" width="96" height="32">
    <properties>
     <property name="map" value="charwood_manor1"/>
@@ -262,6 +267,11 @@
    <properties>
     <property name="map" value="charwood_manor5"/>
     <property name="place" value="north"/>
+   </properties>
+  </object>
+  <object name="poisonland_warning1" type="script" x="544" y="32" width="64" height="32">
+   <properties>
+    <property name="when" value="enter"/>
    </properties>
   </object>
  </objectgroup>

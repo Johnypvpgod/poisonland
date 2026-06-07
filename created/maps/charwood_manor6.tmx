@@ -238,6 +238,12 @@
     <property name="place" value="east"/>
    </properties>
   </object>
+  <object name="north" type="mapchange" x="64" y="0" width="64" height="32">
+   <properties>
+    <property name="map" value="charwood_manor9"/>
+    <property name="place" value="south"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Spawn"/>
  <objectgroup name="Keys"/>

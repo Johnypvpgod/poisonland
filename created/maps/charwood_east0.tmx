@@ -243,7 +243,44 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup name="Spawn"/>
+ <objectgroup name="Spawn">
+  <object name="poisonland_wildmazarth" type="spawn" x="192" y="96" width="64" height="64">
+   <properties>
+    <property name="spawngroup" value="poisonland_wildmazarth"/>
+   </properties>
+  </object>
+  <object name="brightport_goblin2" type="spawn" x="224" y="448" width="64" height="64">
+   <properties>
+    <property name="spawngroup" value="brightport_goblin2"/>
+   </properties>
+  </object>
+  <object name="poisonland_wildmazarth1" type="spawn" x="384" y="512" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="poisonland_wildmazarth"/>
+   </properties>
+  </object>
+  <object name="poisonland_wildmazarth2" type="spawn" x="320" y="384" width="32" height="64">
+   <properties>
+    <property name="spawngroup" value="poisonland_wildmazarth"/>
+   </properties>
+  </object>
+  <object name="brightport_goblin" type="spawn" x="96" y="128" width="64" height="96">
+   <properties>
+    <property name="spawngroup" value="brightport_goblin"/>
+   </properties>
+  </object>
+  <object name="poisonland_wildmazarth3" type="spawn" x="64" y="288" width="96" height="128">
+   <properties>
+    <property name="quantity" value="2"/>
+    <property name="spawngroup" value="poisonland_wildmazarth"/>
+   </properties>
+  </object>
+  <object name="poisonland_wildmazarth" type="spawn" x="416" y="96" width="32" height="32">
+   <properties>
+    <property name="spawngroup" value="poisonland_wildmazarth"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup name="Keys"/>
  <objectgroup name="Replace"/>
 </map>

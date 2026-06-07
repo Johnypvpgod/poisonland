@@ -279,6 +279,14 @@
             {
                 "progress":37,
                 "logText":"rubiano notebook brought"
+            },
+            {
+                "progress":38,
+                "logText":"Warning accepted"
+            },
+            {
+                "progress":39,
+                "logText":"goblin king fight started."
             }
         ]
     }
