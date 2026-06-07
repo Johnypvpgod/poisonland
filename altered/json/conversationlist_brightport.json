@@ -675,5 +675,22 @@
                 "value":36
             }
         ]
+    },
+    {
+        "id":"brightport_student",
+        "message":"How's my hair? And is my skirt straight? I just want to make sure everything looks okay before I go to class.",
+        "replies":[
+            {
+                "text":"A bit too late, the lecture is over already.",
+                "nextPhraseID":"poisonland_agnese",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224
+                    }
+                ]
+            }
+        ]
     }
 ]

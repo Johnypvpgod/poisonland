@@ -217,12 +217,12 @@
    eJxjYBjaAAAAwAAB
   </data>
  </layer>
- <layer id="6" name="Walkable" width="4" height="12">
+ <layer id="6" name="Walkable" width="4" height="12" visible="0">
   <data encoding="base64" compression="zlib">
    eJy7KMbAcJEARgbIfHQ12NQTqxebfmxmo/MBGtoZRQ==
   </data>
  </layer>
- <objectgroup id="7" name="Mapevents">
+ <objectgroup id="7" name="Mapevents" visible="0">
   <object id="1" name="south" type="mapchange" x="32" y="352" width="32" height="32">
    <properties>
     <property name="map" value="charwood_east1"/>
@@ -236,7 +236,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="8" name="Spawn">
+ <objectgroup id="8" name="Spawn" visible="0">
   <object id="3" name="poisonland_shaman" type="spawn" x="64" y="64" width="32" height="64">
    <properties>
     <property name="spawngroup" value="poisonland_shaman"/>

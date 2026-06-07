@@ -67,5 +67,11 @@
         "name":"Rubiano",
         "iconID":"monsters_ld1:77",
         "phraseID":"poisonland_mayor_selector"
+    },
+    {
+        "id":"brightportstudent",
+        "name":"Agnese",
+        "iconID":"monsters_ld1:150",
+        "phraseID":"brightport_student"
     }
 ]

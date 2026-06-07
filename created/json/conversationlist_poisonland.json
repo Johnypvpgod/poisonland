@@ -5070,5 +5070,15 @@
                 ]
             }
         ]
+    },
+    {
+        "id":"poisonland_agnese",
+        "message":"I know that much, silly. Ysolde's already returned. It's the astronomy class I'm worried about!",
+        "replies":[
+            {
+                "text":"I see, bye.",
+                "nextPhraseID":"X"
+            }
+        ]
     }
 ]
