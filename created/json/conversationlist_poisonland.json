@@ -430,8 +430,30 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"poisonland",
+                        "value":75
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
                         "value":80,
                         "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":97,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lavainspect2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":4
                     },
                     {
                         "requireType":"questProgress",
@@ -445,11 +467,12 @@
     },
     {
         "id":"poisonland_lavainspect1",
-        "message":"The pool of lava sits blocking the passage, emanating intense heat.",
+        "message":"The pool of lava blocks the passage, emanating intense heat.",
         "switchToNPC":"none",
         "replies":[
             {
-                "text":"Seems that Eckhart's worries became true."
+                "text":"Seems that Eckhart's worries became true.",
+                "nextPhraseID":"X"
             }
         ],
         "rewards":[
@@ -2707,7 +2730,7 @@
     },
     {
         "id":"poisonland_heiter1",
-        "message":"I suppose I shall start from the very beginning... I was born in Charwood. We were three brothers in our family. My dad was a miner, like many in Charwood, but none of us wanted that kind of life for ourselves.",
+        "message":"I suppose I shall start from the very beginning. I was born in Charwood. We were three brothers in our family. My father was a miner, like many in Charwood, but none of us wanted that kind of life for ourselves.",
         "replies":[
             {
                 "nextPhraseID":"poisonland_heiter2"
@@ -2845,7 +2868,7 @@
     },
     {
         "id":"poisonland_heiter3",
-        "message":"Soon the Noble Wars began. Brimhaven stood with Nor City, but the Oakburns refused to follow. Eventually they joined, but the other wealthy families held a grudge against them for it. When the troops of Nor City arrived, I worked for them as a scout, keeping note of enemy positions in the area and reporting any movements. I came close to being gravely hurt many times, but thanks to the Shadow I came out relatively unscathed through those years.",
+        "message":"Soon the Noble Wars began. Brimhaven stood with Nor City, but the Oakburns refused to follow at first. Eventually they joined, but the other wealthy families held a grudge against them for it. When the troops of Nor City arrived, I worked for them as a scout, keeping note of enemy positions in the area and reporting any movements. I came close to being gravely hurt many times, but thanks to the Shadow I came out relatively unscathed through those years.",
         "replies":[
             {
                 "text":"N",
@@ -2895,7 +2918,7 @@
     },
     {
         "id":"poisonland_heiter8",
-        "message":"I found the men from Brimhaven who were sent alongside them, they stood as auxiliaries in the back rows, and were left relatively unscathed. Save for those in the Oakburn's employ... The other families conspired with a commander and made arrangements so that the men from Charwood were sent to the front lines, lightly armored as they were.",
+        "message":"The men from Brimhaven who were sent alongside them stood as auxiliaries in the back ranks and were left relatively unscathed, save for those in Oakburn's employ. The other families conspired with a commander and arranged for the men from Charwood to be sent to the front lines, lightly armored as they were.",
         "replies":[
             {
                 "text":"N",
@@ -2905,7 +2928,7 @@
     },
     {
         "id":"poisonland_heiter9",
-        "message":"I asked everyone who was in a state well enough to speak. I found one man who was fresh recruit and marched east alongside my brother. When the Feygardians were caught in an ambush, Heinkel was sent as reinforcements to the front lines instead of that young man's battalion.",
+        "message":"I asked everyone who was well enough to speak. I found one man who was a fresh recruit and had marched east alongside my brother. When the Feygardians were caught in an ambush, Heinkel was sent to reinforce the front lines instead of that young man's battalion.",
         "replies":[
             {
                 "text":"N",
@@ -2915,7 +2938,7 @@
     },
     {
         "id":"poisonland_heiter10",
-        "message":"He fought bravely, as I knew my brother would. But as the battle began to stabilize, something horrific happened. A horde of horrific creatures assailed the battlefield. It wasn\u2019t an attack by Nor City, no sane person would believe that. They were something far worse than that. Those creatures targeted the weaker ones first, and Nor City lost even more than Feygard. But my brother... he was torn apart by a disfigured giant. I couldn\u2019t believe when I heard about it.",
+        "message":"He fought bravely, as I knew my brother would. But as the battle began to stabilize, something horrific happened. A horde of horrific creatures assailed the battlefield. It wasn\u2019t an attack by Nor City, no sane person should believe that. They were something far worse than that. Those creatures targeted the weaker ones first, and Nor City lost even more than Feygard. But my brother... he was torn apart by a disfigured giant. I couldn\u2019t believe when I heard about it.",
         "replies":[
             {
                 "text":"N",
@@ -2925,7 +2948,7 @@
     },
     {
         "id":"poisonland_heiter0",
-        "message":"West of this cabin built on land I was given for my service to Feygard, was the battleground. I didn't witness it firsthand. My brother did, and he lost his life there... I only heard about it from those who were there.",
+        "message":"West of this cabin, built on land I received for my service, was the battleground. I didn't witness the battle firsthand. My brother did, and he lost his life there. I only heard about it from those who were present.",
         "replies":[
             {
                 "text":"N",
@@ -2942,7 +2965,7 @@
     },
     {
         "id":"poisonland_heiter11",
-        "message":"A fate as horrible as this, for my brother... The Shadow had forsaken us in those needless wars. And now I wonder. Did my brother die with any regrets... Since then I've witnessed the land west of here be poisoned by this curse before my very own eyes.",
+        "message":"A fate as horrible as this for my brother. The Shadow had forsaken us in those needless wars. I've long wondered whether my brother died with any regrets... Since then, I've witnessed the land west of here being poisoned by this curse before my own eyes.",
         "replies":[
             {
                 "text":"N",
@@ -2952,7 +2975,7 @@
     },
     {
         "id":"poisonland_heiter12",
-        "message":"Heiter puts the bottle of Charwood sap back on the table. Before you noticed, he had already drunk the whole bottle.",
+        "message":"Heiter puts the empty bottle of Charwood sap back on the table. Before you noticed, he has already drunk the whole bottle.",
         "switchToNPC":"none",
         "replies":[
             {
@@ -2967,11 +2990,11 @@
         "switchToNPC":"poisonland_heiter",
         "replies":[
             {
-                "text":"Thank you for trusting me with this.",
+                "text":"Thanks for telling me your story.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"Yeah... that was a lot. Bye.",
+                "text":"Yeah. That was a lot. Bye.",
                 "nextPhraseID":"X"
             }
         ],
@@ -3021,7 +3044,7 @@
     },
     {
         "id":"poisonland_heiter16",
-        "message":"No I don\u2019t, but it\u2019s better you stay away from it. Disturbing the dead is never wise..."
+        "message":"No I don\u2019t, but it\u2019s better you stay away from it. Disturbing the dead is never wise."
     },
     {
         "id":"brightport_lecture_aurelia",
@@ -3260,11 +3283,6 @@
                 "rewardType":"questProgress",
                 "rewardID":"brightport_nondisplay",
                 "value":225
-            },
-            {
-                "rewardType":"questProgress",
-                "rewardID":"poisonland_nondisplay",
-                "value":28
             }
         ]
     },
@@ -3523,7 +3541,7 @@
     },
     {
         "id":"poisonland_lecture3",
-        "message":"The girl sitting at the front of the class stands up in a blink.",
+        "message":"A girl sitting at the front of the class stands up in a blink.",
         "switchToNPC":"none",
         "replies":[
             {
@@ -3652,7 +3670,7 @@
     },
     {
         "id":"poisonland_lecture5",
-        "message":"As the forces of Feygard approached the crucial crossroads, a second army was dispatched south from Thalgard to secure the flank of the main force. The town of Brimhaven stood at this important position. The Nor City garrison had not been greatly diminished by years of skirmishing, so the fighting was expected to be fierce. As these heavy thoughts loomed over the marching soldiers, a missive from the wealthy families of Brimhaven arrived. The letter reads as follow.",
+        "message":"As the forces of Feygard approached the crucial crossroads, a second army was dispatched south from Thalgard to secure the flank of the main force. The town of Brimhaven stood at this important position. The Nor City garrison had not been greatly diminished by the years of skirmishing, so the fighting was expected to be fierce. As these heavy thoughts loomed over the marching soldiers, a missive from the wealthy families of Brimhaven arrived. The letter reads as follow.",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
@@ -4286,7 +4304,7 @@
     },
     {
         "id":"poisonland_lecture23",
-        "message":"Tch, you Nor City ilk have no manners... With this, today's lecture will end. Six years of fighting and Eight of venerable rule by our King Geomyr. Today marks the fourteenth year since the end of the era of prosperity and the death of King Luthor. Next time you will learn about the Battle of the Duleian, the Siege of Stoutford, and the signing of the Treaty of Fallhaven. You are free to go.",
+        "message":"Tch, you and your Nor city ilk have no manners... With this, today's lecture will end. Six years of fighting and Eight of venerable rule by our King Geomyr. Today marks the fourteenth year since the death of King Luthor and the end of the Era of Prosperity. Next time you will learn about the Battle of the Duleian, the Siege of Stoutford, and the signing of the Treaty of Fallhaven. You are free to go.",
         "switchToNPC":"brightportnpc5",
         "replies":[
             {
@@ -4437,7 +4455,7 @@
     },
     {
         "id":"poisonland_frederich1",
-        "message":"He is misinformed, stubborn, and never listens when I tell him otherwise. I was personally sent here from Feygard due to my teaching skills, and yet he claims to know better.",
+        "message":"He is misinformed, stubborn, and never listens when I tell him otherwise. I was sent here from Feygard personally due to my teaching skills, yet he claims to know better.",
         "replies":[
             {
                 "text":"That's irrelevant to me. Do you know where I can find him?",
@@ -4461,7 +4479,7 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"You seem to lack self-awareness...",
+                "text":"You seem to lack self-awareness.",
                 "nextPhraseID":"X"
             }
         ],
@@ -4602,7 +4620,7 @@
     },
     {
         "id":"poisonland_eiden4",
-        "message":"Huh, why would you take interest in that...?",
+        "message":"Huh, why would you take interest in that?",
         "replies":[
             {
                 "text":"It's curiousity.",
@@ -4622,7 +4640,7 @@
         "message":"I don't want any trouble, what if it was Frederich who put you up to this. We don't know each other after all.",
         "replies":[
             {
-                "text":"200 gold. For your acquaintance.",
+                "text":"200 gold. For our acquaintance.",
                 "nextPhraseID":"poisonland_eiden3",
                 "requires":[
                     {
@@ -4664,7 +4682,7 @@
     },
     {
         "id":"poisonland_eiden9",
-        "message":"It was once late at night, and he was drinking something I brought when he told me about this battle. He didn't just say they were monsters or that they were summoned or anything like that. They simply appeared and attacked everyone indiscriminately, and unlike Frederich, he described what they looked like. It was really scary.",
+        "message":"It was late at night, and he was drinking something I brought him when he told me about the battle. He didn't just say they were monsters or that they had been summoned or anything like that. They simply appeared and attacked everyone, Nor City and Feygard alike. And unlike Frederich, he described what they looked like. It was really scary.",
         "replies":[
             {
                 "text":"N",
@@ -4681,7 +4699,7 @@
     },
     {
         "id":"poisonland_eiden10",
-        "message":"When we started the study on the subject of the noble wars half a year ago I went back to inquire with him on an essay. This time he didn't mention anything about those monsters, it felt forced. Like he was hiding it. ",
+        "message":"When we started the study on the subject of the Noble Wars half a year ago I went back to inquire with him on an essay. This time he didn't mention anything about those monsters, it felt forced. Like he was hiding it. ",
         "replies":[
             {
                 "text":"N",
@@ -4691,7 +4709,7 @@
     },
     {
         "id":"poisonland_eiden11",
-        "message":"That's what I wanted to ask about at the lecture, but that stuck-up jerk didn't want to hear it. That's the gist of what I know though. My uncle would know the details, but he's living in isolation north of Brightport. You'd have to ask him directly since he doesn't pass by Brightport very often.",
+        "message":"That's what I wanted to ask about at the lecture, but that stuck-up jerk didn't want to hear it. My uncle could tell you more, but he's living in isolation north of Brightport. You'd have to ask him directly since he doesn't pass by Brightport very often.",
         "replies":[
             {
                 "text":"At first I thought the whole thing with the monsters was a lie.",
@@ -4716,7 +4734,7 @@
     },
     {
         "id":"poisonland_rubiano1",
-        "message":"Heiter did? I suppose you are really capable if Heiter revealed his name to you and sent you this way.",
+        "message":"Heiter did? I suppose you must be a capable individual if Heiter trusted you enough to reveal his name and send you my way.",
         "replies":[
             {
                 "text":"N",
@@ -4726,7 +4744,7 @@
     },
     {
         "id":"poisonland_rubiano2",
-        "message":"I'll cut to the chase, the situation is really dire. A while ago, when the outskirts of that area began to be affected, I sent an adventuring party to see what was happening in the depths of the cursed land. Everyone thinks it's just superstition, but there had to be a cause. They returned extremely ill. It took them weeks to recover since we have no bonemeal left at hand...",
+        "message":"I'll cut to the chase, the situation is really dire. A while ago, when the outskirts of that area began to be affected, I sent an adventuring party to investigate what was happening in the depths of the cursed land. Everyone thinks it's just superstition, but there had to be a cause. They returned extremely ill. It took them weeks to recover since we have no bonemeal left at hand.",
         "replies":[
             {
                 "text":"N",
@@ -4770,7 +4788,7 @@
     },
     {
         "id":"poisonland_rubiano5",
-        "message":"He himself was very optimistic about it. If I had tried to stop him, I'm convinced he would have gone by himself without any of the supplies we loaded him with. But it's been a week since he left, and I'm worried the worst has happened. I'm not telling you to risk your life for this town, but if you willingly came to me, I'll simply say this: find Eckhart and return. Both of you hopefully.",
+        "message":"He himself was very optimistic about the mission. If we had tried to stop him, I'm convinced he would have gone by himself without any of the supplies we loaded him with. But it's been a week since he left, and I'm worried the worst has happened. I'm not telling you to risk your life for this town, but if you willingly came to me, I'll simply say this: find Eckhart and return. Both of you hopefully.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -4905,7 +4923,7 @@
     },
     {
         "id":"poisonland_eiden12",
-        "message":"I would have thought the same if it weren't for my uncle. You've already seen how they changed the details.",
+        "message":"I would have thought the same if it weren't for my uncle. You've already seen how they changed the details in the lecture.",
         "replies":[
             {
                 "text":"I suppose if Feygard did it theres a good reason.",
@@ -4919,7 +4937,7 @@
     },
     {
         "id":"poisonland_rubiano0",
-        "message":"You did what I asked of you, $Playername. There is no reason to keep equipment away from an adventurer as useful as you are. You have my permission.",
+        "message":"You did what I asked of you, $playername. There is no reason to keep equipment away from an adventurer as useful as you are. You have my permission.",
         "replies":[
             {
                 "text":"Thanks, I'll be on my way.",
@@ -4993,7 +5011,7 @@
     },
     {
         "id":"poisonland_rubiano8",
-        "message":"You are right, $Playername. He is an adventurer, and adventurers have their pride. We shouldn't be quick to judge him. Rather, we should pray that the Shadow watches over him. You've done a good job.",
+        "message":"You are right, $playername. He is an adventurer, and adventurers have their pride. We shouldn't be quick to judge him. Rather, we should pray that the Shadow watches over him. You've done a good job.",
         "replies":[
             {
                 "text":"May the Shadow watch over him.",
@@ -5010,7 +5028,7 @@
     },
     {
         "id":"poisonland_rubiano9",
-        "message":"Nevertheless, he chose that path for himself, and I doubt he would return a second time. You need not risk your life as well. May the Shadow watch over him.",
+        "message":"Nevertheless, he chose that path for himself, and I doubt his life would be saved a second time. You need not risk your life as well. May the Shadow watch over him.",
         "replies":[
             {
                 "text":"May the shadow watch over him.",
@@ -5080,5 +5098,9 @@
                 "nextPhraseID":"X"
             }
         ]
+    },
+    {
+        "id":"poisonland_lavainspect2",
+        "message":"The pool of lava blocks the passage, emanating intense heat."
     }
 ]
