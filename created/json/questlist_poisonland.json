@@ -6,7 +6,11 @@
         "stages":[
             {
                 "progress":1,
-                "logText":"In the middle of a history lecture in Brightport, a student stood up during the teacher\u2019s retelling of the Battle of Brightport, seemingly to contest the accuracy of the account, but was told to sit down."
+                "logText":"During a history lecture at the Brightport academy I learnt that the cursed land north was the site of a battle during the Noble Wars."
+            },
+            {
+                "progress":2,
+                "logText":"A student stood up during the teacher\u2019s retelling of the Battle of Brightport, seemingly to contest the accuracy of the account, but was told to sit down."
             },
             {
                 "progress":3,
@@ -30,11 +34,11 @@
             },
             {
                 "progress":20,
-                "logText":"He told me he had heard a different version of the retelling of the battle of Brightport, the monsters that emerged did not differentiate between feygard or Nor city in their carnage."
+                "logText":"He told me he had heard a different version of the battle of Brightport, the monsters that emerged did not differentiate between feygard or Nor city in their carnage."
             },
             {
                 "progress":25,
-                "logText":"Eiden said he believes that is not the full story either, and he felt his uncle was hiding something when he was inquiring for an essay."
+                "logText":"Eiden said he believes that is not the full story either, and he felt his uncle was hiding something when he was inquiring for an essay. According to Eiden he lives north of Brightport."
             },
             {
                 "progress":30,

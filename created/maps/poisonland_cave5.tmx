@@ -232,7 +232,7 @@
  </layer>
  <layer id="8" name="Above_lava" width="16" height="15">
   <data encoding="base64" compression="zlib">
-   eJxjYKA+KFNApUkFrQqoNLFgsjim/oVAsc3ixOk/CFQ3iUi1+MwYBaOAXgAAN44IRg==
+   eJxjYKA+KFNApUkFrQqoNLFgsjim/oVAsc3ixOk/CFQ3CU3tbibS3HCQSLtGwSigBgAAJ8oJAw==
   </data>
  </layer>
  <layer id="9" name="Top" width="16" height="15">

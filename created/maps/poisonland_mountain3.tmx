@@ -214,12 +214,12 @@
    eJxjYCAPXJRkYLgExH+A+C8QPxYj0yASAMwuegJy7ISFDTXsJDVcyXEvPe2jVhwScielcUAN8JnMPAHy2x8y3E5uHsSlj1Bc4bMPn15y3AkKS3L00btcood96IDcdDYYAQC3wC01
   </data>
  </layer>
- <layer id="6" name="Walkable" width="14" height="30">
+ <layer id="6" name="Walkable" width="14" height="30" visible="0">
   <data encoding="base64" compression="zlib">
    eJy7KMbAcBELRgbY5HFheusjVy817CLHPkrChVphQ6w52AAt3U2KfehylNhFrHpy/IZLLan6SAl7ZP2kphdS0sdA2UdumJDrN3LthKklRx8paYXSeCDVb+SmTWL0AAC9HyKe
   </data>
  </layer>
- <objectgroup id="7" name="Mapevents">
+ <objectgroup id="7" name="Mapevents" visible="0">
   <object id="1" name="north" type="mapchange" x="192" y="0" width="96" height="32">
    <properties>
     <property name="map" value="poisonland_mountain2"/>
@@ -239,7 +239,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="8" name="Spawn">
+ <objectgroup id="8" name="Spawn" visible="0">
   <object id="4" name="poisonland_normalbeast" type="spawn" x="192" y="64" width="160" height="256">
    <properties>
     <property name="quantity" value="2"/>
@@ -262,6 +262,6 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="9" name="Keys"/>
+ <objectgroup id="9" name="Keys" visible="0"/>
  <objectgroup id="10" name="Replace"/>
 </map>
