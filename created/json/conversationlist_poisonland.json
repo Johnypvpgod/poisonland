@@ -913,14 +913,14 @@
         "message":"After being stuck here for days, thinking my end was near, when I saw you it felt like you were a savior sent to help me by Elythara herself. I know inside my heart that I have a purpose to fulfill, which is why no one but me volunteered for this job. Now with a clear path forward I'm convinced of it.",
         "replies":[
             {
-                "text":"You can't possibly mean to continue, it's too dangerous. The Doughe sent me to bring you back!",
+                "text":"You can't possibly mean to continue. The Doughe sent me to bring you back!",
                 "nextPhraseID":"poisonland_eckhart22"
             }
         ]
     },
     {
         "id":"poisonland_eckhart22",
-        "message":"I can't stop and leave, $Playername. With the spirits gone, the way in should be open too. If I flee, we can't discover the cause of the corruption and the spread of disease won't stop. This whole ordeal would've been for naught. Please take my notes and deliver them to the Doughe. We both have our own missions to fulfill, after all.",
+        "message":"I can't stop and leave, $playername. With the spirits gone, the way in should be open too. If I flee, we can't discover the cause of the corruption and the spread of disease won't stop. This whole ordeal would've been for naught. Please take my notes and deliver them to the Doughe. We both have our own missions to fulfill, after all.",
         "replies":[
             {
                 "text":"N",
@@ -947,7 +947,7 @@
     },
     {
         "id":"poisonland_eckhart23",
-        "message":"Eckhart adjusts his gear to fit snugly, then turns to you and puts his hand on your shoulder. He gives you a smile, then walks off to the other side of the cave until he passes the corner and his quiet footsteps fade away.",
+        "message":"Eckhart adjusts his gear to fit snugly, then turns to you and puts his hand on your shoulder. He gives you a pat then walks off to the other side of the cave until he passes the corner and his quiet footsteps fade away.",
         "switchToNPC":"none"
     },
     {
@@ -2778,7 +2778,7 @@
     },
     {
         "id":"poisonland_brimhavenguard4",
-        "message":"Brimhaven and Charwood were much closely related up until recently. It was someone from Brimhaven came across a few ore deposits in the hills a few hundred years ago and decided to open a mine.",
+        "message":"Brimhaven and Charwood were tightly knit up until recently. It was someone from Brimhaven came across a few ore deposits in the hills a few hundred years ago and decided to open a mine.",
         "replies":[
             {
                 "text":"N",
@@ -3074,7 +3074,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"brightport_nondisplay",
-                        "value":225
+                        "value":222
                     }
                 ]
             }
@@ -3125,7 +3125,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"brightport_nondisplay",
-                        "value":225
+                        "value":222
                     }
                 ]
             }
@@ -4096,6 +4096,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"poisonland_nondisplay",
                 "value":33
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland",
+                "value":1
             }
         ]
     },
@@ -4220,7 +4225,7 @@
             {
                 "rewardType":"questProgress",
                 "rewardID":"poisonland",
-                "value":1
+                "value":2
             }
         ]
     },
@@ -4841,7 +4846,7 @@
                 ]
             },
             {
-                "text":"This statue is similar to the one I found in the forest, I hadn't thought that there could be more of the light type. Best focus on that one for now.",
+                "text":"This statue is similar to the one I found in the forest, I hadn't thought that there could be more of the light type. I should focus on that one.",
                 "nextPhraseID":"X",
                 "requires":[
                     {
@@ -4859,6 +4864,11 @@
                         "requireType":"questProgress",
                         "requireID":"poisonland_nondisplay",
                         "value":36
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":66
                     }
                 ]
             }

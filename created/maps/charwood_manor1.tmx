@@ -232,7 +232,7 @@
     <property name="place" value="north1"/>
    </properties>
   </object>
-  <object id="2" name="west" type="mapchange" x="0" y="96" width="32" height="32">
+  <object id="2" name="west" type="mapchange" x="0" y="96" width="32" height="64">
    <properties>
     <property name="map" value="charwood_manor2"/>
     <property name="place" value="east"/>

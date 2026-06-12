@@ -151,7 +151,7 @@
                     {
                         "requireType":"questProgress",
                         "requireID":"brightport_nondisplay",
-                        "value":225
+                        "value":222
                     }
                 ]
             }
@@ -274,6 +274,17 @@
                         "requireType":"questProgress",
                         "requireID":"poisonland_nondisplay",
                         "value":29
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture5",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":27
                     }
                 ]
             },
@@ -690,6 +701,38 @@
                         "value":224
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "id":"brightport_lecture_warning0",
+        "message":"I was just about to start my lecture. Take a seat at once!",
+        "switchToNPC":"brightportnpc5",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"brightport_nondisplay",
+                "value":226
+            }
+        ]
+    },
+    {
+        "id":"brightport_dibella_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"brightport_dibella0",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"brightport_dibella1"
             }
         ]
     }
