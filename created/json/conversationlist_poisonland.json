@@ -2271,7 +2271,7 @@
     },
     {
         "id":"poisonland_isolatedman5",
-        "message":"The last time I was in Brightport, I heard rumors of some commotion in my hometown of Charwood. Creatures called goblins emerged from the mines one day and overran the town. Some people did not manage to flee in time and were captured, but a brave young adventurer saved them.",
+        "message":"The last time I was in Brightport, I heard rumors of some commotion in my hometown of Charwood. Creatures called goblins emerged from the mines one day and overran the area. Some people did not manage to flee in time and were captured, but a brave young adventurer saved them.",
         "replies":[
             {
                 "text":"N",
@@ -2778,7 +2778,7 @@
     },
     {
         "id":"poisonland_brimhavenguard4",
-        "message":"Brimhaven and Charwood were tightly knit up until recently. It was someone from Brimhaven came across a few ore deposits in the hills a few hundred years ago and decided to open a mine.",
+        "message":"Charwood was under the administration of Brimhaven up until recently. It was someone from Brimhaven who came across a few ore deposits in the hills a few hundred years ago and decided to open a mine.",
         "replies":[
             {
                 "text":"N",
@@ -2798,7 +2798,7 @@
     },
     {
         "id":"poisonland_brimhavenguard6",
-        "message":"The family of that individual founded the settlement and became extremely wealthy. Once they had Feygard's backing, they wanted more and reached the bottom of the mine but... [Leans in and whispers] Feygard wanted a bigger slice of the pie too, and the family began relentlessly exploiting the miners to dig deeper. A few years ago, the miners finally had enough and kicked them out of Charwood, ruling the settlement by themselves. That's when the passage got cut off.",
+        "message":"The family of that individual opened the mines and became extremely wealthy. Once they had Feygard's backing, they wanted more and reached the bottom of the mine but... [Leans in and whispers] Feygard wanted a bigger slice of the pie too, and the family began relentlessly exploiting the miners to dig deeper. A few years ago, the miners finally had enough and kicked them out of Charwood. Cutting themselves from Brimhaven, that's when the passage fell out of use.",
         "replies":[
             {
                 "text":"N",
@@ -2815,7 +2815,7 @@
     },
     {
         "id":"poisonland_brimhavenguard7",
-        "message":"Since the family ran away to Nor City, Feygard just accepted that and started dealing with the townfolk directly. I heard they hit a new vein too. Good for them. But that is what you get for dealing with those treacherous Feygardians. You grow up into a fine Brimhavener, kid.",
+        "message":"Since the family ran away to Nor City, Feygard just accepted that and started dealing with the workers directly. I heard they hit a new vein too. Good for them. But that is what you get for dealing with those treacherous Feygardians. You grow up into a fine Brimhavener, kid.",
         "replies":[
             {
                 "text":"I'm not from here but sure.",
@@ -2990,6 +2990,17 @@
         "switchToNPC":"poisonland_heiter",
         "replies":[
             {
+                "text":"Where can I find Rubiano?",
+                "nextPhraseID":"poisonland_heiter_rubiano",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "negate":true
+                    }
+                ]
+            },
+            {
                 "text":"Thanks for telling me your story.",
                 "nextPhraseID":"X"
             },
@@ -3150,14 +3161,45 @@
     },
     {
         "id":"poisonland_npcstudentgreeting",
-        "message":"What are you doing, hurry up and sit down!"
+        "message":"What are you doing? Hurry up and sit down!"
     },
     {
         "id":"poisonland_thaddeus",
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_npcstudentgreeting"
+                "nextPhraseID":"poisonland_npcstudentgreeting",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_thaddeus2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":41,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_thaddeus5",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":41
+                    }
+                ]
             }
         ]
     },
@@ -3166,7 +3208,35 @@
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_npcstudentgreeting"
+                "nextPhraseID":"poisonland_npcstudentgreeting",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":224,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dietrich4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":41
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":42
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dietrich1"
             }
         ]
     },
@@ -4883,7 +4953,26 @@
     },
     {
         "id":"poisonland_ball",
-        "message":"[This looks like a ball made of leather]"
+        "message":"[This looks like a ball made of leather.]",
+        "replies":[
+            {
+                "text":"[Kick the ball.",
+                "nextPhraseID":"poisonland_ball1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":40
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":41,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
     },
     {
         "id":"poisonland_regnal",
@@ -5007,7 +5096,7 @@
     },
     {
         "id":"poisonland_rubiano7",
-        "message":"That fool, the mission ended the moment he got stranded. This determination of his might be the end of his life...",
+        "message":"That fool, the mission ended the moment he got stranded. This determination of his might be the end of his life.",
         "replies":[
             {
                 "text":"I wouldn't discount him so soon.",
@@ -5112,5 +5201,196 @@
     {
         "id":"poisonland_lavainspect2",
         "message":"The pool of lava blocks the passage, emanating intense heat."
+    },
+    {
+        "id":"poisonland_heiter_rubiano",
+        "message":"He is the Doughe, you can find him in his office on the bakery's second floor.",
+        "replies":[
+            {
+                "text":"OK,  I'll go see him."
+            }
+        ]
+    },
+    {
+        "id":"poisonland_cedric",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_cedric1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":41,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_cedric2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":41
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_thaddeus2",
+        "message":"Hi, I've seen you at the lecture. Didn't know we had a new student, you can play the ba game with us.",
+        "replies":[
+            {
+                "text":"I might give it a shot.",
+                "nextPhraseID":"poisonland_thaddeus4"
+            },
+            {
+                "text":"I just bumped into you guys. I have places to be.",
+                "nextPhraseID":"poisonland_thaddeus3"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_thaddeus3",
+        "message":"Eh, OK. If you say so.",
+        "replies":[
+            {
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_thaddeus4",
+        "replies":[
+            {
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":40
+            }
+        ]
+    },
+    {
+        "id":"poisonland_thaddeus5",
+        "message":"Haha, you kick the ball like one of those Brimhaven kids!",
+        "replies":[
+            {
+                "text":"How does one learn if not through failure.",
+                "nextPhraseID":"poisonland_thaddeus6"
+            },
+            {
+                "text":"Tch, chasing a ball is stupid anyway.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ball1",
+        "message":"You attempt to kick the ball but miss and lose your balance. All the kids start laughing as you sit on the ground.",
+        "switchToNPC":"none",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":41
+            }
+        ]
+    },
+    {
+        "id":"poisonland_thaddeus6",
+        "message":"Wow, that's really smart. Didn't know you're like that.",
+        "replies":[
+            {
+                "text":"An undiscovered genius you could say.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dietrich1",
+        "message":"I thought Thaddeus was lying when he said we have a new kid at the academy. You living with some relatives here?",
+        "replies":[
+            {
+                "text":"Relatives in Brightport? Hmm I don't think so.",
+                "nextPhraseID":"poisonland_dietrich2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"andor",
+                        "value":110,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I know someone who lives here but we're not related.",
+                "nextPhraseID":"poisonland_dietrich2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"andor",
+                        "value":110
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dietrich2",
+        "message":"As you talk with Dietrich, a ball flies and hits him square in the face",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dietrich3"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dietrich3",
+        "message":"Ah, it's not fair, I was distracted! Go away, kid, the others are laughing at me now.",
+        "switchToNPC":"brightportstudent7",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":42
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dietrich4",
+        "message":"Haha, nice play there, better than being hit in the face! Ouch, it still stings..."
+    },
+    {
+        "id":"poisonland_cedric1",
+        "message":"Hey, want to play the ba game with us? Someone to take my place in gate would be sweet.",
+        "replies":[
+            {
+                "text":"Sure, I'll give this a shot.",
+                "nextPhraseID":"poisonland_thaddeus4"
+            },
+            {
+                "text":"I just bumped into you guys. I have places to be.",
+                "nextPhraseID":"poisonland_thaddeus3"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_cedric2",
+        "message":"Haha, you're so bad at this!",
+        "replies":[
+            {
+                "text":"Tch, chasing a ball is stupid anyway.",
+                "nextPhraseID":"X"
+            }
+        ]
     }
 ]

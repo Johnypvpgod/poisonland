@@ -271,19 +271,19 @@
     <property name="spawngroup" value="brightportcitizen"/>
    </properties>
   </object>
-  <object name="brightportstudent5" type="spawn" x="320" y="160" width="96" height="64">
+  <object name="brightportstudent5" type="spawn" x="320" y="224" width="64" height="64">
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="brightportstudent5"/>
    </properties>
   </object>
-  <object name="brightportstudent7" type="spawn" x="352" y="160" width="96" height="64">
+  <object name="brightportstudent7" type="spawn" x="352" y="192" width="96" height="64">
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="brightportstudent7"/>
    </properties>
   </object>
-  <object name="brightportstudent1" type="spawn" x="320" y="192" width="96" height="64">
+  <object name="brightportstudent1" type="spawn" x="320" y="160" width="64" height="64">
    <properties>
     <property name="active" value="false"/>
     <property name="spawngroup" value="brightportstudent1"/>

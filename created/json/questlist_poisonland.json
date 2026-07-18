@@ -291,6 +291,18 @@
             {
                 "progress":39,
                 "logText":"goblin king fight started."
+            },
+            {
+                "progress":40,
+                "logText":"invite to play"
+            },
+            {
+                "progress":41,
+                "logText":"play failed"
+            },
+            {
+                "progress":42,
+                "logText":"dietrich hit in the face"
             }
         ]
     }

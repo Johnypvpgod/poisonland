@@ -16,7 +16,8 @@
         "id":"brightportstudent5",
         "name":"Cedric",
         "iconID":"monsters_ld1:87",
-        "unique":1
+        "unique":1,
+        "phraseID":"poisonland_cedric"
     },
     {
         "id":"brightportstudent1",

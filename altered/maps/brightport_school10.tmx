@@ -229,17 +229,17 @@
   </object>
   <object name="brightport_lecture_regnal" type="script" x="224" y="384" width="96" height="32">
    <properties>
-    <property name="when" value="always"/>
+    <property name="when" value="round"/>
    </properties>
   </object>
   <object name="brightport_lecture_aurelia" type="script" x="224" y="256" width="32" height="32">
    <properties>
-    <property name="when" value="always"/>
+    <property name="when" value="round"/>
    </properties>
   </object>
-  <object name="brightport_lecture_eiden" type="script" x="64" y="320" width="64" height="32">
+  <object name="brightport_lecture_eiden" type="script" x="96" y="320" width="32" height="32">
    <properties>
-    <property name="when" value="always"/>
+    <property name="when" value="round"/>
    </properties>
   </object>
  </objectgroup>

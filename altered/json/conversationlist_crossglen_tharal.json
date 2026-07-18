@@ -1,0 +1,47 @@
+[
+    {
+        "id":"tharal1",
+        "message":"Walk in the glow of the Shadow, my child. Unfortunately, if you've come to me sick or with a stomach ache, I don't have any bonemeal potions for healing anymore, only those ineffective regular potions.",
+        "replies":[
+            {
+                "text":"Show me what you have to trade.",
+                "nextPhraseID":"S"
+            },
+            {
+                "text":"Do you have anything else for food poisoning?",
+                "nextPhraseID":"tharal_antifoodp1"
+            },
+            {
+                "text":"What can you tell me about bonemeal?",
+                "nextPhraseID":"tharal_bonemeal_select",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bonemeal",
+                        "value":10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"tharal_bonemeal1",
+        "message":"We shouldn't talk about that. Lord Geomyr issued a decree. It's not allowed anymore.",
+        "replies":[
+            {
+                "text":"Please?",
+                "nextPhraseID":"tharal_bonemeal2_1"
+            }
+        ]
+    },
+    {
+        "id":"tharal_antifoodp1",
+        "message":"No, sorry. I hear that the potion-maker in Fallhaven can create something to help against that though.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"tharal_antifoodp2"
+            }
+        ]
+    }
+]
