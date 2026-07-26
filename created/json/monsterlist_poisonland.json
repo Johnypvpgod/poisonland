@@ -103,12 +103,14 @@
     {
         "id":"brightportstudent13",
         "name":"Erina",
-        "iconID":"monsters_ld_edit:41"
+        "iconID":"monsters_ld_edit:41",
+        "phraseID":"poisonland_erina"
     },
     {
         "id":"brightportstudent14",
         "name":"Dinan",
-        "iconID":"monsters_ld_edit:38"
+        "iconID":"monsters_ld_edit:38",
+        "phraseID":"poisonland_dinan"
     },
     {
         "id":"poisonland_bagame",
@@ -141,5 +143,16 @@
         "name":"Wild mazarth beast",
         "iconID":"monsters_tometik9:19",
         "monsterClass":"animal"
+    },
+    {
+        "id":"poisonland_hortensia",
+        "name":"Hortensia",
+        "iconID":"monsters_ld_edit:4"
+    },
+    {
+        "id":"poisonland_freya",
+        "name":"Freya",
+        "iconID":"monsters_ld1:179",
+        "droplistID":"poisonland_extendedfreyja"
     }
 ]

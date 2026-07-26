@@ -21,7 +21,7 @@
         "name":"Remgardi steel shield",
         "displaytype":"ordinary",
         "category":"shld_mtl_hv",
-        "description":"Forged out of expensive Remgard iron."
+        "description":"Forged out of expensive Remgard iron. Well designed but the wielder needs a strong arm."
     },
     {
         "id":"brightport_lamellar",
@@ -36,6 +36,32 @@
         "name":"Eckhart's notebook",
         "displaytype":"quest",
         "category":"other",
-        "description":"Various theories, descriptions, and observations made by Eckhart regarding the poisoned land. The most striking texts read: \"It seems to me that the most likely theory is a curse from the battle. I have seen land be cursed by undead before, but never to such an extent. No undead have risen in the aftermath of the battle, nor have I seen any during my exploration.\" \"... After the rumble I had no choice but to search for another way, so I went deeper in. I thought the monsters from the Doughe's story could not possibly be true, but there it stood before me. That's not something a summoner, or even a dozen of them, could create. Not such horrible creatures at that.\""
+        "description":"Various theories, descriptions, and observations made by Eckhart regarding the poisoned land. \"It seems to me that the most likely theory is a curse from the battle. I've seen land cursed and roamed by undead before but never to such an extent. However no undead have risen in the aftermath of the battle, nor have I seen any during my exploration...\" \"... After this rumble I had no choice but to delve deeper in to find a way out I thought the monsters from the Doughe's story could not possibly be true, but one stood there guarding what seemed like an exit to me. That's not something a summoner, or even a dozen of them could create. Not such a horribly deformed creature at that, it must be the result of some other magic.\" Further texts involve meaningless scribbles and counting down the time until rations ran out."
+    },
+    {
+        "id":"poisonland_key",
+        "iconID":"items_misc:21",
+        "name":"Baking room key",
+        "displaytype":"quest",
+        "category":"other",
+        "description":"A key to the baking cum astronomy classroom."
+    },
+    {
+        "id":"poisonland_chocolate",
+        "iconID":"items_misc_6:34",
+        "name":"Chocolate",
+        "displaytype":"rare",
+        "category":"food",
+        "description":"An exotic ingredient from the east, can be eaten raw.",
+        "useEffect":{
+            "conditionsSource":[
+                {
+                    "condition":"food",
+                    "magnitude":2,
+                    "duration":6,
+                    "chance":"100"
+                }
+            ]
+        }
     }
 ]

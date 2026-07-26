@@ -74,5 +74,12 @@
         "name":"Agnese",
         "iconID":"monsters_ld1:150",
         "phraseID":"brightport_student"
+    },
+    {
+        "id":"brightportarmor",
+        "name":"Freya",
+        "iconID":"monsters_ld1:148",
+        "phraseID":"brightport_armor",
+        "droplistID":"freyja_shoplist"
     }
 ]

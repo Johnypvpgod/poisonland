@@ -80,5 +80,58 @@
                 }
             }
         ]
+    },
+    {
+        "id":"poisonland_extendedfreyja",
+        "items":[
+            {
+                "itemID":"chmail2",
+                "chance":"100",
+                "quantity":{
+                    "min":1,
+                    "max":1
+                }
+            },
+            {
+                "itemID":"spmail2",
+                "chance":"100",
+                "quantity":{
+                    "min":1,
+                    "max":1
+                }
+            },
+            {
+                "itemID":"brightport_bronzeshield",
+                "chance":"100",
+                "quantity":{
+                    "min":1,
+                    "max":10
+                }
+            },
+            {
+                "itemID":"brightport_helmet",
+                "chance":"100",
+                "quantity":{
+                    "min":1,
+                    "max":1
+                }
+            },
+            {
+                "itemID":"brightport_shield",
+                "chance":"100"
+            },
+            {
+                "itemID":"brightport_feygardarmor",
+                "chance":"100"
+            },
+            {
+                "itemID":"brightport_shield2",
+                "chance":"100"
+            },
+            {
+                "itemID":"brightport_lamellar",
+                "chance":"100"
+            }
+        ]
     }
 ]

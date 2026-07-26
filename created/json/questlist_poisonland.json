@@ -303,6 +303,130 @@
             {
                 "progress":42,
                 "logText":"dietrich hit in the face"
+            },
+            {
+                "progress":43,
+                "logText":"unlocked baking room"
+            },
+            {
+                "progress":44,
+                "logText":"extended inventory for freyja unlocked"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakeryquest",
+        "name":"Longing for bread",
+        "stages":[
+            {
+                "progress":1,
+                "logText":"I met a student named Ysolde in her dormitory at the Brightport Academy. She seemed rather downcast, so I offered to help ease her worries."
+            },
+            {
+                "progress":5,
+                "logText":"Ysolde explained that in Brightport it is tradition to bake a pastry and offer it to someone you wish to become closer with. She received one from her friend Dinan and wishes to return the favor, but today is the only day of the week when the baking classroom is locked."
+            },
+            {
+                "progress":10,
+                "logText":"She wants me to speak with Milena, the school cook, and see if she will let her use the oven for the baking."
+            },
+            {
+                "progress":15,
+                "logText":"Milena refused to let Ysolde use her kitchen. The soup she was preparing would keep the place busy for the rest of the day, and she didn't think her oven was suitable for Ysolde's baking."
+            },
+            {
+                "progress":20,
+                "logText":"Ysolde's hope was crushed, but her determination only grew. She explained that Hortensia leaves the key with Milena when she heads off the academy grounds. We only need a convincing reason for her to hand it over."
+            },
+            {
+                "progress":25,
+                "logText":"According to Ysolde, Milena is quite close to the person named Jalmor. We might learn something useful if I ask him."
+            },
+            {
+                "progress":30,
+                "logText":"Jalmor told me that he and Milena once exchanged pastries as part of Brightport's baking tradition."
+            },
+            {
+                "progress":35,
+                "logText":"I told Milena about Ysolde's plight. Though reluctant to betray Hortensia's trust, she agreed to lend us the key as long as we returned it quickly."
+            },
+            {
+                "progress":40,
+                "logText":"Ysolde was overjoyed to hear I got the key, she'll be going ahead to prepare the dough and asked me to buy some firewood from Jalmor."
+            },
+            {
+                "progress":45,
+                "logText":"While buying the firewood, Jalmor told me he doesn't sell kindling. But in places like Sullengard, kids go into the forest to gather sticks."
+            },
+            {
+                "progress":50,
+                "logText":"I brought the logs back to Ysolde. She was already making progress with the dough and oven, and wants to explain to me how to heat the oven."
+            },
+            {
+                "progress":55,
+                "logText":"First I must kindle the fire. This time, Ysolde brought her own kindling, but if I were to bake by myself, I would need to bring my own."
+            },
+            {
+                "progress":60,
+                "logText":"Second, once the sticks are burning, I should add the firewood and let it smolder. The oven needs to be heated by the embers before baking."
+            },
+            {
+                "progress":65,
+                "logText":"Third, I should keep an eye on the embers. When the fire begins to die down, I must add more wood. If too much wood is burning, the oven will overheat and ruin the bread. Keeping a stable temperature is the key."
+            },
+            {
+                "progress":70,
+                "logText":"I did all thing correctly according to Ysolde, she put her pie "
+            },
+            {
+                
+            },
+            {
+                
+            }
+        ]
+    },
+    {
+        "id":"poisonland_goblinquest",
+        "name":"Surpassing the leader",
+        "stages":[
+            
+        ]
+    },
+    {
+        "id":"poisonland_goblinconclusion",
+        "name":"From the ashes",
+        "stages":[
+            
+        ]
+    },
+    {
+        "id":"poisonland_baking",
+        "name":"baking stuff",
+        "stages":[
+            {
+                "progress":1,
+                "logText":"Inputted low tier ingredient"
+            },
+            {
+                "progress":2,
+                "logText":"Inputted mid tier ingredient"
+            },
+            {
+                "progress":3,
+                "logText":"Inputted high tier ingredient"
+            },
+            {
+                "progress":4,
+                "logText":"roll recipe selected"
+            },
+            {
+                "progress":5,
+                "logText":"tart recipe selected"
+            },
+            {
+                "progress":6,
+                "logText":"pie recipe selected"
             }
         ]
     }

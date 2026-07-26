@@ -5248,6 +5248,10 @@
                 "nextPhraseID":"poisonland_thaddeus4"
             },
             {
+                "text":"Ba game?",
+                "nextPhraseID":"poisonland_thaddeus7"
+            },
+            {
                 "text":"I just bumped into you guys. I have places to be.",
                 "nextPhraseID":"poisonland_thaddeus3"
             }
@@ -5282,7 +5286,7 @@
         "message":"Haha, you kick the ball like one of those Brimhaven kids!",
         "replies":[
             {
-                "text":"How does one learn if not through failure.",
+                "text":"How does one learn, if not through failure.",
                 "nextPhraseID":"poisonland_thaddeus6"
             },
             {
@@ -5355,7 +5359,7 @@
     },
     {
         "id":"poisonland_dietrich3",
-        "message":"Ah, it's not fair, I was distracted! Go away, kid, the others are laughing at me now.",
+        "message":"Ah, it's not fair, I was distracted! Go away, kid! the others are laughing at me now...",
         "switchToNPC":"brightportstudent7",
         "rewards":[
             {
@@ -5367,7 +5371,7 @@
     },
     {
         "id":"poisonland_dietrich4",
-        "message":"Haha, nice play there, better than being hit in the face! Ouch, it still stings..."
+        "message":"Haha, nice play there. Better than being hit in the face! Ouch, it still stings..."
     },
     {
         "id":"poisonland_cedric1",
@@ -5390,6 +5394,64 @@
             {
                 "text":"Tch, chasing a ball is stupid anyway.",
                 "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_thaddeus7",
+        "message":"It's called that because you play it with this ball we have, it can get very intensive.",
+        "replies":[
+            {
+                "text":"I see, bye.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dinan"
+    },
+    {
+        "id":"poisonland_erina"
+    },
+    {
+        "id":"poisonland_keyunlocked",
+        "replies":[
+            {
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":43
+            }
+        ]
+    },
+    {
+        "id":"poisonland_freyja",
+        "message":"I received word from the Doughe about the young adventurer in his hire. I take it you've succeeded at your task, so it is only fair that we allow you to outfit yourself here.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_freyja_extratrade"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_freyja_normaltrade",
+        "replies":[
+            {
+                "nextPhraseID":"S"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_freyja_extratrade",
+        "switchToNPC":"poisonland_freya",
+        "replies":[
+            {
+                "nextPhraseID":"S"
             }
         ]
     }

@@ -367,7 +367,7 @@
                 ]
             },
             {
-                "text":"Can you tell me again where I can find Eiden?",
+                "text":"Can you tell me again where I can find Eiden ?",
                 "nextPhraseID":"poisonland_frederich3",
                 "requires":[
                     {
@@ -733,6 +733,123 @@
             {
                 "text":"N",
                 "nextPhraseID":"brightport_dibella1"
+            }
+        ]
+    },
+    {
+        "id":"brightport_frederich2",
+        "message":"It's only a matter of time before he spits out the names of his accomplices.",
+        "replies":[
+            {
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"brightport_lockedclass",
+        "message":"This class seems to be locked, and not currently in use. ",
+        "replies":[
+            {
+                "text":"[Unlock the baking classroom with the key.]",
+                "nextPhraseID":"poisonland_keyunlocked",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_key",
+                        "value":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"brightport_armor",
+        "message":"Welcome to Brightport's armor smithy, how can I assist you?",
+        "replies":[
+            {
+                "text":"Please show me your wares.",
+                "nextPhraseID":"brightport_armor0"
+            },
+            {
+                "text":"Everything seems pretty worn out, don't you have anything better to offer?",
+                "nextPhraseID":"brightport_armor4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":235
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":115,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I got permission from the Doughe, show me the best you have.",
+                "nextPhraseID":"poisonland_freyja",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":115
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":44,
+                        "negate":true
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"brightport_nondisplay",
+                "value":33
+            }
+        ]
+    },
+    {
+        "id":"brightport_armor0",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_freyja_normaltrade",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":44,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_freyja_extratrade",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":43
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"brightport_nondisplay",
+                "value":235
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"brightport_nondisplay",
+                "value":33
             }
         ]
     }
