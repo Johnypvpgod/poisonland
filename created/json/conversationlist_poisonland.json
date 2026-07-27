@@ -5921,5 +5921,15 @@
                 "value":1
             }
         ]
+    },
+    {
+        "id":"poisonland_book",
+        "message":"You scan through most of the book and conclude a few points: \"We lack much evidence beyond hypotheses.\" and \"They died out millennia ago.\"",
+        "replies":[
+            {
+                "text":"3000 years is a long time.",
+                "nextPhraseID":"X"
+            }
+        ]
     }
 ]

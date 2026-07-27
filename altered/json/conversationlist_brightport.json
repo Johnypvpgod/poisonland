@@ -889,5 +889,49 @@
                 "nextPhraseID":"poisonland_oswald1"
             }
         ]
+    },
+    {
+        "id":"brightport_book0",
+        "message":"The drawer is locked. This might have been where the secret document was kept.",
+        "replies":[
+            {
+                "text":"Nothing that could be a clue.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":110,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"No reason to look at it by this point.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"brightport_book",
+        "message":"You pick up an old-looking book titled \"The fate of the Lethgar\" you shuffle a bit through it until you reach the end.",
+        "replies":[
+            {
+                "text":"This might be worth reading more carefully now.",
+                "nextPhraseID":"poisonland_book",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":110,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Now's not the time for reading.",
+                "nextPhraseID":"X"
+            }
+        ]
     }
 ]

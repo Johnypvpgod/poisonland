@@ -67,196 +67,289 @@
     {
         "id":"poisonland_charred1",
         "iconID":"items_tometik3:0",
-        "name":"Charred roll"
+        "name":"Charred roll",
+        "displaytype":"ordinary",
+        "category":"food",
+        "description":"A dark reminder 'maybe next time don't mess up?'"
     },
     {
         "id":"poisonland_charred2",
         "iconID":"items_tometik3:0",
-        "name":"Charred tart"
+        "name":"Charred tart",
+        "displaytype":"ordinary",
+        "category":"food",
+        "description":"A dark reminder 'maybe next time don't mess up?'"
     },
     {
         "id":"poisonland_charred3",
         "iconID":"items_tometik3:0",
-        "name":"Charred tart"
+        "name":"Charred pie",
+        "description":"A dark reminder 'maybe next time don't mess up?'"
     },
     {
         "id":"poisonland_chocolate1",
         "iconID":"items_misc_3:144",
-        "name":"Undercooked chocolate roll"
+        "name":"Undercooked chocolate roll",
+        "displaytype":"ordinary",
+        "category":"food",
+        "description":"Raw outside, raw inside. A shame of the wasted chocolate."
     },
     {
         "id":"poisonland_chocolate2",
         "iconID":"items_misc_3:144",
-        "name":"Undercooked chocolate tart"
+        "name":"Undercooked chocolate tart",
+        "category":"food",
+        "description":"Raw outside, raw inside. A shame of the wasted chocolate."
     },
     {
         "id":"poisonland_chocolate3",
         "iconID":"items_misc_3:84",
-        "name":"Undercooked chocolate pie"
+        "name":"Undercooked chocolate pie",
+        "category":"food",
+        "description":"Raw outside, raw inside. A shame on the wasted chocolate."
     },
     {
         "id":"poisonland_chocolate4",
         "iconID":"items_misc_3:84",
-        "name":"Baked chocolate roll"
+        "name":"Baked chocolate roll",
+        "description":"A properly baked chocolate pastry. The effort was worth it."
     },
     {
         "id":"poisonland_chocolate5",
         "iconID":"items_misc_3:84",
-        "name":"Baked chocolate tart"
+        "name":"Baked chocolate tart",
+        "description":"A properly baked chocolate pastry. The effort was worth it."
     },
     {
         "id":"poisonland_chocolate6",
         "iconID":"items_misc_3:84",
-        "name":"Baked chocolate pie"
+        "name":"Baked chocolate pie",
+        "description":"A properly baked chocolate pastry. The effort was worth it."
     },
     {
         "id":"poisonland_chocolate7",
         "iconID":"items_misc_3:84",
-        "name":"Well baked chocolate roll"
+        "name":"Well baked chocolate roll",
+        "category":"food",
+        "description":"A well baked pastry, each bite reveals why an obsession with chocolate ever existed."
     },
     {
         "id":"poisonland_chocolate8",
         "iconID":"items_misc_3:84",
-        "name":"Well baked chocolate tart"
+        "name":"Well baked chocolate tart",
+        "category":"food",
+        "description":"A well baked pastry, each bite reveals why an obsession with chocolate ever existed."
     },
     {
         "id":"poisonland_chocolate9",
         "iconID":"items_misc_3:84",
-        "name":"Well baked chocolate pie"
+        "name":"Well baked chocolate pie",
+        "category":"food",
+        "description":"A well baked pastry, each bite reveals why an obsession with chocolate ever existed."
     },
     {
         "id":"poisonland_lowbake1",
         "iconID":"items_misc_3:84",
-        "name":"Undercooked Plain Roll"
+        "name":"Undercooked Plain Roll",
+        "category":"food",
+        "description":"The worst of the worst. It seems the dough never baked at all."
     },
     {
         "id":"poisonland_lowbake2",
         "iconID":"items_misc_3:84",
-        "name":"Undercooked Fine Roll"
+        "name":"Undercooked Fine Roll",
+        "category":"food",
+        "description":"It seems the dough never baked at all."
     },
     {
         "id":"poisonland_lowbake3",
         "iconID":"items_misc_3:84",
-        "name":"Undercooked Sweet Roll"
+        "name":"Undercooked Sweet Roll",
+        "category":"food",
+        "description":"A waste of the fine ingredients, it seems the dough never baked at all."
     },
     {
         "id":"poisonland_midbake1",
         "iconID":"items_misc_3:84",
-        "name":"Baked Plain Roll"
+        "name":"Baked Plain Roll",
+        "category":"food",
+        "description":"A properly baked pastry, but the taste leaves a lot to be desired."
     },
     {
         "id":"poisonland_midbake2",
         "iconID":"items_misc_3:84",
-        "name":"Baked Fine Roll"
+        "name":"Baked Fine Roll",
+        "category":"food",
+        "description":"A baked pastry, something you would feel good sharing with others."
     },
     {
         "id":"poisonland_midbake3",
         "iconID":"items_misc_3:84",
-        "name":"Baked Sweet Roll"
+        "name":"Baked Sweet Roll",
+        "category":"food",
+        "description":"A well baked pastry, the taste is exciting."
     },
     {
         "id":"poisonland_highbake1",
         "iconID":"items_misc_3:84",
-        "name":"Well Baked Plain Roll"
+        "name":"Well Baked Plain Roll",
+        "category":"food",
+        "description":"A well baked but simple pastry."
     },
     {
         "id":"poisonland_highbake2",
         "iconID":"items_misc_2:154",
-        "name":"Well Baked Fine Roll"
+        "name":"Well Baked Fine Roll",
+        "category":"food",
+        "description":"A well baked pastry, something you would visit a bakery for."
     },
     {
         "id":"poisonland_highbake3",
         "iconID":"items_misc_3:84",
-        "name":"Well Baked Sweet Roll"
+        "name":"Well Baked Sweet Roll",
+        "category":"food",
+        "description":"A well baked pastry, the taste is a skillfull blend of texture and flavor."
     },
     {
         "id":"poisonland_lowbake4",
         "iconID":"items_misc_3:84",
-        "name":"Undercooked Plain Tart"
+        "name":"Undercooked Plain Tart",
+        "category":"food",
+        "description":"The worst of the worst. It seems the dough never baked at all."
     },
     {
         "id":"poisonland_lowbake5",
         "iconID":"items_misc_3:84",
-        "name":"Undercooked Fine Tart"
+        "name":"Undercooked Fine Tart",
+        "category":"food",
+        "description":"It seems the dough never baked at all."
     },
     {
         "id":"poisonland_lowbake6",
         "iconID":"items_misc_3:84",
-        "name":"Undercooked Sweet Tart"
+        "name":"Undercooked Sweet Tart",
+        "category":"food",
+        "description":"A waste of the fine ingredients, it seems the dough never baked at all."
     },
     {
         "id":"poisonland_midbake4",
         "iconID":"items_misc_3:84",
-        "name":"Baked Plain Tart"
+        "name":"Baked Plain Tart",
+        "category":"food",
+        "description":"A properly baked pastry, but the taste leaves a lot to be desired."
     },
     {
         "id":"poisonland_midbake5",
         "iconID":"items_misc_3:84",
-        "name":"Baked Fine Tart"
+        "name":"Baked Fine Tart",
+        "category":"food",
+        "description":"A properly baked pastry, something you would feel good sharing with others."
     },
     {
         "id":"poisonland_midbake6",
         "iconID":"items_misc_2:154",
-        "name":"Baked Sweet Tart"
+        "name":"Baked Sweet Tart",
+        "category":"food",
+        "description":"A baked pastry, the taste is exciting."
     },
     {
         "id":"poisonland_highbake4",
         "iconID":"items_misc_2:154",
-        "name":"Well Baked Plain Tart"
+        "name":"Well Baked Plain Tart",
+        "category":"food",
+        "description":"A well baked but simple pastry."
     },
     {
         "id":"poisonland_highbake5",
         "iconID":"items_misc_2:154",
-        "name":"Well Baked Fine Tart"
+        "name":"Well Baked Fine Tart",
+        "category":"food",
+        "description":"A well baked pastry, something you would visit a bakery for."
     },
     {
         "id":"poisonland_highbake6",
         "iconID":"items_misc_2:154",
-        "name":"Well Baked Sweet Tart"
+        "name":"Well Baked Sweet Tart",
+        "category":"food",
+        "description":"A well baked pastry, the taste is a skillfull blend of texture and flavor."
     },
     {
         "id":"poisonland_lowbake7",
         "iconID":"items_misc_2:154",
-        "name":"Undercooked Plain Pie"
+        "name":"Undercooked Plain Pie",
+        "category":"food",
+        "description":"The worst of the worst. It seems the dough never baked at all."
     },
     {
         "id":"poisonland_lowbake8",
         "iconID":"items_misc_2:154",
-        "name":"Undercooked Fine Pie"
+        "name":"Undercooked Fine Pie",
+        "category":"food",
+        "description":"It seems the dough never baked at all."
     },
     {
         "id":"poisonland_lowbake9",
         "iconID":"items_misc_2:154",
-        "name":"Undercooked Sweet Pie"
+        "name":"Undercooked Sweet Pie",
+        "category":"food",
+        "description":"A waste of the fine ingredients, it seems the dough never baked at all."
     },
     {
         "id":"poisonland_midbake7",
         "iconID":"items_misc_2:154",
-        "name":"Baked Plain Pie"
+        "name":"Baked Plain Pie",
+        "category":"food",
+        "description":"A properly baked pastry, but the taste leaves a lot to be desired."
     },
     {
         "id":"poisonland_midbake8",
         "iconID":"items_misc_2:154",
-        "name":"Baked Fine Pie"
+        "name":"Baked Fine Pie",
+        "category":"food",
+        "description":"A properly baked pastry, something you would feel good sharing with others."
     },
     {
         "id":"poisonland_midbake9",
         "iconID":"items_misc_2:154",
-        "name":"Baked Sweet Pie"
+        "name":"Baked Sweet Pie",
+        "category":"food",
+        "description":"A baked pastry, the taste is exciting."
     },
     {
         "id":"poisonland_highbake7",
         "iconID":"items_misc_2:154",
-        "name":"Well Baked Plain Pie"
+        "name":"Well Baked Plain Pie",
+        "category":"food",
+        "description":"A well baked but simple pastry."
     },
     {
         "id":"poisonland_highbake8",
         "iconID":"items_misc_2:154",
-        "name":"Well Baked Fine Pie"
+        "name":"Well Baked Fine Pie",
+        "category":"food",
+        "description":"A well baked pastry, something you would visit a bakery for."
     },
     {
         "id":"poisonland_highbake9",
         "iconID":"items_misc_2:154",
-        "name":"Well Baked Sweet Pie"
+        "name":"Well Baked Sweet Pie",
+        "category":"food",
+        "description":"A well baked pastry, the taste is a skillfull blend of texture and flavor."
+    },
+    {
+        "id":"poisonland_berry",
+        "iconID":"items_newb:817",
+        "name":"Crystal berries",
+        "displaytype":"ordinary",
+        "category":"food",
+        "description":"Crystal berries, harvested in the wild."
+    },
+    {
+        "id":"poisonland_berry1",
+        "iconID":"items_newb:817",
+        "name":"Especially sweet crystal berry",
+        "displaytype":"ordinary",
+        "category":"food",
+        "description":"A well riped crystal berry."
     }
 ]
