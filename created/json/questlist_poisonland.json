@@ -376,13 +376,40 @@
             },
             {
                 "progress":70,
-                "logText":"I did all thing correctly according to Ysolde, she put her pie "
+                "logText":"I heated the oven correctly according to Ysolde. She has put her tarts in the oven and now wants to teach me how to make my own dough."
             },
             {
-                
+                "progress":75,
+                "logText":"My oven management could use some improvement according to Ysolde. She has put her tarts in the oven, and now wants to teach me to make my own dough."
             },
             {
-                
+                "progress":80,
+                "logText":"First, I should fetch some flour from the sack in the room and add milk until the dough reaches the right consistency."
+            },
+            {
+                "progress":85,
+                "logText":"We don't have time to let the dough rise, so according to Ysolde my dough will end up worse. Tch, wish I had some of that white powder she put in her dough."
+            },
+            {
+                "progress":90,
+                "logText":"I cooked the sweet roll I made and it wasn't sweet at all. It was dark as coal!"
+            },
+            {
+                "progress":95,
+                "logText":"I cooked the sweet roll I made and it wasn't sweet at all!"
+            },
+            {
+                "progress":100,
+                "logText":"I cooked the sweet roll I made and it was delicious."
+            },
+            {
+                "progress":105,
+                "logText":"Hortensia suddenly entered the room while we were taste testing my baked roll. We thought we were in trouble, but she was surprisingly kind and said she would have helped us if she knew about Ysolde's troubles."
+            },
+            {
+                "progress":110,
+                "logText":"Ysolde thanked me and said I can come to her whenever I need help learning how to bake. Sweet, I can bake now?!",
+                "finishesQuest":1
             }
         ]
     },
@@ -390,7 +417,11 @@
         "id":"poisonland_goblinquest",
         "name":"Surpassing the leader",
         "stages":[
-            
+            {
+                "progress":100,
+                "logText":"I ended the goblin terrorization of the Charwood hills forever.",
+                "finishesQuest":1
+            }
         ]
     },
     {
@@ -415,6 +446,10 @@
             {
                 "progress":3,
                 "logText":"Inputted high tier ingredient"
+            },
+            {
+                "progress":7,
+                "logText":"Inputted chocolate"
             },
             {
                 "progress":4,

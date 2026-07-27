@@ -852,5 +852,42 @@
                 "value":33
             }
         ]
+    },
+    {
+        "id":"brightport_book1",
+        "message":"You pull out a book tucked in the back of the shelf titled \"The Forbidden Cookbook of Love\" You figure the copious amounts of chocolate in the recipes is what got this book thrown away here.",
+        "replies":[
+            {
+                "text":"Huh, now this is quite interesting. [Examine the book for a bit.]",
+                "nextPhraseID":"poisonland_readchocolatebook",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":11
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":258,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Brightporters and their obsession with pastries. This isn't a clue.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"brightport_oswald24",
+        "message":"Serves you right, $playername, don't misbehave.",
+        "replies":[
+            {
+                "text":"What if I just say sorry, pleasee.",
+                "nextPhraseID":"poisonland_oswald1"
+            }
+        ]
     }
 ]

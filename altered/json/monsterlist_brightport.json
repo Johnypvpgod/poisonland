@@ -81,5 +81,18 @@
         "iconID":"monsters_ld1:148",
         "phraseID":"brightport_armor",
         "droplistID":"freyja_shoplist"
+    },
+    {
+        "id":"brightportnpc11",
+        "name":"Jalmor",
+        "iconID":"monsters_ld1:84",
+        "phraseID":"brightport_npc11"
+    },
+    {
+        "id":"brightportnpc1",
+        "name":"Milena",
+        "iconID":"monsters_karvis2:6",
+        "unique":1,
+        "phraseID":"brightport_milena"
     }
 ]
