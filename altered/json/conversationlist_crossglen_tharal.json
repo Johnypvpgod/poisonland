@@ -1,7 +1,7 @@
 [
     {
         "id":"tharal1",
-        "message":"Walk in the glow of the Shadow, my child. Unfortunately, if you've come to me sick or with a stomach ache, I don't have any bonemeal potions for healing anymore, only those ineffective regular potions.",
+        "message":"Walk in the glow of the Shadow, my child. If you've come with a sickness or a stomach ache, I'm afraid I don't have any bonemeal potions anymore. Only the regular ones.",
         "replies":[
             {
                 "text":"Show me what you have to trade.",
@@ -10,6 +10,18 @@
             {
                 "text":"Do you have anything else for food poisoning?",
                 "nextPhraseID":"tharal_antifoodp1"
+            },
+            {
+                "text":"What can you tell me about bonemeal?",
+                "nextPhraseID":"poisonland_tharal",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"bonemeal",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
             },
             {
                 "text":"What can you tell me about bonemeal?",
@@ -36,11 +48,28 @@
     },
     {
         "id":"tharal_antifoodp1",
-        "message":"No, sorry. I hear that the potion-maker in Fallhaven can create something to help against that though.",
+        "message":"No, sorry. But I spoke with the potion maker in Fallhaven, and he was working on a recipe for a new potion for that. With bonemeal banned and all.",
         "replies":[
             {
                 "text":"N",
                 "nextPhraseID":"tharal_antifoodp2"
+            }
+        ]
+    },
+    {
+        "id":"tharal_antifoodp2",
+        "message":"You should go see him and ask if he's finished it. He can probably help you.",
+        "replies":[
+            {
+                "text":"Thanks, I'll go see him.",
+                "nextPhraseID":"tharal1"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"antifoodp",
+                "value":10
             }
         ]
     }

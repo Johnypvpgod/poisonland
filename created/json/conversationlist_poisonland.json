@@ -5931,5 +5931,339 @@
                 "nextPhraseID":"X"
             }
         ]
+    },
+    {
+        "id":"poisonland_ysolde_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde13",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":20
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde8",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":20,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":5
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":5,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde1",
+        "message":"Sigh... Wish I could bake right now.",
+        "replies":[
+            {
+                "text":"You seem troubled. Is something wrong?",
+                "nextPhraseID":"poisonland_ysolde2"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde2",
+        "message":"I am very much troubled. I can't bake today! Of all days this could happen, why did it have to be the day the baking room is closed...",
+        "replies":[
+            {
+                "text":"I could help, if you tell me more about it.",
+                "nextPhraseID":"poisonland_ysolde3"
+            },
+            {
+                "text":"That's rough. [Leave.]",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde3",
+        "message":"Can't you tell? You should know what I mean.",
+        "replies":[
+            {
+                "text":"I'm not a student here. I'm just visiting Brightport.",
+                "nextPhraseID":"poisonland_ysolde4"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":1
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde4",
+        "message":"Oh. In Brightport, we have a tradition of exchanging pastries with those we wish to become closer with. For me, it's my friend Dinan. He gave me a slice of cake he baked yesterday, but he must have forgotten that today we have astronomy and the baking room is closed.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde5"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":5
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde5",
+        "message":"I urgently need to bake something fresh, and it has to be today. I can't have him think of me as some frivolous woman who doesn't appreciate his gesture!",
+        "replies":[
+            {
+                "text":"I'll help, if that would ease your worries a little.",
+                "nextPhraseID":"poisonland_ysolde6"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde6",
+        "message":"You would? Thank you! I already have an idea of what we can do. Hortensia's astronomy classes take place in the same room as the baking classes. She cleans it the day before and locks the door so no one makes a mess. I usually wouldn't mind taking a break for a day, but today is different.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde7"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde7",
+        "message":"I want you to ask Milena, the school cook, if she would let us use her oven for the time being.",
+        "replies":[
+            {
+                "text":"Easy as pie.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":10
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde8",
+        "message":"Have you spoken with Milena? Has she given us permission yet?",
+        "replies":[
+            {
+                "text":"Unfortunately not. She said she'll be busy with the soup for the entire day.",
+                "nextPhraseID":"poisonland_ysolde9"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_agnese0",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_agnese1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"brightport_student",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_agnese1",
+        "message":"Ysolde has a habit of getting carried away. She gets so focused that she forgets everything else around her. Being her friend means helping her slow down sometimes. Now she's got you helping too.",
+        "replies":[
+            {
+                "text":"Maybe, I'll keep that in mind.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"We're not friends, I'm helping on a whim.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_tharal",
+        "message":"We shouldn't talk about that. Lord Geomyr issued a decree. It's not allowed anymore.",
+        "replies":[
+            {
+                "text":"Fine.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_milena",
+        "message":"Milena gives you a troubled look.",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_milena1"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_milena1",
+        "message":"Oh my, as you can see, I'm quite busy with this deer soup. It'll take the whole day to finish. Couldn't she put off baking for just one day? ",
+        "switchToNPC":"brightportnpc1",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_milena2"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_milena2",
+        "message":"Besides, I don't think an oven as small as mine would do Ysolde's baking any justice.",
+        "replies":[
+            {
+                "text":"I see, I'll tell her that.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":15
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde9",
+        "message":"Sigh, I had a feeling that would be the case. I almost didn't need to ask...",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde10"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde10",
+        "message":"In an instant, Ysolde's face brightened.",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde11"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde11",
+        "message":"But that doesn't mean our efforts have to end here! Hortensia leaves her key at Milena's desk when she leaves the academy. So all we have to do is stea-",
+        "switchToNPC":"brightportstudent2",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde12"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde12",
+        "message":"Agnese gives Ysolde a strange look, causing her to smile awkwardly.",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde13"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde13",
+        "message":"All we have to do is find a convincing reason for her to hand it over, haha...",
+        "switchToNPC":"brightportstudent2",
+        "replies":[
+            {
+                "text":"Clearly, we only have good intentions.",
+                "nextPhraseID":"poisonland_ysolde14"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":20
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde14",
+        "message":"That said, I don't know Milena all that well. I'm not sure how we'd get her to agree. Maybe we need someone who knows her better... but I don't know anyone like that either.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde15"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde15",
+        "message":"I know someone. I already told you to wait a day, but I'd rather not see what you two come up with on your own.",
+        "switchToNPC":"brightportstudent"
     }
 ]

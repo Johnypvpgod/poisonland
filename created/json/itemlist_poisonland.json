@@ -351,5 +351,78 @@
         "displaytype":"ordinary",
         "category":"food",
         "description":"A well riped crystal berry."
+    },
+    {
+        "id":"poisonland_rawroll1",
+        "iconID":"items_misc_2:6",
+        "name":"Unbaked roll",
+        "category":"food",
+        "description":"A raw pastry, filled with simple ingredients."
+    },
+    {
+        "id":"poisonland_rawroll2",
+        "iconID":"items_misc_2:6",
+        "name":"Unbaked roll",
+        "category":"food",
+        "description":"A raw pastry, filled with quality ingredients."
+    },
+    {
+        "id":"poisonland_rawroll3",
+        "iconID":"items_misc_2:6",
+        "name":"Unbaked roll",
+        "category":"food",
+        "description":"A raw pastry, filled with the finest ingredients."
+    },
+    {
+        "id":"poisonland_rawtart1",
+        "iconID":"items_misc_2:6",
+        "name":"Unbaked tart",
+        "category":"food",
+        "description":"A raw pastry, filled with simple ingredients."
+    },
+    {
+        "id":"Poisonland_rawtart2",
+        "iconID":"items_misc_2:6",
+        "name":"Unbaked tart",
+        "category":"food",
+        "description":"A raw pastry, filled with quality ingredients."
+    },
+    {
+        "id":"poisonland_rawtart3",
+        "iconID":"items_misc_2:154",
+        "name":"Unbaked tart",
+        "displaytype":"ordinary",
+        "category":"food",
+        "description":"A raw pastry, filled with the finest ingredients."
+    },
+    {
+        "id":"poisonland_rawpie1",
+        "iconID":"items_misc_2:6",
+        "name":"Unbaked pie"
+    },
+    {
+        "id":"poisonland_rawpie2",
+        "iconID":"items_misc_2:6",
+        "name":"Unbaked pie"
+    },
+    {
+        "id":"poisonland_rawpie3",
+        "iconID":"items_misc_2:6",
+        "name":"Unbaked pie"
+    },
+    {
+        "id":"poisonland_rawchocolate",
+        "iconID":"items_misc_2:6",
+        "name":"Unbaked chocolate roll"
+    },
+    {
+        "id":"poisonland_rawchocolate2",
+        "iconID":"items_misc_2:6",
+        "name":"Unbaked chocolate tart"
+    },
+    {
+        "id":"poisonland_rawchocolate3",
+        "iconID":"items_misc_2:6",
+        "name":"Unbaked chocolate pie"
     }
 ]

@@ -933,5 +933,53 @@
                 "nextPhraseID":"X"
             }
         ]
+    },
+    {
+        "id":"brightport_milena",
+        "message":"Ah, this deer soup smells just heavenly.",
+        "replies":[
+            {
+                "text":"Could you sell me some traveling supplies?",
+                "nextPhraseID":"brightport_milena1"
+            },
+            {
+                "text":"Ysolde needs to bake something today but the classroom is locked. She asked me to see if you would let her use your oven instead.",
+                "nextPhraseID":"poisonland_milena",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":15,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Could you tell me what you know about the library theft?",
+                "nextPhraseID":"brightport_milena2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":25
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":96,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Soup from those creepy deer? Yuck.",
+                "nextPhraseID":"X"
+            }
+        ]
     }
 ]

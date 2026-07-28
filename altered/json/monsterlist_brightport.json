@@ -48,7 +48,8 @@
         "id":"brightportstudent2",
         "name":"Ysolde",
         "iconID":"monsters_ld1:145",
-        "horizontalFlipChance":100
+        "horizontalFlipChance":100,
+        "phraseID":"poisonland_ysolde_selector"
     },
     {
         "id":"brightportstudent7",
@@ -73,7 +74,7 @@
         "id":"brightportstudent",
         "name":"Agnese",
         "iconID":"monsters_ld1:150",
-        "phraseID":"brightport_student"
+        "phraseID":"poisonland_agnese0"
     },
     {
         "id":"brightportarmor",
