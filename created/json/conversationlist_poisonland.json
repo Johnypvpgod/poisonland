@@ -5414,21 +5414,6 @@
         "id":"poisonland_erina"
     },
     {
-        "id":"poisonland_keyunlocked",
-        "replies":[
-            {
-                "nextPhraseID":"X"
-            }
-        ],
-        "rewards":[
-            {
-                "rewardType":"questProgress",
-                "rewardID":"poisonland_nondisplay",
-                "value":43
-            }
-        ]
-    },
-    {
         "id":"poisonland_freyja",
         "message":"I received word from the Doughe about the young adventurer in his hire. I take it you've succeeded at your task, so it is only fair that we allow you to outfit yourself here.",
         "replies":[
@@ -5675,7 +5660,7 @@
                 "nextPhraseID":"poisonland_apology_selector_1"
             },
             {
-                "text":"Pleasee, pleaseeee.",
+                "text":"Pleaseee, pleaseeee.",
                 "nextPhraseID":"poisonland_apology_selector2"
             }
         ]
@@ -5689,7 +5674,7 @@
                 "nextPhraseID":"poisonland_apology_selector_1"
             },
             {
-                "text":"Pleasee, pleaseeee.",
+                "text":"Pleaseee, pleaseeee.",
                 "nextPhraseID":"poisonland_apology_selector2"
             },
             {
@@ -5717,7 +5702,7 @@
         "message":"You're ways off a hundred.",
         "replies":[
             {
-                "text":"Pleasee!",
+                "text":"Pleaseee!",
                 "nextPhraseID":"poisonland_apology_selector_1"
             },
             {
@@ -5937,6 +5922,23 @@
         "replies":[
             {
                 "text":"N",
+                "nextPhraseID":"poisonland_ysolde17",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":25
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":40,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
                 "nextPhraseID":"poisonland_ysolde13",
                 "requires":[
                     {
@@ -6095,7 +6097,14 @@
         "replies":[
             {
                 "text":"Unfortunately not. She said she'll be busy with the soup for the entire day.",
-                "nextPhraseID":"poisonland_ysolde9"
+                "nextPhraseID":"poisonland_ysolde9",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":15
+                    }
+                ]
             }
         ]
     },
@@ -6263,7 +6272,345 @@
     },
     {
         "id":"poisonland_ysolde15",
-        "message":"I know someone. I already told you to wait a day, but I'd rather not see what you two come up with on your own.",
-        "switchToNPC":"brightportstudent"
+        "message":"Sigh... I already told you to wait a day, but I'd rather not see what you two come up with on your own. I know just the right person.",
+        "switchToNPC":"brightportstudent",
+        "replies":[
+            {
+                "text":"Who is it?",
+                "nextPhraseID":"poisonland_ysolde16"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde16",
+        "message":"Go speak with Jalmor here in Brightport. He's close to Milena. If anyone knows what might convince her, it's probably him.",
+        "replies":[
+            {
+                "text":"Alright, it'll be a quick trip.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":25
+            }
+        ]
+    },
+    {
+        "id":"poisonland_jalmor",
+        "message":"Hmm? [Jalmor looks at you strangely.] What for?",
+        "replies":[
+            {
+                "text":"I'm asking on behalf of a student named Ysolde. She needs Milena's help, and I'd like to know the best way to approach her.",
+                "nextPhraseID":"poisonland_jalmor1"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_jalmor1",
+        "message":"Then you'll have to tell me why. Otherwise, I'm not sure how I can help.",
+        "replies":[
+            {
+                "text":"Apparently, people here exchange pastries with one another. That's what Ysolde needs Milena's help with.",
+                "nextPhraseID":"poisonland_jalmor2"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_jalmor2",
+        "message":"Ah, that's simple then. I understand that sentiment well.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_jalmor3"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_jalmor3",
+        "message":"Milena and I are good friends. Back in our academy days, I tasted her entire repertoire of pastries. If your friend needs to draw Milena's attention away from her cooking for a conversation, simply mention the pastry exchange. That ought to get her attention.",
+        "replies":[
+            {
+                "text":"That's helpful, thanks.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":30
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde17",
+        "message":"Have you figured out how we can convince Milena to give us the key?",
+        "replies":[
+            {
+                "text":"I spoke with Jalmor, he told me something I could try convince her with.",
+                "nextPhraseID":"poisonland_ysolde18",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":30
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":35,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Milena agreed to give us the key as long as we don't make too much noise and finish up quickly.",
+                "nextPhraseID":"poisonland_ysolde19",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":35
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde18",
+        "message":"Then please, hurry and speak with Milena. Why did you come back to me?",
+        "replies":[
+            {
+                "text":"Sorry, I'll be back.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde19",
+        "message":"Wonderful news, $playername! Do you have the key?",
+        "replies":[
+            {
+                "text":"Here it is.",
+                "nextPhraseID":"poisonland_ysolde20",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_key",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"I lost it actually.",
+                "nextPhraseID":"poisonland_ysolde21",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_key",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde20",
+        "message":"I'll go ahead and prepare the dough. I need you to return to Jalmor and buy some firewood so we can start the oven.",
+        "replies":[
+            {
+                "text":"Easy as pie.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":43
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":40
+            },
+            {
+                "rewardType":"removeSpawnArea",
+                "rewardID":"brightportstudent2",
+                "mapName":"brightport_school6"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde21",
+        "message":"Don't joke around. Now that Milena has agreed, we should take this seriously.",
+        "replies":[
+            {
+                "text":"Fine, I'll go get it.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_milena3",
+        "message":"I'm quite busy, but go ahead, as long as it's important.",
+        "replies":[
+            {
+                "text":"My friend Ysolde is supposed to exchange pastries with one of her friends, but she can't bake any today.",
+                "nextPhraseID":"poisonland_milena4"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_milena4",
+        "message":"Oh my, that is quite troubling. That explains why you asked if she could use my oven earlier. I thought she was simply bored, but I'm afraid I still can't help you, as you can see, I have a broth cooking.",
+        "replies":[
+            {
+                "text":"Then what if you lent us the key to the baking room instead?",
+                "nextPhraseID":"poisonland_milena5"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_milena5",
+        "message":"Milena looks even more troubled.",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_milena6"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_milena6",
+        "message":"I understand Ysolde's reason very well, but I promised my friend Hortensia that the key would be safe with me while she's away. I would lend it to you if it didn't mean breaking that promise.",
+        "switchToNPC":"brightportnpc1",
+        "replies":[
+            {
+                "text":"We'll be quick about it. Hortensia won't find out.",
+                "nextPhraseID":"poisonland_milena7"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_milena7",
+        "message":"Yes... It's my classroom too. And since one of my students is in trouble, I feel obliged to make an exception.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_milena8"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_milena8",
+        "message":"Here is the key. Please remember your promise and don't take too long.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_key",
+                "value":1
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":35
+            }
+        ]
+    },
+    {
+        "id":"poisonland_jalmor_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_jalmor4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":40
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"brightport_npc11",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":40,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_jalmor4",
+        "message":"Ah, it's you again. I hope your friend is doing well.",
+        "replies":[
+            {
+                "text":"Hello, Jalmor. Does Richimor live here too?",
+                "nextPhraseID":"brightport_npc110",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":65,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":248
+                    }
+                ]
+            },
+            {
+                "text":"I need some firewood for the bakery oven. I heard you sell it.",
+                "nextPhraseID":"poisonland_jalmor5",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":45,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I need to buy some firewood.",
+                "nextPhraseID":"S",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":45
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_jalmor5",
+        "message":"Yes, I have wood to sell. I only cut large logs though. I don't sell kindling. Where I grew up in Sullengard, I had to go into the forest to gather branches for kindling. I have fond memories of those days.",
+        "replies":[
+            {
+                "nextPhraseID":"S"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":45
+            }
+        ]
     }
 ]

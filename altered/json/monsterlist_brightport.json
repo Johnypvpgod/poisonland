@@ -87,7 +87,8 @@
         "id":"brightportnpc11",
         "name":"Jalmor",
         "iconID":"monsters_ld1:84",
-        "phraseID":"brightport_npc11"
+        "phraseID":"poisonland_jalmor_selector",
+        "droplistID":"poisonland_jalmor"
     },
     {
         "id":"brightportnpc1",
@@ -95,5 +96,34 @@
         "iconID":"monsters_karvis2:6",
         "unique":1,
         "phraseID":"brightport_milena"
+    },
+    {
+        "id":"brightport_tree",
+        "name":" Moonwalker tree stump",
+        "iconID":"monsters_johny:7",
+        "maxHP":100,
+        "maxAP":8,
+        "moveCost":8,
+        "monsterClass":"construct",
+        "movementAggressionType":"none",
+        "attackDamage":{
+            "min":3,
+            "max":12
+        },
+        "droplistID":"poisonland_tree",
+        "attackCost":6,
+        "attackChance":90,
+        "blockChance":80,
+        "damageResistance":8,
+        "deathEffect":{
+            "conditionsSource":[
+                {
+                    "condition":"brightport_poison",
+                    "magnitude":2,
+                    "duration":4,
+                    "chance":"15"
+                }
+            ]
+        }
     }
 ]

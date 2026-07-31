@@ -750,8 +750,8 @@
         "message":"This class seems to be locked, and not currently in use. ",
         "replies":[
             {
-                "text":"[Unlock the baking classroom with the key.]",
-                "nextPhraseID":"poisonland_keyunlocked",
+                "text":"I shouldn't poke around on my own. I should give the key to Ysolde first.",
+                "nextPhraseID":"X",
                 "requires":[
                     {
                         "requireType":"inventoryKeep",
@@ -960,6 +960,23 @@
                 ]
             },
             {
+                "text":"Excuse me, can I speak to you about something.",
+                "nextPhraseID":"poisonland_milena3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":30
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":35,
+                        "negate":true
+                    }
+                ]
+            },
+            {
                 "text":"Could you tell me what you know about the library theft?",
                 "nextPhraseID":"brightport_milena2",
                 "requires":[
@@ -979,6 +996,46 @@
             {
                 "text":"Soup from those creepy deer? Yuck.",
                 "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"brightport_npc11",
+        "message":"I'm not mad, but entering people's homes isn't exactly a nice thing to do, you know.",
+        "replies":[
+            {
+                "text":"Excuse me, can you tell me more about Milena?",
+                "nextPhraseID":"poisonland_jalmor",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":25
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":30,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Is this Richimor's house?",
+                "nextPhraseID":"brightport_npc110",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"Stanwickquest",
+                        "value":65,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":248
+                    }
+                ]
             }
         ]
     }

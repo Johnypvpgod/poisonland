@@ -344,7 +344,7 @@
             },
             {
                 "progress":30,
-                "logText":"Jalmor told me that he and Milena once exchanged pastries as part of Brightport's baking tradition."
+                "logText":"Jalmor told me that he and Milena exchanged pastries in their academy days as part of Brightport's baking tradition."
             },
             {
                 "progress":35,
@@ -360,7 +360,7 @@
             },
             {
                 "progress":50,
-                "logText":"I brought the logs back to Ysolde. She was already making progress with the dough and oven, and wants to explain to me how to heat the oven."
+                "logText":"I brought the logs back to Ysolde. She was already making progress with the dough, and wants to explain to me how to heat the oven."
             },
             {
                 "progress":55,
@@ -462,6 +462,22 @@
             {
                 "progress":6,
                 "logText":"pie recipe selected"
+            },
+            {
+                "progress":8,
+                "logText":"stick inputted"
+            },
+            {
+                "progress":9,
+                "logText":"sticks kindled"
+            },
+            {
+                "progress":10,
+                "logText":"sticks smoldered"
+            },
+            {
+                "progress":11,
+                "logText":"smoldered sticks burning"
             }
         ]
     }

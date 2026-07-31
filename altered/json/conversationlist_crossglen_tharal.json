@@ -48,7 +48,7 @@
     },
     {
         "id":"tharal_antifoodp1",
-        "message":"No, sorry. But I spoke with the potion maker in Fallhaven, and he was working on a recipe for a new potion for that. With bonemeal banned and all.",
+        "message":"No, sorry. But I spoke with the potion maker in Fallhaven, and he was working on a new potion for that. With bonemeal banned and all.",
         "replies":[
             {
                 "text":"N",
@@ -62,7 +62,7 @@
         "replies":[
             {
                 "text":"Thanks, I'll go see him.",
-                "nextPhraseID":"tharal1"
+                "nextPhraseID":"X"
             }
         ],
         "rewards":[

@@ -48,7 +48,8 @@
     {
         "id":"poisonland_tree",
         "name":"Moonwalker tree",
-        "iconID":"monsters_tometik10:31"
+        "iconID":"monsters_tometik10:31",
+        "droplistID":"poisonland_tree"
     },
     {
         "id":"poisonland_guardian",
