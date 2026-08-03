@@ -355,21 +355,21 @@
     {
         "id":"poisonland_rawroll1",
         "iconID":"items_misc_2:6",
-        "name":"Unbaked roll",
+        "name":"Unbaked rolls",
         "category":"food",
         "description":"A raw pastry, filled with simple ingredients."
     },
     {
         "id":"poisonland_rawroll2",
         "iconID":"items_misc_2:6",
-        "name":"Unbaked roll",
+        "name":"Unbaked rolls",
         "category":"food",
         "description":"A raw pastry, filled with quality ingredients."
     },
     {
         "id":"poisonland_rawroll3",
         "iconID":"items_misc_2:6",
-        "name":"Unbaked roll",
+        "name":"Unbaked rolls",
         "category":"food",
         "description":"A raw pastry, filled with the finest ingredients."
     },
@@ -413,7 +413,7 @@
     {
         "id":"poisonland_rawchocolate",
         "iconID":"items_misc_2:6",
-        "name":"Unbaked chocolate roll"
+        "name":"Unbaked chocolate rolls"
     },
     {
         "id":"poisonland_rawchocolate2",
@@ -431,5 +431,21 @@
         "name":"Firewood",
         "category":"other",
         "description":"Wood meant for use as firewood."
+    },
+    {
+        "id":"poisonland_hay",
+        "iconID":"items_japozero:567",
+        "name":"Handful of hay",
+        "displaytype":"quest",
+        "category":"other",
+        "description":"A handful of hay, useful for starting a fire."
+    },
+    {
+        "id":"poisonland_flour",
+        "iconID":"items_japozero:591",
+        "name":"Flour",
+        "displaytype":"ordinary",
+        "category":"other",
+        "description":"Flour for use in baking, or other recipes."
     }
 ]

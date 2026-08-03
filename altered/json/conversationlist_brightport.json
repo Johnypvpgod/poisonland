@@ -1038,5 +1038,119 @@
                 ]
             }
         ]
+    },
+    {
+        "id":"brightport_storemaster",
+        "message":"Please keep off this path, you'll get under the feet of the workers.",
+        "replies":[
+            {
+                "text":"What's up with all these crates outside?",
+                "nextPhraseID":"brightport_storemaster2"
+            },
+            {
+                "text":"Allares sent me to help find the apple delivery.",
+                "nextPhraseID":"brightport_storemaster4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_bakery",
+                        "value":25,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_bakery",
+                        "value":23
+                    }
+                ]
+            },
+            {
+                "text":"Who are you?",
+                "nextPhraseID":"brightport_eatloni_selector"
+            },
+            {
+                "text":"The flour sack at the academy is empty. Could you refill it?",
+                "nextPhraseID":"poisonland_eatloni",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_flour",
+                        "value":10
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"brightport_storemaster_apples",
+        "message":"Have you learned what happened with the apple delivery?",
+        "replies":[
+            {
+                "text":"I have the shipment from Deebo. ",
+                "nextPhraseID":"brightport_storemaster6",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_bakery",
+                        "value":50
+                    }
+                ]
+            },
+            {
+                "text":"Apparantly the merchant picked them up.",
+                "nextPhraseID":"brightport_storemaster12",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_bakery",
+                        "value":30
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_bakery",
+                        "value":50,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_bakery",
+                        "value":40,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"The flour sack at the academy is empty. Could you refill it?",
+                "nextPhraseID":"poisonland_eatloni1",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_flour",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "text":"I found the apples in a mountain cat nest. The poor merchant probably got eaten.",
+                "nextPhraseID":"brightport_storemaster9",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_bakery",
+                        "value":40
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_bakery",
+                        "value":50,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"Not yet.",
+                "nextPhraseID":"X"
+            }
+        ]
     }
 ]

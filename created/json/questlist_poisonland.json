@@ -311,6 +311,18 @@
             {
                 "progress":44,
                 "logText":"extended inventory for freyja unlocked"
+            },
+            {
+                "progress":45,
+                "logText":"white powder noticed."
+            },
+            {
+                "progress":46,
+                "logText":"Ysolde teaches the player to make dough"
+            },
+            {
+                "progress":47,
+                "logText":"Ysolde teaches about flour"
             }
         ]
     },
@@ -437,47 +449,135 @@
         "stages":[
             {
                 "progress":1,
-                "logText":"Inputted low tier ingredient"
+                "logText":"low tier ingredient (Input)"
             },
             {
                 "progress":2,
-                "logText":"Inputted mid tier ingredient"
+                "logText":"Mid tier ingredient (input)"
             },
             {
                 "progress":3,
-                "logText":"Inputted high tier ingredient"
+                "logText":"high tier ingredient (input)"
             },
             {
                 "progress":7,
-                "logText":"Inputted chocolate"
+                "logText":"chocolate (Input)"
             },
             {
                 "progress":4,
-                "logText":"roll recipe selected"
+                "logText":"roll recipe (input)"
             },
             {
                 "progress":5,
-                "logText":"tart recipe selected"
+                "logText":"tart recipe  (input)"
             },
             {
                 "progress":6,
-                "logText":"pie recipe selected"
+                "logText":"pie recipe (input)"
             },
             {
                 "progress":8,
-                "logText":"stick inputted"
+                "logText":"stick inputted (sprite replace)"
             },
             {
                 "progress":9,
-                "logText":"sticks kindled"
+                "logText":"sticks kindled (status check)"
+            },
+            {
+                "progress":13,
+                "logText":"Kindled sticks burning (sprite replace)"
             },
             {
                 "progress":10,
-                "logText":"sticks smoldered"
+                "logText":"fire smoldered (sprite replace)"
             },
             {
                 "progress":11,
-                "logText":"smoldered sticks burning"
+                "logText":"smoldered fire burning (sprite replace)"
+            },
+            {
+                "progress":14,
+                "logText":"ash in the fireplace (sprite replace)"
+            },
+            {
+                "progress":17,
+                "logText":"wood added while smoldeing (status check)"
+            },
+            {
+                "progress":15,
+                "logText":"fireplace clean (sprite replace)"
+            },
+            {
+                "progress":12,
+                "logText":"fire burning (locks door)"
+            },
+            {
+                "progress":16,
+                "logText":"pastries in the oven. "
+            },
+            {
+                "progress":33,
+                "logText":"decay not allowed "
+            },
+            {
+                "progress":18,
+                "logText":"low roll (input)"
+            },
+            {
+                "progress":19,
+                "logText":"Mid roll (input))"
+            },
+            {
+                "progress":20,
+                "logText":"high roll (input)"
+            },
+            {
+                "progress":30,
+                "logText":"roll(input)"
+            },
+            {
+                "progress":21,
+                "logText":"low tart (input)"
+            },
+            {
+                "progress":22,
+                "logText":"mid tart (input)"
+            },
+            {
+                "progress":23,
+                "logText":"high tart (input)"
+            },
+            {
+                "progress":31,
+                "logText":"tart(input)"
+            },
+            {
+                "progress":24,
+                "logText":"low pie (input)"
+            },
+            {
+                "progress":25,
+                "logText":"mid pie (input)"
+            },
+            {
+                "progress":26,
+                "logText":"high pie (input)"
+            },
+            {
+                "progress":32,
+                "logText":"pie(input)"
+            },
+            {
+                "progress":27,
+                "logText":"chocolate roll (input)"
+            },
+            {
+                "progress":28,
+                "logText":"chocolate tart (input)"
+            },
+            {
+                "progress":29,
+                "logText":"chocolate pie (input)"
             }
         ]
     }
