@@ -448,6 +448,10 @@
         "name":"baking stuff",
         "stages":[
             {
+                "progress":16,
+                "logText":"pastries in the oven. "
+            },
+            {
                 "progress":1,
                 "logText":"low tier ingredient (Input)"
             },
@@ -510,10 +514,6 @@
             {
                 "progress":12,
                 "logText":"fire burning (locks door)"
-            },
-            {
-                "progress":16,
-                "logText":"pastries in the oven. "
             },
             {
                 "progress":33,

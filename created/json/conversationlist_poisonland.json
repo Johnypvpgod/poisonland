@@ -3824,11 +3824,11 @@
     },
     {
         "id":"poisonland_lecture9",
-        "message":"The Feygard troops arrived in a friendly town, though the locals foolishly spoke of the Shadow, the light of reason they displayed was the motive the town stands unharmed to this day over the foolish stoutforders, who dwell among ruins. Having not lost any lives and with the burden on their supply lines lessened general Ahrensbach decided that no break would be needed, they would chase down the remaining Nor City troops who have fled to continue their resistance with the support of Brightport. And in turn, by securing the waterway infrastructure Remgard would be able to support his army with supplies. It is worth noting here that Remgard's role was tertial and little to nothing happened to the town due to its isolation.",
+        "message":"The Feygard troops arrived in a friendly town, though the locals foolishly spoke of the Shadow, the light of reason they displayed was the motive the town stands unharmed to this day over the foolish stoutforders, who dwell among ruins.",
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_lecture10_narration"
+                "nextPhraseID":"poisonland_lecture9alt"
             }
         ]
     },
@@ -6739,7 +6739,7 @@
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_oven"
+                "nextPhraseID":"poisonland_oven0"
             }
         ]
     },
@@ -6748,17 +6748,131 @@
         "replies":[
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_firescript_1",
+                "nextPhraseID":"poisonland_ash",
                 "requires":[
                     {
-                        "requireType":"questProgress"
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":13
+                    },
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_fuel",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ash",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":10
+                    },
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_fuel",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_cooking",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":10
+                    },
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_fuel",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_embers2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":11
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":17
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_embersflame",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":17
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_embers",
+                "requires":[
+                    {
+                        "requireType":"timerElapsed",
+                        "requireID":"poisonland_embers",
+                        "value":2
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":13
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":10,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_stickskindled",
+                "requires":[
+                    {
+                        "requireType":"timerElapsed",
+                        "requireID":"poisonland_kindled",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":8
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":13,
+                        "negate":true
                     }
                 ]
             }
         ]
-    },
-    {
-        "id":"poisonland_firescript_1"
     },
     {
         "id":"poisonland_oven",
@@ -6873,6 +6987,16 @@
             {
                 "rewardType":"createTimer",
                 "rewardID":"poisonland_kindled"
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":8
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":15
             }
         ]
     },
@@ -6892,13 +7016,13 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_fuel",
-                        "value":6,
+                        "value":9,
                         "negate":true
                     },
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_fuel",
-                        "value":5,
+                        "value":7,
                         "negate":true
                     }
                 ]
@@ -6928,7 +7052,7 @@
             {
                 "rewardType":"alignmentChange",
                 "rewardID":"poisonland_fuel",
-                "value":2
+                "value":3
             }
         ]
     },
@@ -6943,13 +7067,13 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_fuel",
-                        "value":6,
+                        "value":9,
                         "negate":true
                     },
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_fuel",
-                        "value":5,
+                        "value":7,
                         "negate":true
                     },
                     {
@@ -7018,7 +7142,7 @@
             {
                 "rewardType":"alignmentChange",
                 "rewardID":"poisonland_fuel",
-                "value":2
+                "value":3
             },
             {
                 "rewardType":"questProgress",
@@ -7029,7 +7153,77 @@
     },
     {
         "id":"poisonland_oven5",
-        "message":"The embers glow brighter as the flame burns intensely."
+        "message":"The embers glow brighter as the flame burns intensely.",
+        "replies":[
+            {
+                "text":"[Add some firewood.]",
+                "nextPhraseID":"poisonland_fueladded_smoldering",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_fuel",
+                        "value":9,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_fuel",
+                        "value":7,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_firewood",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"[Put a pastry in the oven.]",
+                "nextPhraseID":"poisonland_pastryadd_selector",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":16,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"[Remove the rolls from the oven.]",
+                "nextPhraseID":"poisonland_oven_rollreward",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":30
+                    }
+                ]
+            },
+            {
+                "text":"[Remove the tart from the oven.]",
+                "nextPhraseID":"poisonland_oven_tartreward",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":31
+                    }
+                ]
+            },
+            {
+                "text":"[Remove the pie from the oven.]",
+                "nextPhraseID":"poisonland_oven_piereward",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":32
+                    }
+                ]
+            }
+        ]
     },
     {
         "id":"poisonland_oven6",
@@ -7038,6 +7232,39 @@
             {
                 "text":"[Clean it.]",
                 "nextPhraseID":"poisonland_oven6_selector"
+            },
+            {
+                "text":"[Remove the rolls from the oven.]",
+                "nextPhraseID":"poisonland_oven_rollreward",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":30
+                    }
+                ]
+            },
+            {
+                "text":"[Remove the tart from the oven.]",
+                "nextPhraseID":"poisonland_oven_tartreward",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":31
+                    }
+                ]
+            },
+            {
+                "text":"[Remove the pie from the oven.]",
+                "nextPhraseID":"poisonland_oven_piereward",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":32
+                    }
+                ]
             }
         ]
     },
@@ -7049,6 +7276,18 @@
             {
                 "text":"N",
                 "nextPhraseID":"poisonland_oven1"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":15
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":14
             }
         ]
     },
@@ -7545,13 +7784,151 @@
         ]
     },
     {
-        "id":"poisonland_oven_tartreward"
+        "id":"poisonland_oven_tartreward",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_charredtart",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_timeinoven",
+                        "value":6
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedtart",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_timeinoven",
+                        "value":5
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedtart",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_timeinoven",
+                        "value":3
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedtart",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_timeinoven",
+                        "value":0
+                    }
+                ]
+            }
+        ]
     },
     {
-        "id":"poisonland_oven_rollreward"
+        "id":"poisonland_oven_rollreward",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_charredrolls",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_timeinoven",
+                        "value":5
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedrolls",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_timeinoven",
+                        "value":4
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedrolls",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_timeinoven",
+                        "value":2
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedrolls",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_timeinoven",
+                        "value":0
+                    }
+                ]
+            }
+        ]
     },
     {
-        "id":"poisonland_oven_piereward"
+        "id":"poisonland_oven_piereward",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_charredpie",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_timeinoven",
+                        "value":6
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedpie",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_timeinoven",
+                        "value":5
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedpie",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_timeinoven",
+                        "value":3
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedpie",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_timeinoven",
+                        "value":0
+                    }
+                ]
+            }
+        ]
     },
     {
         "id":"poisonland_oven6_selector",
@@ -7682,7 +8059,11 @@
         "message":"Hmm, I don't have any pastries to bake.",
         "replies":[
             {
-                "text":"I should make some.",
+                "text":"I could make some.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Maybe some other time.",
                 "nextPhraseID":"X"
             }
         ]
@@ -7708,11 +8089,13 @@
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
-                        "requireID":"poisonland_rawroll2"
+                        "requireID":"poisonland_rawroll2",
+                        "value":1
                     },
                     {
                         "requireType":"inventoryKeep",
                         "requireID":"poisonland_rawroll1",
+                        "value":1,
                         "negate":true
                     }
                 ]
@@ -7723,16 +8106,19 @@
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
-                        "requireID":"poisonland_rawroll3"
+                        "requireID":"poisonland_rawroll3",
+                        "value":1
                     },
                     {
                         "requireType":"inventoryKeep",
                         "requireID":"poisonland_rawroll1",
+                        "value":1,
                         "negate":true
                     },
                     {
                         "requireType":"inventoryKeep",
                         "requireID":"poisonland_rawroll2",
+                        "value":1,
                         "negate":true
                     }
                 ]
@@ -7743,57 +8129,194 @@
                 "requires":[
                     {
                         "requireType":"inventoryRemove",
-                        "requireID":"poisonland_rawchocolate"
+                        "requireID":"poisonland_rawchocolate",
+                        "value":1
                     },
                     {
                         "requireType":"inventoryKeep",
                         "requireID":"poisonland_rawroll1",
+                        "value":1,
                         "negate":true
                     },
                     {
                         "requireType":"inventoryKeep",
                         "requireID":"poisonland_rawroll2",
+                        "value":1,
                         "negate":true
                     },
                     {
                         "requireType":"inventoryKeep",
                         "requireID":"poisonland_rawroll3",
+                        "value":1,
                         "negate":true
                     }
                 ]
             },
             {
                 "text":"[Place the tart into the oven.]",
-                "nextPhraseID":"poisonland_addtart1"
+                "nextPhraseID":"poisonland_addtart1",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_rawtart1",
+                        "value":1
+                    }
+                ]
             },
             {
                 "text":"[Place the tart into the oven.]",
-                "nextPhraseID":"poisonland_addtart2"
+                "nextPhraseID":"poisonland_addtart2",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"Poisonland_rawtart2",
+                        "value":1
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_rawtart1",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
             },
             {
                 "text":"[Place the tart into the oven.]",
-                "nextPhraseID":"poisonland_addtart3"
+                "nextPhraseID":"poisonland_addtart3",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_rawtart3",
+                        "value":1
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_rawtart1",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"Poisonland_rawtart2",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
             },
             {
                 "text":"[Place the tart into the oven.]",
-                "nextPhraseID":"poisonland_addtart_chocolate"
+                "nextPhraseID":"poisonland_addtart_chocolate",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_rawchocolate2",
+                        "value":1
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_rawtart1",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"Poisonland_rawtart2",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_rawtart3",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
             },
             {
-                "text":"[Place the pie into the oven.]"
+                "text":"[Place the pie into the oven.]",
+                "nextPhraseID":"poisonland_addpie1",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_rawpie1",
+                        "value":1
+                    }
+                ]
             },
             {
-                "text":"[Place the pie into the oven.]"
+                "text":"[Place the pie into the oven.]",
+                "nextPhraseID":"poisonland_addpie2",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_rawpie2",
+                        "value":1
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_rawpie1",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
             },
             {
-                "text":"[Place the pie into the oven.]"
+                "text":"[Place the pie into the oven.]",
+                "nextPhraseID":"poisonland_addpie3",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_rawpie3",
+                        "value":1
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_rawpie1",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_rawpie2",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
             },
             {
-                "text":"[Place the pie into the oven.]"
+                "text":"[Place the pie into the oven.]",
+                "nextPhraseID":"poisonland_addpie_chocolate",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_rawchocolate3",
+                        "value":1
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_rawpie1",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_rawpie2",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_rawpie3",
+                        "value":1,
+                        "negate":true
+                    }
+                ]
             }
         ]
     },
     {
         "id":"poisonland_addrolls1",
+        "message":"You place the rolls in the compartment above the flame.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -7814,6 +8337,7 @@
     },
     {
         "id":"poisonland_addrolls2",
+        "message":"You place the rolls in the compartment above the flame.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -7834,6 +8358,7 @@
     },
     {
         "id":"poisonland_addrolls3",
+        "message":"You place the rolls in the compartment above the flame.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -7854,6 +8379,7 @@
     },
     {
         "id":"poisonland_addrolls_chocolate",
+        "message":"You place the rolls in the compartment above the flame.",
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -7873,15 +8399,1501 @@
         ]
     },
     {
-        "id":"poisonland_addtart1"
+        "id":"poisonland_addtart1",
+        "message":"You place the tart in the compartment above the flame.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":21
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":31
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
     },
     {
-        "id":"poisonland_addtart2"
+        "id":"poisonland_addtart2",
+        "message":"You place the tart in the compartment above the flame.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":22
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":31
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
     },
     {
-        "id":"poisonland_addtart3"
+        "id":"poisonland_addtart3",
+        "message":"You place the tart in the compartment above the flame.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":23
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":31
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
     },
     {
-        "id":"poisonland_addtart_chocolate"
+        "id":"poisonland_addtart_chocolate",
+        "message":"You place the tart in the compartment above the flame.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":28
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":31
+            }
+        ]
+    },
+    {
+        "id":"poisonland_addpie1",
+        "message":"You place the pie in the compartment above the flame.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":32
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":24
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_addpie2",
+        "message":"You place the pie in the compartment above the flame.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":32
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":25
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_addpie3",
+        "message":"You place the pie in the compartment above the flame.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":26
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":32
+            }
+        ]
+    },
+    {
+        "id":"poisonland_addpie_chocolate",
+        "message":"You place the pie in the compartment above the flame.",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":29
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":32
+            }
+        ]
+    },
+    {
+        "id":"poisonland_charredrolls",
+        "message":"You open the compartment and smoke bursts out. After coughing for a moment, the smoke clears to reveal three blackened lumps.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_charred1",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedrolls",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedrolls1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":18
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedrolls2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":19
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedrolls3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":23
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedrolls4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":27
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedrolls",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedrolls1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":18
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedrolls2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":19
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedrolls3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":20
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedrolls4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":27
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedrolls",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedroll1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":18
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedroll2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":19
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedroll3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":20
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedroll4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":27
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_oven0",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_oven",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":16
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_oven_clean",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":16,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_oven_clean",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_oven"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":18
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":19
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":20
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":30
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":21
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":22
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":23
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":31
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":24
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":25
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":26
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":32
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":27
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":28
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":29
+            },
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"poisonland_timeinoven",
+                "value":0
+            }
+        ]
+    },
+    {
+        "id":"poisonland_charredtart",
+        "message":"You open the compartment and smoke bursts out. After coughing for a moment, the smoke clears to reveal the tart has been charred.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_charred2",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedtart",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedtart1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":21
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedtart2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":22
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedtart3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":23
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedtart4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":28
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedtart",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedtart1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":21
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedtart2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":22
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedtart3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":23
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedtart4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":28
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedtart",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedtart1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":21
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedtart2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":22
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedtart3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":23
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedtart4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":28
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_charredpie",
+        "message":"You open the compartment and smoke bursts out. After coughing for a moment, the smoke clears to reveal the pie has been charred.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_charred3",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedpie",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedpie1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":24
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedpie2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":25
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedpie3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":26
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_wellbakedpie4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":29
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedpie",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedpie1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":24
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedpie2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":25
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedpie3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":26
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_bakedpie4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":29
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedpie",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedpie1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":24
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedpie2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":25
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedpie3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":26
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_undercookedpie4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":29
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedrolls1",
+        "message":"You open the compartment and a pleasant smell flows out. Though the rolls were made with simple ingredients, the baking was flawless.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_highbake1",
+                "value":3
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedrolls2",
+        "message":"You open the compartment and a pleasant smell flows out. The flawless baking brought out the most from the ingredients.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_highbake2",
+                "value":3
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedrolls3",
+        "message":"You open the compartment and a pleasant smell flows out. The rolls were made with the finest ingredients, and the baking was flawless.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_highbake3",
+                "value":3
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedrolls4",
+        "message":"You open the compartment and a pleasant smell flows out. The flawless baking and the smell of chocolate makes your mouth water.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_chocolate7",
+                "value":3
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedrolls1",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_midbake1",
+                "value":3
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedrolls2",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_midbake2",
+                "value":3
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedrolls3",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_midbake3",
+                "value":3
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedrolls4",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_chocolate4",
+                "value":3
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedroll1",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_lowbake1",
+                "value":3
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedroll2",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_lowbake2",
+                "value":3
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedroll3",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_lowbake3",
+                "value":3
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedroll4",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_chocolate1",
+                "value":3
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedtart1",
+        "message":"You open the compartment and a pleasant smell flows out. Though the tart was made with simple ingredients, the baking was flawless.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_highbake4",
+                "value":2
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedtart2",
+        "message":"You open the compartment and a pleasant smell flows out. The flawless baking brought out the most from the ingredients.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_highbake5",
+                "value":2
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedtart3",
+        "message":"You open the compartment and a pleasant smell flows out. The tart was made with the finest ingredients, and the baking was flawless.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_highbake6",
+                "value":2
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedtart4",
+        "message":"You open the compartment and a pleasant smell flows out. The flawless baking and the smell of chocolate make your mouth water.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_chocolate8",
+                "value":2
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedtart1",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_midbake4",
+                "value":2
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedtart2",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_midbake5",
+                "value":2
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedtart3",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_midbake6",
+                "value":2
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedtart4",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_chocolate5",
+                "value":2
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedtart1",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_lowbake4",
+                "value":2
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedtart2",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_lowbake5",
+                "value":2
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedtart3",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_lowbake6",
+                "value":2
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedtart4",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_chocolate2",
+                "value":2
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedpie1",
+        "message":"You open the compartment and a pleasant smell flows out. Though the pie was made with simple ingredients, the baking was flawless.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_highbake7",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedpie2",
+        "message":"You open the compartment and a pleasant smell flows out. The flawless baking brought out the most from the ingredients.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_highbake8",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedpie3",
+        "message":"You open the compartment and a pleasant smell flows out. The pie was made with the finest ingredients, and the baking was flawless.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_highbake9",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_wellbakedpie4",
+        "message":"You open the compartment and a pleasant smell flows out. The flawless baking and the smell of chocolate make your mouth water.",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_chocolate9",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedpie1",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_midbake7",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedpie2",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_midbake8",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedpie3",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_chocolate1",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_bakedpie4",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_chocolate6",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedpie1",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_lowbake7",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedpie2",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_lowbake8",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedpie3",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_lowbake9",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_undercookedpie4",
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_chocolate3",
+                "value":1
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":16
+            }
+        ]
+    },
+    {
+        "id":"poisonland_lecture9alt",
+        "message":"Having not lost any lives and with the burden on their supply lines lessened general Ahrensbach decided that no break would be needed, they would chase down the remaining Nor City troops who have fled to continue their resistance with the support of Brightport. And in turn, by securing the waterway infrastructure Remgard would be able to support his army with supplies. It is worth noting here that Remgard's role was tertial and little to nothing happened to the town due to its isolation.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_lecture10_narration"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_stickskindled",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":13
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":8
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":9
+            },
+            {
+                "rewardType":"createTimer",
+                "rewardID":"poisonland_embers"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_embers",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":10
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":13
+            }
+        ]
+    },
+    {
+        "id":"poisonland_embersflame",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_embersflame1",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_fuel",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":16
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":11
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":10
+            },
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"poisonland_fuel",
+                "value":-1
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ash",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":14
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":10
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":13
+            }
+        ]
+    },
+    {
+        "id":"poisonland_embers2",
+        "rewards":[
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":17
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":11
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":10
+            }
+        ]
+    },
+    {
+        "id":"poisonland_embersflame1",
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"poisonland_timeinoven",
+                "value":2
+            }
+        ]
+    },
+    {
+        "id":"poisonland_cooking",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_cooking2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":16
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"poisonland_fuel1",
+                "value":-1
+            }
+        ]
+    },
+    {
+        "id":"poisonland_cooking2",
+        "rewards":[
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"poisonland_timeinoven",
+                "value":1
+            }
+        ]
     }
 ]

@@ -277,7 +277,7 @@
   </object>
   <object name="poisonland_firescript" type="script" x="32" y="64" width="352" height="352">
    <properties>
-    <property name="when" value="always"/>
+    <property name="when" value="round"/>
    </properties>
   </object>
  </objectgroup>
