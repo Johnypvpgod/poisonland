@@ -404,23 +404,23 @@
             },
             {
                 "progress":90,
-                "logText":"I cooked the sweet roll I made and it wasn't sweet at all. It was dark as coal!"
+                "logText":"I cooked the sweet rolls I made and it wasn't sweet at all. It was dark as coal!"
             },
             {
                 "progress":95,
-                "logText":"I cooked the sweet roll I made and it wasn't sweet at all!"
+                "logText":"I cooked the sweet rolls I made and it wasn't sweet at all!"
             },
             {
                 "progress":100,
-                "logText":"I cooked the sweet roll I made and it was delicious."
+                "logText":"I cooked the sweet rolls I made and it was delicious."
             },
             {
                 "progress":105,
-                "logText":"Hortensia suddenly entered the room while we were taste testing my baked roll. We thought we were in trouble, but she was surprisingly kind and said she would have helped us if she knew about Ysolde's troubles."
+                "logText":"Hortensia suddenly entered the room while we were taste testing my baked rolls. We thought we were in trouble, but she was surprisingly kind and said she would have helped us if she knew about Ysolde's troubles."
             },
             {
                 "progress":110,
-                "logText":"Ysolde thanked me and said I can come to her whenever I need help learning how to bake. Sweet, I can bake now?!",
+                "logText":"Ysolde thanked me and said I can come to her whenever I need help learning new recipes to bake. Sweet, I can bake now?!",
                 "finishesQuest":1
             }
         ]
@@ -578,6 +578,30 @@
             {
                 "progress":29,
                 "logText":"chocolate pie (input)"
+            },
+            {
+                "progress":34,
+                "logText":"baking allowed"
+            },
+            {
+                "progress":35,
+                "logText":"dough making allowed"
+            },
+            {
+                "progress":36,
+                "logText":"Cooking savepoint: milk and flour"
+            },
+            {
+                "progress":37,
+                "logText":"Ingredient1 (input)"
+            },
+            {
+                "progress":38,
+                "logText":"Ingredient 2 (input)"
+            },
+            {
+                "progress":38,
+                "logText":"ingredient 3 (input)"
             }
         ]
     }
