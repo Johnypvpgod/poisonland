@@ -175,5 +175,18 @@
                 }
             }
         ]
+    },
+    {
+        "id":"poisonland_hay",
+        "items":[
+            {
+                "itemID":"poisonland_hay",
+                "chance":"100",
+                "quantity":{
+                    "min":1,
+                    "max":10
+                }
+            }
+        ]
     }
 ]

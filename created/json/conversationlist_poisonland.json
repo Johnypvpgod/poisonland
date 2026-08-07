@@ -4819,7 +4819,7 @@
     },
     {
         "id":"poisonland_rubiano2",
-        "message":"I'll cut to the chase, the situation is really dire. A while ago, when the outskirts of that area began to be affected, I sent an adventuring party to investigate what was happening in the depths of the cursed land. Everyone thinks it's just superstition, but there had to be a cause. They returned extremely ill. It took them weeks to recover since we have no bonemeal left at hand.",
+        "message":"I'll cut to the chase, the situation is dire. A while ago, the outskirts of the area to the north began to twist and decay. I sent an adventuring party to investigate what was happening in the depths of the cursed land. Everyone thinks it's just superstition, but there had to be a cause. They returned extremely ill. It took them weeks to recover since we had no bonemeal left on hand.",
         "replies":[
             {
                 "text":"N",
@@ -4829,7 +4829,7 @@
     },
     {
         "id":"poisonland_rubiano3",
-        "message":"They said they witnessed monsters in the depths of the forest, where there used to be nothing but deer and mountain cats. Monsters mutated in many forms, much like those Heiter knows about. ",
+        "message":"They said they witnessed monsters in the depths of the twisted forest, where there used to be nothing but deer and mountain cats. Monsters mutated in many forms, much like those Heiter knows about. ",
         "replies":[
             {
                 "text":"N",
@@ -5115,6 +5115,10 @@
             {
                 "text":"May the Shadow watch over him.",
                 "nextPhraseID":"X"
+            },
+            {
+                "text":"A brave adventurer of Feygard has no use for the Shadow.",
+                "nextPhraseID":"X"
             }
         ],
         "rewards":[
@@ -5131,6 +5135,10 @@
         "replies":[
             {
                 "text":"May the shadow watch over him.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"A brave adventurer of Feygard has no use for the Shadow.",
                 "nextPhraseID":"X"
             }
         ],
@@ -5920,6 +5928,17 @@
     {
         "id":"poisonland_ysolde_selector",
         "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde27",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":70
+                    }
+                ]
+            },
             {
                 "text":"N",
                 "nextPhraseID":"poisonland_ysolde27",
@@ -10375,7 +10394,14 @@
         "message":"I shouldn't play around with the oven without Ysolde's instructions."
     },
     {
-        "id":"poisonland_dough1"
+        "id":"poisonland_dough1",
+        "message":"You stand before the cutting board. All the tools are ready.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dough_selector"
+            }
+        ]
     },
     {
         "id":"poisonland_dough2",
@@ -10425,6 +10451,23 @@
         "replies":[
             {
                 "text":"N",
+                "nextPhraseID":"poisonland_ysolde_tutorial5",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":51
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":75,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
                 "nextPhraseID":"poisonland_ysolde_tutorial4_selector",
                 "requires":[
                     {
@@ -10448,6 +10491,12 @@
                         "requireType":"questProgress",
                         "requireID":"poisonland_baking",
                         "value":10
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":51,
+                        "negate":true
                     }
                 ]
             },
@@ -10599,20 +10648,30 @@
                 "requires":[
                     {
                         "requireType":"factionScore",
-                        "requireID":"poisonland_fuel3",
+                        "requireID":"poisonland_fuel",
                         "value":3
                     }
                 ]
             },
             {
                 "text":"N",
-                "nextPhraseID":"poisonland_ysolde_tutorial5"
+                "nextPhraseID":"poisonland_ysolde_tutorial5alt"
             }
         ]
     },
     {
         "id":"poisonland_ysolde_tutorial4",
-        "message":"Nice job on the oven, playername. Hop on to the oven yo",
+        "message":"You did well, $playername. The oven is ready. Just a bit and... Done! The tarts are cooking in the oven. It's time to work on your own pastry, $playername. Go to the table with the cutting board. I'll teach you how to make the dough.",
+        "replies":[
+            {
+                "text":"Eh, I'll be baking too?",
+                "nextPhraseID":"poisonland_ysolde28"
+            },
+            {
+                "text":"Easy as pie.",
+                "nextPhraseID":"poisonland_ysolde_tutorial6"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -10623,12 +10682,33 @@
                 "rewardType":"questProgress",
                 "rewardID":"poisonland_baking",
                 "value":35
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":34
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":46
             }
         ]
     },
     {
         "id":"poisonland_ysolde_tutorial5",
-        "message":"bad job :d hop on to the oven tho\n",
+        "message":"Sigh, I told you to put wood on the fire. Where was your head? I put my tarts in the oven. It's time to work on your own pastry, $playername. Go to the table with the cutting board. I'll teach you how to make the dough.",
+        "switchToNPC":"brightportstudent2",
+        "replies":[
+            {
+                "text":"Eh, I'll be baking too?",
+                "nextPhraseID":"poisonland_ysolde28"
+            },
+            {
+                "text":"Easy as pie.",
+                "nextPhraseID":"poisonland_ysolde_tutorial6"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"questProgress",
@@ -10639,7 +10719,541 @@
                 "rewardType":"questProgress",
                 "rewardID":"poisonland_baking",
                 "value":35
+            },
+            {
+                "rewardType":"removeQuestProgress",
+                "rewardID":"poisonland_baking",
+                "value":34
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":46
             }
         ]
+    },
+    {
+        "id":"poisonland_hayselector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_hay",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":50
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_hay2"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_hay",
+        "replies":[
+            {
+                "nextPhraseID":"S"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_hay2",
+        "message":"A cartload of hay I can sell, yes. But you kid, I assume don't need more than a handful. I'll give you some.",
+        "replies":[
+            {
+                "nextPhraseID":"S"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":50
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano10",
+        "message":"This goes back further. During my father's rule of Brightport, his loyalty to the Shadow and the ways of Nor City blinded him to what was happening in the kingdom. He foolishly committed himself to a lost cause.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_rubiano11"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano11",
+        "message":"We suffered many losses among the people of Brightport. After the war ended, not only was he executed, but it took time for the garrison of Feygard to settle in. While we were weakened, the accursed lizardmen poured out of their caverns and claimed the lake as their home. Our grand water temple on Lake Bright was ransacked. Surely the Shadow sent this curse upon us for that reason.",
+        "replies":[
+            {
+                "text":"Why would the Shadow curse you?",
+                "nextPhraseID":"poisonland_rubiano12"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_rubiano12",
+        "message":"The Shadow is our guide. It was the one who assisted my ancestors in settling this swampy place. The temple was built for that reason. The Shadow gives, and the Shadow takes away. The land to the north is the price we have to pay, and until the water temple is purified of the scaled filth, we can only prevent the decay, not cure it."
+    },
+    {
+        "id":"poisonland_ysolde_tutorial5alt",
+        "message":"At some point, Ysolde noticed you hadn't added firewood and refueled the oven herself.",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde_tutorial5"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"alignmentSet",
+                "rewardID":"poisonland_fuel",
+                "value":9
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde_tutorial6",
+        "message":"No, we won't be making pie. It's too difficult. I'll teach you how to make some basic rolls.",
+        "replies":[
+            {
+                "text":"Oh, ok.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"I didn't meant it literally...",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough_selector",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dough3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":80
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dough_ysolde",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":80,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough_ysolde",
+        "message":"First off, $playername, you need to take a portion of flour from the sack at the back of the classroom, then come here and mix the flour with two bottles of milk. I've brought the milk for you.",
+        "switchToNPC":"brightportstudent2",
+        "replies":[
+            {
+                "text":"Thanks, I'll go get the flour.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":47
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":80
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_milk",
+                "value":2
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough3",
+        "message":"On the table there is a bowl prepared ready for mixing the dough.",
+        "replies":[
+            {
+                "text":"[Mix a portion of flour with 2 bottles of milk.]",
+                "nextPhraseID":"poisonland_dough3_selector",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_milk",
+                        "value":2
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_flour",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "text":"[Mix a portion of flour with 2 bottles of milk.]",
+                "nextPhraseID":"poisonland_dough3_selector",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"milk",
+                        "value":2
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"poisonland_flour",
+                        "value":1,
+                        "negate":false
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":52
+                    }
+                ]
+            },
+            {
+                "text":"I don't have all the ingredients right now.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_flour",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"milk",
+                        "value":2,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I don't have the flour right now.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_flour",
+                        "value":1,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_milk",
+                        "value":2,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"I don't have the milk right now.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"poisonland_flour",
+                        "value":1
+                    },
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"milk",
+                        "value":2,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough3_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dough4",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":53
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dough_ysolde2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":53,
+                        "negate":true
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":52
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":36
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough_ysolde2",
+        "message":"Keep mixing it with your hands. You're doing a good job.",
+        "switchToNPC":"brightportstudent2",
+        "replies":[
+            {
+                "text":"uh, thanks.",
+                "nextPhraseID":"poisonland_dough4"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":53
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough4",
+        "message":"You mix the flour with milk for a while until the dough looks consistent.",
+        "switchToNPC":"none",
+        "replies":[
+            {
+                "text":"[Continue.]",
+                "nextPhraseID":"poisonland_dough5_selector"
+            },
+            {
+                "text":"[Pour a bonemeal potion into the mixture.]",
+                "nextPhraseID":"poisonland_dough4_bonemeal",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":110
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"brightport_nondisplay",
+                        "value":257
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"bonemeal_potion",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":40,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"[Add butter.]",
+                "nextPhraseID":"poisonland_dough6",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":110
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":110
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":41,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"butter",
+                        "value":1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough5_selector",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dough5",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":85
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dough7",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":85,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough5",
+        "message":"Now to choose which recipe to use the dough for.",
+        "replies":[
+            {
+                "text":"I'll make some rolls.",
+                "nextPhraseID":"poisonland_dough_rolls"
+            },
+            {
+                "text":"I'll make a tart.",
+                "nextPhraseID":"poisonland_dough_tart",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":42
+                    }
+                ]
+            },
+            {
+                "text":"I'll make a pie.",
+                "nextPhraseID":"poisonland_dough_pie",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":43
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough6",
+        "message":"You add in the butter and mix it a little more.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dough4"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":41
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough7",
+        "message":"Now we'll turn this dough into rolls. Unfortunately, we don't have time to let the dough rise. To bring out the full flavor, you would need to use a substance to make it rise quicker. But not for today.",
+        "switchToNPC":"brightportstudent2",
+        "replies":[
+            {
+                "text":"Rolls? That doesn't sound bad.",
+                "nextPhraseID":"poisonland_dough9"
+            },
+            {
+                "text":"Like that white powder you used?",
+                "nextPhraseID":"poisonland_dough8",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":45
+                    }
+                ]
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":85
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough4_bonemeal",
+        "message":"You pour in the liquid and mix it a little more.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dough4"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":40
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough_rolls"
+    },
+    {
+        "id":"poisonland_dough_tart"
+    },
+    {
+        "id":"poisonland_dough_pie"
+    },
+    {
+        "id":"poisonland_dough8",
+        "message":"You've seen that? Please don't tell anyone, $playername. For you I meant beetle sap, not what I used!",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_dough9"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_dough9",
+        "message":"Ysolde shows you how to shape the dough in preparation for adding the ingredients.",
+        "switchToNPC":"none"
     }
 ]

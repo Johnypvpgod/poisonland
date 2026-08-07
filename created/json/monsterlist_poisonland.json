@@ -161,5 +161,10 @@
         "name":"Walker tree",
         "iconID":"monsters_tometik10:28",
         "droplistID":"poisonland_tree"
+    },
+    {
+        "id":"poisonland_crystalberry",
+        "name":"Crystal berry",
+        "iconID":"items_newb:817"
     }
 ]

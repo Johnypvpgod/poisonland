@@ -496,6 +496,18 @@
                 ]
             },
             {
+                "text":"What can you tell me about the cursed land?",
+                "nextPhraseID":"poisonland_rubiano10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland",
+                        "value":60,
+                        "negate":false
+                    }
+                ]
+            },
+            {
                 "text":"What's a Doughe?",
                 "nextPhraseID":"brightport_mayor1"
             },

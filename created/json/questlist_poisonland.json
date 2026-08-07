@@ -331,6 +331,22 @@
             {
                 "progress":49,
                 "logText":"firewood reminder"
+            },
+            {
+                "progress":50,
+                "logText":"hay buying active"
+            },
+            {
+                "progress":51,
+                "logText":"ysolde had to help"
+            },
+            {
+                "progress":52,
+                "logText":"fake milk used"
+            },
+            {
+                "progress":53,
+                "logText":"ysole yapping1"
             }
         ]
     },
@@ -412,15 +428,15 @@
             },
             {
                 "progress":90,
-                "logText":"I cooked the sweet rolls I made but they weren't sweet at all. They were dark as coal!"
+                "logText":"I tasted the rolls I baked but they weren't sweet at all. They were dark as coal!"
             },
             {
                 "progress":95,
-                "logText":"I cooked the sweet rolls I made and they weren't sweet at all!"
+                "logText":"I tasted the rolls I baked and they weren't sweet at all!"
             },
             {
                 "progress":100,
-                "logText":"I cooked the sweet rolls I made and they were delicious."
+                "logText":"I tasted the rolls I baked and they were delicious."
             },
             {
                 "progress":105,
@@ -455,10 +471,6 @@
         "id":"poisonland_baking",
         "name":"baking stuff",
         "stages":[
-            {
-                "progress":16,
-                "logText":"pastries in the oven. "
-            },
             {
                 "progress":1,
                 "logText":"low tier ingredient (Input)"
@@ -510,6 +522,10 @@
             {
                 "progress":14,
                 "logText":"ash in the fireplace (sprite replace)"
+            },
+            {
+                "progress":16,
+                "logText":"pastries in the oven. "
             },
             {
                 "progress":17,
@@ -608,8 +624,24 @@
                 "logText":"Ingredient 2 (input)"
             },
             {
-                "progress":38,
+                "progress":39,
                 "logText":"ingredient 3 (input)"
+            },
+            {
+                "progress":40,
+                "logText":"Bonemeal potion added"
+            },
+            {
+                "progress":41,
+                "logText":"Butter added"
+            },
+            {
+                "progress":42,
+                "logText":"learnt the recipe for tarts"
+            },
+            {
+                "progress":43,
+                "logText":"learnt the recipe for pies"
             }
         ]
     }
