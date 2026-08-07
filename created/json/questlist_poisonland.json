@@ -323,6 +323,14 @@
             {
                 "progress":47,
                 "logText":"Ysolde teaches about flour"
+            },
+            {
+                "progress":48,
+                "logText":"Kindling received"
+            },
+            {
+                "progress":49,
+                "logText":"firewood reminder"
             }
         ]
     },
@@ -376,7 +384,7 @@
             },
             {
                 "progress":55,
-                "logText":"First I must kindle the fire. This time, Ysolde brought her own kindling, but if I were to bake by myself, I would need to bring my own."
+                "logText":"First I must kindle the fire. This time, Ysolde brought her own kindling, but if I were to use the oven by myself, I would need to bring my own."
             },
             {
                 "progress":60,
@@ -404,15 +412,15 @@
             },
             {
                 "progress":90,
-                "logText":"I cooked the sweet rolls I made and it wasn't sweet at all. It was dark as coal!"
+                "logText":"I cooked the sweet rolls I made but they weren't sweet at all. They were dark as coal!"
             },
             {
                 "progress":95,
-                "logText":"I cooked the sweet rolls I made and it wasn't sweet at all!"
+                "logText":"I cooked the sweet rolls I made and they weren't sweet at all!"
             },
             {
                 "progress":100,
-                "logText":"I cooked the sweet rolls I made and it was delicious."
+                "logText":"I cooked the sweet rolls I made and they were delicious."
             },
             {
                 "progress":105,

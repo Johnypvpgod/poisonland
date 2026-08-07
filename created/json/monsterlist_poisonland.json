@@ -155,5 +155,11 @@
         "name":"Freya",
         "iconID":"monsters_ld1:179",
         "droplistID":"poisonland_extendedfreyja"
+    },
+    {
+        "id":"poisonland_tree2",
+        "name":"Walker tree",
+        "iconID":"monsters_tometik10:28",
+        "droplistID":"poisonland_tree"
     }
 ]

@@ -6861,6 +6861,12 @@
                         "requireType":"questProgress",
                         "requireID":"poisonland_baking",
                         "value":10
+                    },
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_fuel",
+                        "value":6,
+                        "negate":false
                     }
                 ]
             },
@@ -6983,6 +6989,7 @@
     {
         "id":"poisonland_oven1",
         "message":"The fireplace is empty.",
+        "switchToNPC":"none",
         "replies":[
             {
                 "text":"[Start the fire using two small sticks and a handful of hay.]",
@@ -6997,6 +7004,18 @@
                         "requireType":"inventoryRemove",
                         "requireID":"poisonland_hay",
                         "value":1
+                    }
+                ]
+            },
+            {
+                "text":"What do I do now?",
+                "nextPhraseID":"poisonland_oven10",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":55,
+                        "negate":true
                     }
                 ]
             },
@@ -7033,6 +7052,11 @@
                 "rewardType":"removeQuestProgress",
                 "rewardID":"poisonland_baking",
                 "value":15
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":12
             }
         ]
     },
@@ -7070,7 +7094,7 @@
                     {
                         "requireType":"factionScore",
                         "requireID":"poisonland_fuel",
-                        "value":5
+                        "value":9
                     }
                 ]
             }
@@ -8906,6 +8930,11 @@
                 "rewardType":"alignmentSet",
                 "rewardID":"poisonland_timeinoven",
                 "value":0
+            },
+            {
+                "rewardType":"alignmentChange",
+                "rewardID":"poisonland_timescooked",
+                "value":1
             }
         ]
     },
@@ -9238,6 +9267,16 @@
     {
         "id":"poisonland_wellbakedrolls1",
         "message":"You open the compartment and a pleasant smell flows out. Though the rolls were made with simple ingredients, the baking was flawless.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing!",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9254,6 +9293,16 @@
     {
         "id":"poisonland_wellbakedrolls2",
         "message":"You open the compartment and a pleasant smell flows out. The flawless baking brought out the most from the ingredients.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing!",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9270,6 +9319,16 @@
     {
         "id":"poisonland_wellbakedrolls3",
         "message":"You open the compartment and a pleasant smell flows out. The rolls were made with the finest ingredients, and the baking was flawless.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing!",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9286,6 +9345,16 @@
     {
         "id":"poisonland_wellbakedrolls4",
         "message":"You open the compartment and a pleasant smell flows out. The flawless baking and the smell of chocolate makes your mouth water.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing!",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9301,6 +9370,17 @@
     },
     {
         "id":"poisonland_bakedrolls1",
+        "message":"You open the compartment and a pleasant smell flows out. The rolls baked nicely.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9316,6 +9396,17 @@
     },
     {
         "id":"poisonland_bakedrolls2",
+        "message":"You open the compartment and a pleasant smell flows out. The rolls baked nicely.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9331,6 +9422,17 @@
     },
     {
         "id":"poisonland_bakedrolls3",
+        "message":"You open the compartment and a pleasant smell flows out. The rolls baked nicely.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9346,6 +9448,17 @@
     },
     {
         "id":"poisonland_bakedrolls4",
+        "message":"You open the compartment and a pleasant smell flows out. The chocolate rolls baked nicely.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9361,6 +9474,17 @@
     },
     {
         "id":"poisonland_undercookedroll1",
+        "message":"You open the compartment to a disappointing sight, the rolls didn't bake at all.",
+        "replies":[
+            {
+                "text":"I'll redeem myself by baking something else.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"I'll close the oven and pretend I didn't see anything.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9376,6 +9500,17 @@
     },
     {
         "id":"poisonland_undercookedroll2",
+        "message":"You open the compartment to a disappointing sight, the rolls didn't bake at all.",
+        "replies":[
+            {
+                "text":"I'll redeem myself by baking something else.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"I'll close the oven and pretend I didn't see anything.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9391,6 +9526,17 @@
     },
     {
         "id":"poisonland_undercookedroll3",
+        "message":"You open the compartment to a disappointing sight, the rolls didn't bake at all.",
+        "replies":[
+            {
+                "text":"I'll redeem myself by baking something else.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"I'll close the oven and pretend I didn't see anything.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9406,6 +9552,17 @@
     },
     {
         "id":"poisonland_undercookedroll4",
+        "message":"You open the compartment to a disappointing sight, the chocolate rolls didn't bake at all, what a waste!",
+        "replies":[
+            {
+                "text":"I'll redeem myself by baking something else.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"I'll close the oven and pretend I didn't see anything.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9422,6 +9579,16 @@
     {
         "id":"poisonland_wellbakedtart1",
         "message":"You open the compartment and a pleasant smell flows out. Though the tart was made with simple ingredients, the baking was flawless.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing!",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9438,6 +9605,16 @@
     {
         "id":"poisonland_wellbakedtart2",
         "message":"You open the compartment and a pleasant smell flows out. The flawless baking brought out the most from the ingredients.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing!",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9454,6 +9631,16 @@
     {
         "id":"poisonland_wellbakedtart3",
         "message":"You open the compartment and a pleasant smell flows out. The tart was made with the finest ingredients, and the baking was flawless.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing!",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9470,6 +9657,16 @@
     {
         "id":"poisonland_wellbakedtart4",
         "message":"You open the compartment and a pleasant smell flows out. The flawless baking and the smell of chocolate make your mouth water.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing!",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9485,6 +9682,17 @@
     },
     {
         "id":"poisonland_bakedtart1",
+        "message":"You open the compartment and a pleasant smell flows out. The tart baked nicely.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9500,6 +9708,17 @@
     },
     {
         "id":"poisonland_bakedtart2",
+        "message":"You open the compartment and a pleasant smell flows out. The tart baked nicely.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9515,6 +9734,17 @@
     },
     {
         "id":"poisonland_bakedtart3",
+        "message":"You open the compartment and a pleasant smell flows out. The tart baked nicely.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9530,6 +9760,17 @@
     },
     {
         "id":"poisonland_bakedtart4",
+        "message":"You open the compartment and a pleasant smell flows out. The chocolate tart baked nicely.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9545,6 +9786,17 @@
     },
     {
         "id":"poisonland_undercookedtart1",
+        "message":"You open the compartment to a disappointing sight, the tart didn't bake at all.",
+        "replies":[
+            {
+                "text":"I'll redeem myself by baking something else.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"I'll close the oven and pretend I didn't see anything.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9560,6 +9812,17 @@
     },
     {
         "id":"poisonland_undercookedtart2",
+        "message":"You open the compartment to a disappointing sight, the tart didn't bake at all.",
+        "replies":[
+            {
+                "text":"I'll redeem myself by baking something else.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"I'll close the oven and pretend I didn't see anything.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9575,6 +9838,17 @@
     },
     {
         "id":"poisonland_undercookedtart3",
+        "message":"You open the compartment to a disappointing sight, the tart didn't bake at all.",
+        "replies":[
+            {
+                "text":"I'll redeem myself by baking something else.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"I'll close the oven and pretend I didn't see anything.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9590,6 +9864,17 @@
     },
     {
         "id":"poisonland_undercookedtart4",
+        "message":"You open the compartment to a disappointing sight, the chocolate tart didn't bake at all, what a waste!",
+        "replies":[
+            {
+                "text":"I'll redeem myself by baking something else.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"I'll close the oven and pretend I didn't see anything.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9606,6 +9891,16 @@
     {
         "id":"poisonland_wellbakedpie1",
         "message":"You open the compartment and a pleasant smell flows out. Though the pie was made with simple ingredients, the baking was flawless.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing!",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9622,6 +9917,16 @@
     {
         "id":"poisonland_wellbakedpie2",
         "message":"You open the compartment and a pleasant smell flows out. The flawless baking brought out the most from the ingredients.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing!",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9638,6 +9943,16 @@
     {
         "id":"poisonland_wellbakedpie3",
         "message":"You open the compartment and a pleasant smell flows out. The pie was made with the finest ingredients, and the baking was flawless.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing!",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9654,6 +9969,16 @@
     {
         "id":"poisonland_wellbakedpie4",
         "message":"You open the compartment and a pleasant smell flows out. The flawless baking and the smell of chocolate make your mouth water.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing!",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9669,6 +9994,17 @@
     },
     {
         "id":"poisonland_bakedpie1",
+        "message":"You open the compartment and a pleasant smell flows out. The pie baked nicely.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9684,6 +10020,17 @@
     },
     {
         "id":"poisonland_bakedpie2",
+        "message":"You open the compartment and a pleasant smell flows out. The pie baked nicely.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9699,6 +10046,17 @@
     },
     {
         "id":"poisonland_bakedpie3",
+        "message":"You open the compartment and a pleasant smell flows out. The pie baked nicely.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9714,6 +10072,17 @@
     },
     {
         "id":"poisonland_bakedpie4",
+        "message":"You open the compartment and a pleasant smell flows out. The chocolate pie baked nicely.",
+        "replies":[
+            {
+                "text":"I'll bake something else first.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"Time for a taste testing.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9729,6 +10098,17 @@
     },
     {
         "id":"poisonland_undercookedpie1",
+        "message":"You open the compartment to a disappointing sight, the pie didn't bake at all.",
+        "replies":[
+            {
+                "text":"I'll redeem myself by baking something else.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"I'll close the oven and pretend I didn't see anything.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9744,6 +10124,17 @@
     },
     {
         "id":"poisonland_undercookedpie2",
+        "message":"You open the compartment to a disappointing sight, the pie didn't bake at all.",
+        "replies":[
+            {
+                "text":"I'll redeem myself by baking something else.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"I'll close the oven and pretend I didn't see anything.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9759,6 +10150,17 @@
     },
     {
         "id":"poisonland_undercookedpie3",
+        "message":"You open the compartment to a disappointing sight, the pie didn't bake at all.",
+        "replies":[
+            {
+                "text":"I'll redeem myself by baking something else.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"I'll close the oven and pretend I didn't see anything.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9774,6 +10176,17 @@
     },
     {
         "id":"poisonland_undercookedpie4",
+        "message":"You open the compartment to a disappointing sight, the chocolate pie didn't bake at all, what a waste!",
+        "replies":[
+            {
+                "text":"I'll redeem myself by baking something else.",
+                "nextPhraseID":"poisonland_oven_clean"
+            },
+            {
+                "text":"I'll close the oven and pretend I didn't see anything.",
+                "nextPhraseID":"X"
+            }
+        ],
         "rewards":[
             {
                 "rewardType":"giveItem",
@@ -9967,5 +10380,266 @@
     {
         "id":"poisonland_dough2",
         "message":"I shouldn't play around here without Ysolde's instructions."
+    },
+    {
+        "id":"poisonland_oven8",
+        "message":"Here's the kindling I brought. To start the fire, place the hay in the fireplace first, then the sticks on top. Strike at it with the flint and steel until the hay catches a spark.",
+        "switchToNPC":"brightportstudent2",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"Poisonland_oven9"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"giveItem",
+                "rewardID":"small_tree_branch",
+                "value":10,
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":48,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "rewardType":"giveItem",
+                "rewardID":"poisonland_hay",
+                "value":5,
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":48,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde_tutorial",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde_tutorial4_selector",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":49
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":75,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questLatestProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":70,
+                        "negate":true
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":10
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde_tutorial3",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":65,
+                        "negate":false
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":13
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_nondisplay",
+                        "value":49,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde_tutorial2",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":60
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":65,
+                        "negate":true
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde_tutorial1",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_baking",
+                        "value":9
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"poisonland_bakeryquest",
+                        "value":60,
+                        "negate":true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde_tutorial1",
+        "message":"Nice one, $playername. Kids tend to find starting a fire difficult. Once the sticks are burning, add firewood, then wait for the fire to smolder. The oven needs to be heated by the embers before baking can begin.",
+        "switchToNPC":"brightportstudent2",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde_tutorial2"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":60
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde_tutorial2",
+        "message":"When the fire is smoldering, you have to make sure it doesn't die out. If you add too much wood, the heat will ruin any pastry that's baking. The temperature has to remain stable throughout the process.",
+        "switchToNPC":"brightportstudent2",
+        "replies":[
+            {
+                "text":"Got it.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":65
+            }
+        ]
+    },
+    {
+        "id":"Poisonland_oven9",
+        "message":"We students prepare the kindling ourselves, so if you ever want to use the oven, you'll need to gather sticks from the forest and find some hay. If you can't gather it yourself, you can buy some from a farmer.",
+        "replies":[
+            {
+                "text":"I'm not sure how that'll be helpful, but OK.",
+                "nextPhraseID":"poisonland_oven1"
+            },
+            {
+                "text":"Got it.",
+                "nextPhraseID":"poisonland_oven1"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":55
+            }
+        ]
+    },
+    {
+        "id":"poisonland_oven10",
+        "message":"First, $playername, you have to learn a few rules. No putting strange things in the oven, and no leaving while the fire is burning.",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_oven8"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde_tutorial3",
+        "message":"Now is the time to add wood to the fire, $playername.",
+        "switchToNPC":"brightportstudent2",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_nondisplay",
+                "value":49
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde_tutorial4_selector",
+        "switchToNPC":"brightportstudent2",
+        "replies":[
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde_tutorial4",
+                "requires":[
+                    {
+                        "requireType":"factionScore",
+                        "requireID":"poisonland_fuel3",
+                        "value":3
+                    }
+                ]
+            },
+            {
+                "text":"N",
+                "nextPhraseID":"poisonland_ysolde_tutorial5"
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde_tutorial4",
+        "message":"Nice job on the oven, playername. Hop on to the oven yo",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":70
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":35
+            }
+        ]
+    },
+    {
+        "id":"poisonland_ysolde_tutorial5",
+        "message":"bad job :d hop on to the oven tho\n",
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_bakeryquest",
+                "value":75
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"poisonland_baking",
+                "value":35
+            }
+        ]
     }
 ]
